@@ -1,5 +1,8 @@
 # Articles and Blogs
 
+- [Stackoverflow - Upload CSV files to Ballerina Service](https://stackoverflow.com/collectives/wso2/articles/73574768/upload-csv-files-to-ballerina-service)
+- [Stackoverflow - How to download a file from URL using Ballerina](https://stackoverflow.com/collectives/wso2/articles/72983894/how-to-download-a-file-from-url-using-ballerina)
+- [InfoQ - Using GraphQL and Ballerina with Multiple Data Sources](https://www.infoq.com/articles/graphql-ballerina/)
 - [Dzone - Real-Time Stock Data Updates with WebSockets using Ballerina](https://dzone.com/articles/real-time-stock-data-updates-with-websockets-using)
 - [Dzone - Event-Driven APIs With Webhook and WebSub](https://dzone.com/articles/event-driven-apis-with-webhook-and-websub)
 - [Dzone - Quickstart OpenAPI With Ballerina](https://dzone.com/articles/quickstart-openapi-with-ballerina)

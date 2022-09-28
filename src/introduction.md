@@ -2,7 +2,7 @@
 
 ## What is Ballerina?
 
-- Ballerina is a general-purpose, open-source programming language.
+- [Ballerina](https://ballerina.io/) is a general-purpose, open-source programming language.
 - It specializes in solving integration/API integration/network interactions & cloud-based problems by providing the right level of language abstractions and tools.
 - Ballerina is NOT a JVM language.
 - Ballerina is a programming language which is 
