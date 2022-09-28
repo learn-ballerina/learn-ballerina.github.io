@@ -31,6 +31,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.LEARNING_BALLERINA_SECRET }}
+          github_token: ${{ secrets.LEARN_BALLERINA }}
           publish_branch: gh-pages
           PUBLISH_DIR: ./book
