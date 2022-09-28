@@ -1,0 +1,1810 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Learning Ballerina</title>
+                <meta name="robots" content="noindex" />
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Introduction</a></li><li class="chapter-item "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction to Ballerina</a></li><li class="chapter-item "><a href="hello_world.html"><strong aria-hidden="true">2.</strong> Hello World</a></li><li class="chapter-item "><a href="type_system.html"><strong aria-hidden="true">3.</strong> Introduction to Type System</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="type_system/type_system_fundamentals.html"><strong aria-hidden="true">3.1.</strong> Type System Fundamentals</a></li><li class="chapter-item "><a href="type_system/langlib.html"><strong aria-hidden="true">3.2.</strong> LangLib Modules</a></li></ol></li><li class="chapter-item "><a href="values_and_types.html"><strong aria-hidden="true">4.</strong> Values and Types</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="simple_basic_types.html"><strong aria-hidden="true">4.1.</strong> Simple Basic Types</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="simple_basic_types/integer.html"><strong aria-hidden="true">4.1.1.</strong> Integer</a></li><li class="chapter-item "><a href="simple_basic_types/float.html"><strong aria-hidden="true">4.1.2.</strong> Float</a></li><li class="chapter-item "><a href="simple_basic_types/decimal.html"><strong aria-hidden="true">4.1.3.</strong> Decimal</a></li><li class="chapter-item "><a href="simple_basic_types/boolean.html"><strong aria-hidden="true">4.1.4.</strong> Boolean</a></li><li class="chapter-item "><a href="simple_basic_types/nil.html"><strong aria-hidden="true">4.1.5.</strong> Nil</a></li></ol></li><li class="chapter-item "><a href="sequence_types.html"><strong aria-hidden="true">4.2.</strong> Sequence Types</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="sequence_types/string.html"><strong aria-hidden="true">4.2.1.</strong> String</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="sequence_types/string/string_template.html"><strong aria-hidden="true">4.2.1.1.</strong> String Template Literal</a></li></ol></li><li class="chapter-item "><a href="sequence_types/xml.html"><strong aria-hidden="true">4.2.2.</strong> XML</a></li></ol></li><li class="chapter-item "><a href="structured_types.html"><strong aria-hidden="true">4.3.</strong> Structured Types</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="structured_types/lists.html"><strong aria-hidden="true">4.3.1.</strong> Lists</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="structured_types/lists/array.html"><strong aria-hidden="true">4.3.1.1.</strong> Array</a></li><li class="chapter-item "><a href="structured_types/lists/tuple.html"><strong aria-hidden="true">4.3.1.2.</strong> Tuple</a></li></ol></li><li class="chapter-item "><a href="structured_types/mappings.html"><strong aria-hidden="true">4.3.2.</strong> Mappings</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="structured_types/mappings/map.html"><strong aria-hidden="true">4.3.2.1.</strong> Map</a></li><li class="chapter-item "><a href="structured_types/mappings/record.html"><strong aria-hidden="true">4.3.2.2.</strong> Record</a></li></ol></li><li class="chapter-item "><a href="structured_types/table.html"><strong aria-hidden="true">4.3.3.</strong> Table</a></li></ol></li><li class="chapter-item "><a href="behavioral_types.html"><strong aria-hidden="true">4.4.</strong> Behavioral Types</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="behavioral_types/object.html"><strong aria-hidden="true">4.4.1.</strong> object</a></li><li class="chapter-item "><a href="behavioral_types/stream.html"><strong aria-hidden="true">4.4.2.</strong> stream</a></li><li class="chapter-item "><a href="behavioral_types/error.html"><strong aria-hidden="true">4.4.3.</strong> error</a></li><li class="chapter-item "><a href="behavioral_types/typedesc.html"><strong aria-hidden="true">4.4.4.</strong> typedesc</a></li><li class="chapter-item "><a href="behavioral_types/function.html"><strong aria-hidden="true">4.4.5.</strong> function</a></li><li class="chapter-item "><a href="behavioral_types/future.html"><strong aria-hidden="true">4.4.6.</strong> future</a></li></ol></li><li class="chapter-item "><a href="other_types.html"><strong aria-hidden="true">4.5.</strong> Other Types</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="other_types/any.html"><strong aria-hidden="true">4.5.1.</strong> any</a></li><li class="chapter-item "><a href="other_types/anydata.html"><strong aria-hidden="true">4.5.2.</strong> anydata</a></li><li class="chapter-item "><a href="other_types/byte.html"><strong aria-hidden="true">4.5.3.</strong> byte</a></li><li class="chapter-item "><a href="other_types/json.html"><strong aria-hidden="true">4.5.4.</strong> json</a></li><li class="chapter-item "><a href="other_types/union.html"><strong aria-hidden="true">4.5.5.</strong> union</a></li></ol></li></ol></li><li class="chapter-item "><a href="how_to.html"><strong aria-hidden="true">5.</strong> Ballerina How To Snippets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="how_to_snippets/download_file.html"><strong aria-hidden="true">5.1.</strong> Download a file from URL using Ballerina</a></li><li class="chapter-item "><a href="how_to_snippets/validating_email.html"><strong aria-hidden="true">5.2.</strong> Validating email address using Regex in Ballerina</a></li></ol></li><li class="chapter-item "><a href="usecases.html"><strong aria-hidden="true">6.</strong> Usecases</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="usecases/graphql_with_multiple_sources.html"><strong aria-hidden="true">6.1.</strong> Ballerina GraphQL with multiple data sources</a></li><li class="chapter-item "><a href="usecases/websocket_for_realtime_stock_updates.html"><strong aria-hidden="true">6.2.</strong> WebSocket based stock updates with Ballerina</a></li><li class="chapter-item "><a href="usecases/http_service_for_searching_books.html"><strong aria-hidden="true">6.3.</strong> Ballerina HTTP Service for book and movie search</a></li></ol></li><li class="chapter-item "><a href="articles.html"><strong aria-hidden="true">7.</strong> Articles and blogs</a></li><li class="chapter-item "><a href="videos.html"><strong aria-hidden="true">8.</strong> Videos and talks</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">Learning Ballerina</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        <a href="https://github.com/learn-ballerina/learn-ballerina.github.io" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                                                
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="learning-ballerina"><a class="header" href="#learning-ballerina">Learning Ballerina</a></h1>
+<p><a href="ballerina.io/">Ballerina</a> is an open-source programming language for the cloud that makes it easier to use, combine, and create network services. </p>
+<p>This is a collection of code examples that illustrate various Ballerina concepts and functionalities.</p>
+<p>Let’s begin learning Ballerina.</p>
+<h2 id="language-basics"><a class="header" href="#language-basics">Language Basics</a></h2>
+<ul>
+<li>
+<p><a href="introduction.html">Introduction to Ballerina</a> - An introduction to the language.</p>
+</li>
+<li>
+<p><a href="hello_world.html">Hello World</a> - A traditional Hello World program.</p>
+</li>
+<li>
+<p><a href="type_system.html">Introduction to Type System</a> - An introduction to Ballerina type system.</p>
+<ul>
+<li><a href="type_system/type_system_fundamentals.html">Type System Fundamentals</a></li>
+<li><a href="type_system/langlib.html">LangLib Modules</a></li>
+</ul>
+</li>
+<li>
+<p><a href="values_and_types.html">Values and Types</a> -  Details on Ballerina type system.</p>
+</li>
+</ul>
+<h2 id="how-to-code-snippets"><a class="header" href="#how-to-code-snippets">How-to Code snippets</a></h2>
+<ul>
+<li><a href="how_to.html">Code snippets using Ballerina</a></li>
+</ul>
+<h2 id="use-cases"><a class="header" href="#use-cases">Use Cases</a></h2>
+<ul>
+<li><a href="usecases.html">Real-world usecases with Ballerina</a></li>
+</ul>
+<h2 id="articles"><a class="header" href="#articles">Articles</a></h2>
+<ul>
+<li><a href="articles.html">Articles and Blogs on Ballerina</a></li>
+</ul>
+<h2 id="videos-and-talks"><a class="header" href="#videos-and-talks">Videos and Talks</a></h2>
+<ul>
+<li><a href="videos.html">Videos and talks on Ballerina</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-to-ballerina"><a class="header" href="#introduction-to-ballerina">Introduction to Ballerina</a></h1>
+<h2 id="what-is-ballerina"><a class="header" href="#what-is-ballerina">What is Ballerina?</a></h2>
+<ul>
+<li>Ballerina is a general-purpose, open-source programming language.</li>
+<li>It specializes in solving integration/API integration/network interactions &amp; cloud-based problems by providing the right level of language abstractions and tools.</li>
+<li>Ballerina is NOT a JVM language.</li>
+<li>Ballerina is a programming language which is 
+<ul>
+<li>compiled : (Compiled languages are converted directly into machine code that the processor can execute. C, C++, Rust, Go are examples. In interpreted Languages, interpreters run through a program line by line and execute each command. PHP, Ruby, Python are examples.    )</li>
+<li>type safe :</li>
+<li>concurrent :</li>
+</ul>
+</li>
+<li>Ballerina is neither an object oriented language nor a functional one.
+<ul>
+<li>While the language has objects, the development methods are not completely OOP-based.</li>
+<li>Both objects and functions are first class concepts, giving developers the ability to choose the best option based on their requirements.</li>
+</ul>
+</li>
+<li>It has two implementations.
+<ul>
+<li>jBallerina - written in java to run on top of JVM. This is the first implementation to prove the language. </li>
+<li>nBallerina - Compiled using LLVM, directly to the platform architecture. </li>
+</ul>
+</li>
+</ul>
+<h2 id="what-are-the-unique-features-of-ballerina"><a class="header" href="#what-are-the-unique-features-of-ballerina">What are the unique features of Ballerina?</a></h2>
+<ul>
+<li><strong>Data-oriented</strong> - Ballerina makes it easy for the user to transfer, declare, manipulate, process and query the data.</li>
+<li><strong>Network oriented</strong> - Ballerina has language constructs/concepts which capture network primitives. (E.g., type system concepts to easily bind data coming via network to language types, service types, client types, etc.)</li>
+<li><strong>Graphical representation</strong> - Can easily explain network interactions via sequence diagrams. Each program has both a textual syntax and an equivalent graphical form based on sequence diagrams</li>
+<li><strong>Enterprise-grade application development</strong> - Built-in concurrency, Explicit error handling, transactions,  full life cycle management concepts including testing, documenting, configurability, dependency management &amp; versioning</li>
+<li><strong>Cloud-Native</strong> - Reduces the gap between development to deployment and makes it easier for the developer to write the application and instruct how it should be deployed in the cloud.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hello-world"><a class="header" href="#hello-world">Hello World</a></h1>
+<h2 id="main-program"><a class="header" href="#main-program">Main Program</a></h2>
+<p>Traditionally the first program we write in any programming language is called a <code>Hello World</code> program – a program that simply outputs the text <code>Hello World</code> to the terminal. </p>
+<p>Let's write our first program using Ballerina. Use <code>bal run &lt;file_name&gt;</code> to run the samples. </p>
+<h4 id="sample"><a class="header" href="#sample">Sample</a></h4>
+<p><a href="https://play.ballerina.io/?gist=a0c991ef252351ff9b5170d5a31bade3&file=lb_hello_world.bal" target="_blank">Run in Playground   </a></p>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../code/hello_world.bal) -->
+<!-- The below code snippet is automatically added from ./../code/hello_world.bal -->
+<pre><code class="language-bal">//Binds prefix `io` to `ballerina/io` module. 
+import ballerina/io;
+
+//The main function is the program entry point.
+public function main() {
+    // Print text to the console using `io` module `println` function. 
+    io:println(&quot;Hello World&quot;);
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./code/hello_world.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output"><a class="header" href="#output">Output</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../code/hello_world.bash) -->
+<!-- The below code snippet is automatically added from ./../code/hello_world.bash -->
+<pre><code class="language-bash">Hello World
+</code></pre>
+<!-- The below code snippet is automatically added from ./code/hello_world.bash -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h2 id="service"><a class="header" href="#service">Service</a></h2>
+<p>The network constructs in the language make it easy to develop network interactions easily. A simple <code>HTTP</code> service is as follows. </p>
+<h4 id="sample-1"><a class="header" href="#sample-1">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../code/hello_world_service.bal) -->
+<!-- The below code snippet is automatically added from ./../code/hello_world_service.bal -->
+<pre><code class="language-bal">import ballerina/http;
+
+service / on new http:Listener(9090) {
+
+    // Handles HTTP GET requests.
+    resource function get hello() returns string {
+        return &quot;Hello World!&quot;;
+    }
+
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./../code/hello_world_service.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<p>Once the above service is started, invoke the service using the <code>cURL</code> command below using another terminal.</p>
+<pre><code class="language-bash">curl http://localhost:9090/hello
+</code></pre>
+<h4 id="output-1"><a class="header" href="#output-1">Output</a></h4>
+<pre><code class="language-bash">Hello World!
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="type-system"><a class="header" href="#type-system">Type System</a></h1>
+<p>Following are some fundamentnals and details about Ballerina type system.</p>
+<ul>
+<li><a href="type_system/type_system_fundamentals.html">Type System Fundamentals</a></li>
+<li><a href="type_system/langlib.html">LangLib Modules</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="type-system-fundamentals"><a class="header" href="#type-system-fundamentals">Type System Fundamentals</a></h1>
+<p><strong>Ballerina is a statically typed language.</strong></p>
+<p>That means that every variable has a type that is known at compile time.</p>
+<p><strong>Ballerina has structural type system.</strong> </p>
+<p>A static type checker uses either the names or the structure of the types in order to compare them against other types. Checking against the name is nominal typing and checking against the structure is structural typing. </p>
+<p>So in Ballerina, type compatibility is identified by considering the structure of the value rather than just relying on the name of the type.</p>
+<p>All mainstream object-oriented languages use nominal subtyping. For ex: Java  has no structural subtyping at all; all subtype relationships must be explicitly declared. </p>
+<p><strong>Ballerina has semantic subtyping</strong>. </p>
+<p>The syntax - describes which strings of of characters comprise a valid program. i.e., the form of the language. </p>
+<p>The semantics - describes what syntactically valid programs mean, what they do. i.e. the meaning of the language.</p>
+<p>Semantic subtyping is an approach for defining subtyping relation based on set-theoretic models, rather than syntactic rules.</p>
+<p>Type is a set of values. When is an assignment, <code>x = y</code> legal? </p>
+<p>There are at least two possible answers:</p>
+<ol>
+<li>
+<p>When <code>x</code> and <code>y</code> are of equal types </p>
+<p>Structural type checking decides that. </p>
+</li>
+<li>
+<p>When <code>y</code>’s type can be “converted” to <code>x</code>’s type </p>
+<ul>
+<li>Once we consider types as set of values, we realize immediately one set may be a subset of another set.</li>
+<li>When the set of values in one type, <code>T</code>, is a subset of the set of values in another type, <code>U</code>, we say that <code>T</code> is a subtype of <code>U</code>.</li>
+<li>There are two main approaches for defining the subtyping relation: 
+<ul>
+<li>syntactic approach - it is defined by means of a formal system of deduction rules</li>
+<li>semantic approach - It is defined based on set theories. The subtyping relation is defined as inclusion of sets denoting types. Ballerina is using this approach. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Semantic subtyping is most useful for expressing types of tree-structured data, such as JSON.</p>
+<p><strong>Ballerina has network aware type system.</strong> </p>
+<p>Ballerina’s type system is specifically focused on aiding the development of networked and distributed applications. It has constructs that seamlessly map to network programming concepts such as services and network resources.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="langlib-functions"><a class="header" href="#langlib-functions">Langlib Functions</a></h1>
+<p>This is a library which provides fundamentnal operations on built-in datatypes. There is a <code>ballerina/lang.T</code> module for each built-in type <code>T</code> and they are automatically imported using <code>T</code> prefix.</p>
+<p>We can call Langlib functions in two ways and both produce the same result. </p>
+<p>Currently there is Langlib module for following built-in types.</p>
+<ul>
+<li>For Simple Types - <code>lang.boolean</code>, <code>lang.int</code>, <code>lang.float</code>, <code>lang.decimal</code></li>
+<li>For Structured Types - <code>lang.array</code>, <code>lang.map</code>, <code>lang.table</code></li>
+<li>For Sequence Types - <code>lang.string</code>, <code>lang.xml</code></li>
+<li>For Behavioral Types - <code>lang.object</code>, <code>lang.error</code>, <code>lang.stream</code>, <code>lang.future</code>, <code>lang.typedesc</code></li>
+<li>For common types, provides functions that work on values of more than one basic type - <code>lang.value</code> </li>
+</ul>
+<p>Other than above modules for built-in types Langlib has following modules as well.</p>
+<ul>
+<li>For functions related to language runtime - <code>lang.runtime</code></li>
+<li>For functions related to transactions - <code>lang.transaction</code> </li>
+</ul>
+<p>Langlib functions can be called in two different ways. </p>
+<h2 id="using-method-call-syntax"><a class="header" href="#using-method-call-syntax">Using method call syntax</a></h2>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    // Can call using the conventinent method-call syntax.
+    string s = &quot;hello World&quot;.substring(1, 2);
+
+    io:println(s);
+}
+</code></pre>
+<h2 id="using-as-a-module-function"><a class="header" href="#using-as-a-module-function">Using as a module function</a></h2>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    // Can call as a langlib module function. No need to import explicitly. 
+    string s = string:substring(&quot;Hello World&quot;, 1, 2);
+
+    io:println(s);
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="values-and-types-in-ballerina"><a class="header" href="#values-and-types-in-ballerina">Values and Types in Ballerina</a></h1>
+<p>Ballerina programs operate on a rich universe of values. This universe of values is partitioned into a number of basic types; every value belongs to exactly one basic type. </p>
+<p>A variable has a type, which constrains what values the variable can hold.</p>
+<p>Values are of four kinds, each corresponding to a kind of basic type:</p>
+<ol>
+<li>Simple values - which are not constructed from other values;
+<ul>
+<li><code>nil</code>, <code>boolean</code>, <code>int</code>, <code>float</code>, <code>decimal</code></li>
+</ul>
+</li>
+<li>Structured values - which contain other values. They are containers for other values, which are called their members. 
+<ul>
+<li><code>array</code>, <code>map</code>, <code>record</code>, <code>table</code>, <code>tuple</code></li>
+</ul>
+</li>
+<li>Sequence values - which consists of an ordered sequence of zero or more constituent items, where the constituent items belong to the same basic type as the sequence value itself.
+<ul>
+<li><code>string</code>, <code>xml</code></li>
+</ul>
+</li>
+<li>Behavioral values- which are not just data
+<ul>
+<li><code>function</code>, <code>object</code>, <code>error</code>, <code>stream</code>, <code>future</code>, <code>typedesc</code></li>
+</ul>
+</li>
+<li>Other - which allows some flexibility to define custom types based on the combination of two or more types.
+<ul>
+<li><code>any</code>, <code>anydata</code>, <code>json</code>, <code>byte</code> and <code>union</code> </li>
+</ul>
+</li>
+</ol>
+<p>Let's learn the Ballerina types in detail.</p>
+<ul>
+<li>
+<p><a href="simple_basic_types.html">Simple Basic Types</a></p>
+<ul>
+<li><a href="simple_basic_types/integer.html">Integer</a></li>
+<li><a href="simple_basic_types/float.html">Float</a></li>
+<li><a href="simple_basic_types/decimal.html">Decimal</a></li>
+<li><a href="simple_basic_types/boolean.html">Boolean</a></li>
+<li><a href="simple_basic_types/nil.html">Nil</a></li>
+</ul>
+</li>
+<li>
+<p><a href="sequence_types.html">Sequence Types</a></p>
+<ul>
+<li><a href="sequence_types/string.html">String</a>
+<ul>
+<li><a href="sequence_types/string/string_template.html">String Template Literal</a></li>
+</ul>
+</li>
+<li><a href="sequence_types/xml.html">XML</a></li>
+</ul>
+</li>
+<li>
+<p><a href="structured_types.html">Structured Types</a></p>
+<ul>
+<li><a href="structured_types/lists.html">Lists</a>
+<ul>
+<li><a href="structured_types/lists/array.html">Array</a></li>
+<li><a href="structured_types/lists/tuple.html">Tuple</a> </li>
+</ul>
+</li>
+<li><a href="structured_types/mappings.html">Mappings</a>
+<ul>
+<li><a href="structured_types/mappings/map.html">Map</a></li>
+<li><a href="structured_types/mappings/record.html">Record</a></li>
+</ul>
+</li>
+<li><a href="structured_types/table.html">Table</a></li>
+</ul>
+</li>
+<li>
+<p><a href="behavioral_types.html">Behavioral Types</a></p>
+<ul>
+<li><a href="behavioral_types/object.html">object</a></li>
+<li><a href="behavioral_types/stream.html">stream</a></li>
+<li><a href="behavioral_types/error.html">error</a></li>
+<li><a href="behavioral_types/typedesc.html">typedesc</a></li>
+<li><a href="behavioral_types/function.html">function</a></li>
+<li><a href="behavioral_types/future.html">future</a></li>
+</ul>
+</li>
+<li>
+<p><a href="other_types.html">Other Types</a></p>
+<ul>
+<li><a href="other_types/any.html">any</a></li>
+<li><a href="other_types/anydata.html">anydata</a></li>
+<li><a href="other_types/byte.html">byte</a></li>
+<li><a href="other_types/json.html">json</a></li>
+<li><a href="other_types/union.html">union</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="simple-basic-types"><a class="header" href="#simple-basic-types">Simple Basic Types</a></h1>
+<p>Ballerina supports following simple basic types.</p>
+<ul>
+<li><a href="simple_basic_types/integer.html">Integer</a></li>
+<li><a href="simple_basic_types/float.html">Float</a></li>
+<li><a href="simple_basic_types/decimal.html">Decimal</a></li>
+<li><a href="simple_basic_types/boolean.html">Boolean</a></li>
+<li><a href="simple_basic_types/nil.html">Nil</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="integer"><a class="header" href="#integer">Integer</a></h1>
+<ul>
+<li>The type <code>int</code> is an integer data type in a 64 bit signed representation. (i.e. signed integers than can fit into 64 bits using a two's complement representation).  This is similar to <code>long</code> in Java. </li>
+<li>Range: <code>-9,223,372,036,854,775,808</code> and <code>9,223,372,036,854,775,807</code></li>
+<li>Integer overflow results in a runtime error.</li>
+<li>The integer literals can be declared either in decimal or hexadecimal format (not octal).</li>
+<li>Supported Operators
+<ul>
+<li>Basic arithmetic operators : <code>+</code> ,<code>-</code> , <code>*</code> , <code>/</code>, and <code>%</code> </li>
+<li>Comparison operators : <code>==</code> , <code>!=</code>, <code>&lt;</code> , <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code> </li>
+<li>Compound assignment operations :  <code>+=</code> &amp; <code>-=</code> </li>
+<li>Bitwise operators : <code>&amp;</code>, <code>|</code> , <code>^</code> , <code>~</code> , <code>&lt;&lt;</code> and <code>&gt;&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="sample-2"><a class="header" href="#sample-2">Sample:</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    //Integer literal in decimal.
+    int m = 100;
+    io:println(m);
+
+    // Integer literal in hexadecimal.
+    int n = 0xFFFF;
+    io:println(n);
+
+    // Use compound assignment operation`+=`. 
+    n += m;
+    io:println(n);
+}
+</code></pre>
+<h4 id="output-2"><a class="header" href="#output-2">Output</a></h4>
+<pre><code>100
+65535
+65635
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="float"><a class="header" href="#float">Float</a></h1>
+<ul>
+<li>The <code>float</code> type corresponds to IEEE 754-2008 64-bit binary (radix 2) floating point numbers. </li>
+<li>This is same as <code>double</code> in Java.</li>
+<li>No implicit conversions between <code>int</code> and <code>float</code> are allowed. Need to use <code>&lt;T&gt;</code> for explicit conversions. </li>
+<li>Literal uses the suffix <code>f</code>. </li>
+</ul>
+<h4 id="sample-3"><a class="header" href="#sample-3">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/float.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/float.bal -->
+<pre><code class="language-bal">import ballerina/io;
+
+public function main() {
+    float f1 = 1.67;
+
+    int i1 = 5;
+
+    // Use `&lt;T&gt;` for explicit conversions.
+    float f2 = f1 + &lt;float&gt;i1;
+    io:println(f2);
+
+    //Use ballerina/lang.float function.
+    float f3 =f1.round();
+    io:println(f3);   
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/float.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-3"><a class="header" href="#output-3">Output</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/float.bash) -->
+<!-- The below code snippet is automatically added from ./../../code/float.bash -->
+<pre><code class="language-bash">6.67
+2.0
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/float.bash -->
+<!-- MARKDOWN-AUTO-DOCS:END --><div style="break-before: page; page-break-before: always;"></div><h1 id="decimal"><a class="header" href="#decimal">Decimal</a></h1>
+<ul>
+<li>The <code>decimal</code> type corresponds to a subset of IEEE 754-2008 128-bit decimal (radix 10) floating point numbers.</li>
+<li>Represents decimal fractions exactly by preserving precision. </li>
+<li>Literal uses the suffix <code>d</code>.</li>
+</ul>
+<h4 id="sample-4"><a class="header" href="#sample-4">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/decimal.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/decimal.bal -->
+<pre><code class="language-bal">import ballerina/io;
+
+public function main() {
+    //Float doesn't represent decimal fractions exactly.
+    float f = 100.10 - 0.01;
+    io:println(f);
+
+    //Decimal represents decimal fractions exactly.
+    decimal d = 100.10 - 0.01;
+    io:println(d);
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/decimal.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-4"><a class="header" href="#output-4">Output</a></h4>
+<pre><code>100.08999999999999
+100.09  
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="boolean"><a class="header" href="#boolean">Boolean</a></h1>
+<ul>
+<li>The <code>boolean</code> type has two values: <code>true</code>, <code>false</code>.</li>
+<li>The logical operators, <code>!</code> , <code>||</code> and <code>&amp;&amp;</code> are  supported with boolean types. </li>
+<li>The <code>||</code> and <code>&amp;&amp;</code> operators support the same short-circuit behavior as in C. </li>
+</ul>
+<h4 id="sample-5"><a class="header" href="#sample-5">Sample</a></h4>
+<p><a href="https://play.ballerina.io/?gist=d06ca052f4412b241a4afd1a50a8afbd&file=boolean.bal" target="_blank">Run in Playground   </a></p>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/boolean.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/boolean.bal -->
+<pre><code class="language-bal">import ballerina/io;
+
+public function main() {
+    boolean b1 = true;
+    boolean b2 = false;
+
+    // Logical operators with boolean.
+    boolean b3 = !b1;
+    io:println(b3);
+
+    boolean b4 = b1 &amp;&amp; b2;
+    io:println(b4);
+
+    boolean b5 = b1 || b2;
+    io:println(b5);
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/boolean.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-5"><a class="header" href="#output-5">Output</a></h4>
+<pre><code>false
+false
+true
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nil"><a class="header" href="#nil">Nil</a></h1>
+<ul>
+<li>The nil type contains a single value, called nil, which is used to represent the absence of any other value.</li>
+<li>This is the only basic type which consists of a single type.</li>
+<li>The nil value is written as <code>()</code>. </li>
+<li>The nil value can also be written <code>null</code>, for compatibility with JSON; the use of <code>null</code> should be restricted to JSON-related contexts. </li>
+<li>Any function that ends without a return statement implicitly returns nil.</li>
+<li>To declare the value of any type <code>T</code> as nil : <code>T? x = ();</code></li>
+</ul>
+<h2 id="elvis-operator"><a class="header" href="#elvis-operator">Elvis Operator</a></h2>
+<ul>
+<li>
+<p>The Elvis Operator is represented by a question mark followed by a colon: <code>?:</code></p>
+<pre><code>first operand ?: second operand
+</code></pre>
+</li>
+<li>
+<p>If <code>first operand</code> isn't nil, then it will be returned. If it is nil, then the <code>second operand</code> will be returned.</p>
+</li>
+</ul>
+<h4 id="sample-6"><a class="header" href="#sample-6">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+
+    int? i = ();
+    io:println(i);
+
+    json j = null;
+    io:println(j);
+
+    //Elvis Operator
+    int k = i ?: 0;
+    io:println(k);
+}
+</code></pre>
+<h4 id="output-6"><a class="header" href="#output-6">Output</a></h4>
+<pre><code>
+
+0
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sequence-types"><a class="header" href="#sequence-types">Sequence Types</a></h1>
+<p>Ballerina supports follwoing sequence types.</p>
+<ul>
+<li><a href="sequence_types.html">Sequence Types</a>
+<ul>
+<li><a href="sequence_types/string.html">String</a></li>
+<li><a href="sequence_types/xml.html">XML</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="string"><a class="header" href="#string">String</a></h1>
+<ul>
+<li>A string is an sequence of zero or more Unicode characters.</li>
+<li>A string may include Unicode noncharacters, such as 0xFFFE and 0xFFFF.</li>
+<li>The string basic type is inherently immutable.</li>
+<li>A  character is represented by a string of length 1.</li>
+<li>There is a built-in subtype <code>string:Char</code> for single character strings. </li>
+<li>The <code>[i]</code> expression on a string value points to the character at index i. The index positions on the string type starting with zero.</li>
+<li>Supported operators
+<ul>
+<li>Equality Check  - <code>==</code> operator : checks for the same characters. </li>
+<li>Comparison operators - <code>&lt;</code> , <code>&lt;=</code>, <code>=&gt;</code>, <code>&gt;</code> :  compalre code points. </li>
+<li>Concatenation - <code>+</code> operator </li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><strong>NOTE:</strong></p>
+<ul>
+<li>Unicode is an encoding for textual characters which is able to represent characters from many different languages.</li>
+<li>Each character is represented by a unicode code point.</li>
+<li>A code point is an integer value that uniquely identifies the given character. </li>
+<li>Unicode characters can be encoded using different encodings, like UTF-8 or UTF-16. </li>
+<li>These encodings specify how each character's Unicode code point is encoded, as one or more bytes.</li>
+</ul>
+<hr />
+<h4 id="sample-7"><a class="header" href="#sample-7">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    //Enclosed within double quotes
+    string s = &quot;Hello World&quot;;
+    io:println(s);
+
+    //Index based access
+    io:println(s[4]);
+
+    // Unicode code point using one or more hex digits `\u{H}`.
+    string symbol = &quot;\u{1F483}&quot;;
+    io:println(symbol);
+
+    string:Char c = &quot;!&quot;;
+    io:println(c);
+    
+    string greeting = s + c;
+    io:println(greeting);
+}
+
+</code></pre>
+<h4 id="output-7"><a class="header" href="#output-7">Output</a></h4>
+<pre><code>Hello World
+o
+💃
+!
+Hello World!
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="string-template-literal"><a class="header" href="#string-template-literal">String Template Literal</a></h1>
+<ul>
+<li>String templates allows to embed expressions of simple basic types (except nil).</li>
+</ul>
+<h4 id="sample-8"><a class="header" href="#sample-8">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    string name = &quot;Ballerina&quot;;
+    int count = 2;
+
+    // Create a `string` template embedding the `name` variable.
+    string template = string `Hello ${name}, count is ${count} !!!`;
+
+    // Print the defined string value.
+    io:println(template);
+}
+</code></pre>
+<h4 id="output-8"><a class="header" href="#output-8">Output</a></h4>
+<pre><code>Hello Ballerina, count is 2 !!!
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="xml"><a class="header" href="#xml">XML</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="structured-types"><a class="header" href="#structured-types">Structured Types</a></h1>
+<p>Ballerina supports following structured types.</p>
+<ul>
+<li><a href="structured_types/lists.html">Lists</a>
+<ul>
+<li><a href="structured_types/lists/array.html">Array</a></li>
+<li><a href="structured_types/lists/tuple.html">Tuple</a></li>
+</ul>
+</li>
+<li><a href="structured_types/mappings.html">Mappings</a>
+<ul>
+<li><a href="structured_types/mappings/map.html">Map</a></li>
+<li><a href="structured_types/mappings/record.html">Record</a></li>
+</ul>
+</li>
+<li><a href="structured_types/table.html">Table</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lists"><a class="header" href="#lists">Lists</a></h1>
+<ul>
+<li>A list value is a container that keeps its members in an ordered list. </li>
+<li>The number of members of the list is called the length of the list. </li>
+<li>The key for a member of a list is the integer index representing its position in the list, with the index of the first member being 0. </li>
+<li>A list is iterable.</li>
+<li>Ballerina supports following lists types.
+<ul>
+<li><a href="structured_types/structured_types/lists/array.html">Array</a></li>
+<li><a href="structured_types/structured_types/lists/tuple.html">Tuple</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="array"><a class="header" href="#array">Array</a></h1>
+<ul>
+<li>Arrays are sequential data structures consisting of values of the same type. <code>T[]</code> is an array of <code>T</code>.</li>
+<li>Arrays are mutable.</li>
+<li>Can access the individual elements of this array using the <code>[i]</code> notation. Array indexing starts with zero.</li>
+<li>The comparison operators - <code>==</code> or <code>!=</code> : perform a deep comparison.  The two arrays are equal if they have the same members in the same order.</li>
+<li>Unless the length is specified or inferred from the value, arrays are unbounded by length. That means they can grow up to any length based on the given index. </li>
+</ul>
+<h4 id="sample-9"><a class="header" href="#sample-9">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    //Creates an int array by specifiying an array literal. 
+    //Length is not speicfied, so this will create unbounded array
+    int[] v = [1, 2, 3];
+    io:println(v);
+    io:println(&quot;Length of array v:&quot;, v.length());
+
+    //Arrays can grow up to any length based on the given index. 
+    v[9] = 10;
+    io:println(v);
+    io:println(&quot;Length of array v:&quot;, v.length());
+
+    //Length is specified when creating,so  it can have only 3 elements maximum. 
+    //If we try to store more than 3 elements it gives errors.
+    int[3] v2 = [1,2,3];
+    io:println(v2);
+
+    //Access elements by index.
+    io:println(v2[1]);
+
+    //Multi dimensional array. 
+    int[][] v3 = [[1, 2, 3], [10, 20, 30], [5, 6, 7]];
+    io:println(v3);
+    io:println(v3.length());
+
+    //The `*` is used to infer the array size from array literal. 
+    //Cannot assing more elements than the initial size. 
+    int[*] v4 = [1, 2, 3, 4];
+    io:println(v4.length());   
+}
+</code></pre>
+<h4 id="output-9"><a class="header" href="#output-9">Output</a></h4>
+<pre><code>[1,2,3]
+Length of array v:3
+[1,2,3,0,0,0,0,0,0,10]
+Length of array v:10
+[1,2,3]
+2
+[[1,2,3],[10,20,30],[5,6,7]]
+3
+4
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tuple"><a class="header" href="#tuple">Tuple</a></h1>
+<ul>
+<li>Creates a list of values just like arrays.</li>
+<li>The main difference between arrays and tuples is that an array has only one type applicable to every member of its list, whereas in a tuple type you can individually specify the types for each member.</li>
+</ul>
+<h4 id="sample-10"><a class="header" href="#sample-10">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+
+    // Defines the type of `a` as a pair that consists of an `int` and a `string`.
+    [int, string] t = [10, &quot;John&quot;];
+    io:println(t);
+    
+    // Tuple destructuring:The assignment statement assigns values of the 
+    // tuple on the right to the variables on the left.
+    int i;
+    string s;
+    [i, s] = t;
+    io:println(i);
+    io:println(s);
+
+    // Invokes a function that returns a tuple.
+    var [q, r] = divideBy10(6);
+    io:println(&quot;06/10: &quot;, &quot;quotient=&quot;, q, &quot; remainder=&quot;, r);
+
+    // To ignore a value in a tuple, use `_`.
+    var [q1, _] = divideBy10(57);
+    io:println(&quot;57/10: &quot;, &quot;quotient=&quot;, q1);
+}
+
+// This function returns a tuple of two integers.
+function divideBy10(int d) returns ([int, int]) {
+    int q = d / 10;
+    int r = d % 10;
+    return [q, r];
+}
+
+</code></pre>
+<h4 id="output-10"><a class="header" href="#output-10">Output</a></h4>
+<pre><code>[10,&quot;John&quot;]
+10
+John
+06/10: quotient=0 remainder=6
+57/10: quotient=5
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mappings"><a class="header" href="#mappings">Mappings</a></h1>
+<ul>
+<li>A mapping value is a container where each member has a key, which is a string, that uniquely identifies within the mapping.</li>
+<li>We use the term field to mean the member together its key; the name of the field is the key, and the value of the field is that value of the member.</li>
+<li>No two fields in a mapping value can have the same name. </li>
+<li>A mapping is iterable.</li>
+<li>Ballerina supports following mapping types.
+<ul>
+<li><a href="structured_types/structured_types/mappings/map.html">Map</a></li>
+<li><a href="structured_types/structured_types/mappings/record.html">Record</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="map"><a class="header" href="#map">Map</a></h1>
+<ul>
+<li>Defined as <code>map&lt;T&gt;</code> where <code>T</code> is the map's constraint type.</li>
+<li>It is a mapping from keys (that are strings) to values of the type specified as the map’s constraint type.</li>
+<li>The comparison operators - <code>==</code> or <code>!=</code> : perform a deep comparison. The two maps are equal if they have the same set of keys and the values for each key are equal.</li>
+<li>Maps are mutable, and <code>m[&quot;x&quot;]</code> will return the integer value stored in <code>&quot;x&quot;</code>, or <code>nil</code> if missing.</li>
+</ul>
+<h4 id="sample-11"><a class="header" href="#sample-11">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    string computedKey = &quot;a&quot; + &quot;b&quot;;
+
+    // Creates a `map` constrained by the type `int`.
+    // Computed keys, where the value of the key expression evaluated at the runtime 
+    // can be used within brackets. 
+    map&lt;int&gt; m = {
+        &quot;x&quot;: 100,
+        &quot;y&quot;: 200,
+        [computedKey] : 500
+    };
+    io:println(m);
+
+    // Adds a new entry for `z`.
+    m[&quot;z&quot;] = 500;
+    io:println(m);
+
+    // Gets the entry for `x`.
+    int? v = m[&quot;x&quot;];
+    io:println(v);
+
+    //Gets an entry for non existing key.
+    v = m[&quot;a&quot;];
+    io:println(v);
+
+     // Gets value using Langlib function.
+     int i = m.get(&quot;x&quot;);
+     io:println(i);
+
+    //Get the list of keys.
+    string[] keys = m.keys();
+    io:println(keys);
+}
+</code></pre>
+<h4 id="output-11"><a class="header" href="#output-11">Output</a></h4>
+<pre><code>{&quot;x&quot;:100,&quot;y&quot;:200,&quot;ab&quot;:500}
+{&quot;x&quot;:100,&quot;y&quot;:200,&quot;ab&quot;:500,&quot;z&quot;:500}
+100
+
+100
+[&quot;x&quot;,&quot;y&quot;,&quot;ab&quot;,&quot;z&quot;]
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="record"><a class="header" href="#record">Record</a></h1>
+<ul>
+<li>A record is a collection of fields of a specific type. </li>
+<li>With record types, you have control over what your keys are.</li>
+<li>The keys are named and their types define the types of values that are allowed for the fields.</li>
+<li>Records are mutable.</li>
+<li>Typically a record type is combined with a type definition. </li>
+<li>The name of the type is not significant: a record is just a collection of fields. </li>
+<li>Record equality works same as map equality.</li>
+</ul>
+<h2 id="annonymous-record"><a class="header" href="#annonymous-record">Annonymous record</a></h2>
+<ul>
+<li>Record types can be defined in-line as well. These types do not have a type name associated with them. So the record descriptor itself has to be specified when declaring variables of an annonymous record type. </li>
+<li>Anonymous record types can be used in instances where there is no need to refer to the record type by its name (e.g., records as record or object fields, records as function parameters).</li>
+</ul>
+<h4 id="sample-12"><a class="header" href="#sample-12">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+// Defines a record type named `Student`.
+type Student record {
+    int age;
+    string name;
+};
+
+// Defines a record type named `Person` with an annonymous record inside.
+type Person record {
+    int age;
+    string name;
+    record {
+        string city;
+        string country;
+    } address;
+};
+
+public function main() {
+    // Creates a `annonymous record`, specifying values for its fields.
+    record { int age; string name; } r1 = {
+        age: 10,
+        name: &quot;Anne&quot;
+    };
+    io:println(r1);
+
+    // Creates a `Student` record.
+    Student s1 = {
+        age: 10,
+        name: &quot;Anne&quot;
+    };
+    io:println(s1);
+
+    //Check whether the two records are equal.
+    io:println(r1 == s1);
+
+    //Access fields
+    int r1Age = r1.age;
+    io:println(r1Age);
+
+    Person p = {
+        age: 33,
+        name: &quot;John&quot;,
+        address: {
+            city: &quot;Colombo&quot;,
+            country: &quot;LK&quot;
+        }
+    };
+    io:println(p);
+}
+</code></pre>
+<h4 id="output-12"><a class="header" href="#output-12">Output</a></h4>
+<pre><code>{&quot;age&quot;:10,&quot;name&quot;:&quot;Anne&quot;}
+{&quot;age&quot;:10,&quot;name&quot;:&quot;Anne&quot;}
+true
+10
+{&quot;age&quot;:33,&quot;name&quot;:&quot;John&quot;,&quot;address&quot;:{&quot;city&quot;:&quot;Colombo&quot;,&quot;country&quot;:&quot;LK&quot;}}
+</code></pre>
+<h2 id="open-vs-closed-records"><a class="header" href="#open-vs-closed-records">Open vs Closed Records</a></h2>
+<ul>
+<li><code>Closed Record</code> : 
+<ul>
+<li>If the set of fields is fixed.  The <code>{|</code> and <code>|}</code> delimiters indicate that the record type allows mapping values, which contain only the described fields.</li>
+<li><code>map&lt;T&gt;</code> is same as record <code>{| T...; |}</code>.</li>
+</ul>
+</li>
+<li><code>Open Record</code> : 
+<ul>
+<li>If the set of fields is not fixed. The <code>{</code> and <code>}</code> delimiters indicate that in addition to the defined fields, this record type allows additional fields with <code>anydata</code> values. The descriptor <code>record { }</code> is equivalent to <code>record {| anydata...; |}</code>.</li>
+<li>Record types are by default open: they allow fields other than those specified. </li>
+<li>The type of unspecified fields are anydata. Records are maps. Open records belongs to map<anydata>. </li>
+<li>Use quoted keys for fields not mentioned in the record type.</li>
+</ul>
+</li>
+</ul>
+<h4 id="sample-13"><a class="header" href="#sample-13">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+// `Person` type is open record allows additional fields with `anydata` values.
+type Person record {
+    string name;
+    int age;
+};
+
+// `Employee` type is a closed record. 
+type Employee record {|
+    string name;
+    int age;
+    int id;
+|};
+
+// Define an open record with rest fields. All additional fields should be of the type or 
+// the subtype of the rest field.
+type Grades record {|
+    int maths;
+    int english;
+    int science;
+    string...;
+|};
+
+public function main() {
+    // Create an `Employee` value
+    Employee e = {
+        name: &quot;Anne&quot;,
+        age: 34,
+        id: 567
+    };
+    io:println(e);
+
+    // Create an `Person` value 
+    Person p1 = {
+        name: &quot;John&quot;,
+        age: 33
+    };
+    io:println(p1);
+
+    // Create an `Person` value with additional filed.
+    Person p2 = {
+        name: &quot;Mark&quot;,
+        age: 34,
+        &quot;city&quot;: &quot;London&quot;
+    };
+    io:println(p2);
+
+    // You can assign an `Employee` type value to a `Person`.
+    Person p3 = e;
+    io:println(p3);
+
+    // You can assign record value to a `map`.
+    map&lt;anydata&gt; m = e;
+    io:println(m);
+
+    // Create a record value with additional rest fields
+    Grades g = {
+        maths: 55,
+        english: 98,
+        science: 43,
+        &quot;art&quot;: &quot;A&quot;,
+        &quot;music&quot;: &quot;B&quot;
+    };
+    io:println(g);
+    
+    // Can assign record to a map of corresponding type.
+    map&lt;int|string&gt; m2 = g;
+    io:println(m2);
+}
+</code></pre>
+<h4 id="output-13"><a class="header" href="#output-13">Output</a></h4>
+<pre><code>{&quot;name&quot;:&quot;Anne&quot;,&quot;age&quot;:34,&quot;id&quot;:567}
+{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:33}
+{&quot;name&quot;:&quot;Mark&quot;,&quot;age&quot;:34,&quot;city&quot;:&quot;London&quot;}
+{&quot;name&quot;:&quot;Anne&quot;,&quot;age&quot;:34,&quot;id&quot;:567}
+{&quot;name&quot;:&quot;Anne&quot;,&quot;age&quot;:34,&quot;id&quot;:567}
+{&quot;maths&quot;:55,&quot;english&quot;:98,&quot;science&quot;:43,&quot;art&quot;:&quot;A&quot;,&quot;music&quot;:&quot;B&quot;}
+{&quot;maths&quot;:55,&quot;english&quot;:98,&quot;science&quot;:43,&quot;art&quot;:&quot;A&quot;,&quot;music&quot;:&quot;B&quot;}
+</code></pre>
+<h2 id="optional-fileds"><a class="header" href="#optional-fileds">Optional Fileds</a></h2>
+<ul>
+<li>Fields of a record can be marked as optional. </li>
+<li>These fields can be omitted when creating a record. </li>
+<li>Such fields can be accessed via optional field access (e.g., p?.name) or member access (e.g., p[“name”]) which will both return () if the field is not present in the record.</li>
+</ul>
+<h4 id="sample-14"><a class="header" href="#sample-14">Sample</a></h4>
+<pre><code class="language-kotlin">import ballerina/io;
+
+type Headers record {
+    string 'from; // When a keyword is using as field name a single quote is used. This is a required field.
+    string to = &quot;test@example.com&quot;; // This is a field with defualt value.
+    string subject?; //This is an optional field.
+};
+
+public function main() {
+
+    Headers h1 = {
+        'from: &quot;John&quot;
+    };
+    io:println(h1); // Will have values for default field too.
+
+    //Use ?. operator to access optional field
+    string? subject = h1?.subject;
+    io:println(subject); // Subject is nil here.
+
+    Headers h2 = {
+        'from: &quot;John&quot;,
+        to: &quot;anne@exmample.com&quot;,
+        subject: &quot;test&quot;
+    };
+    io:println(h2);
+
+    // Can access the fields as follows.
+    io:println(h1[&quot;subject&quot;]);
+    io:println(h2[&quot;subject&quot;]);
+}
+
+</code></pre>
+<h4 id="output-14"><a class="header" href="#output-14">Output</a></h4>
+<pre><code>{&quot;from&quot;:&quot;John&quot;,&quot;to&quot;:&quot;test@example.com&quot;}
+
+{&quot;from&quot;:&quot;John&quot;,&quot;to&quot;:&quot;anne@exmample.com&quot;,&quot;subject&quot;:&quot;test&quot;}
+
+test
+</code></pre>
+<h2 id="record-type-reference"><a class="header" href="#record-type-reference">Record Type Reference</a></h2>
+<ul>
+<li>Record type referencing provides a convenient way to copy the fields defined in a record type descriptor to another record type descriptor. </li>
+<li>It is equivalent to explicitly defining those fields in the new type descriptor.</li>
+<li>Type referencing copies the fields including their properties (e.g., type, default value, optional status). </li>
+<li>A record type descriptor can have multiple type references as well as chained-type references. </li>
+</ul>
+<h4 id="sample-15"><a class="header" href="#sample-15">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+type Person record {|
+    string name;
+    int age = 25;
+|};
+
+type Student record {
+    *Person;  // References the `Person` record.
+    string studentId;
+};
+
+type Grades record {|
+    int maths;
+    int english;
+    int science;
+|};
+
+public function main() {
+    Person p = {name: &quot;John&quot;, age: 13};
+    io:println(p);
+
+    Student s1 = {name: &quot;Jane&quot;, studentId: &quot;2103X&quot;};
+    io:println(s1);
+
+    Grades g = {
+        maths: 32,
+        english: 34,
+        science: 54
+    };
+    // When a spread field is specified, all the fields of the relevant
+    // mapping value are added to the new record value being created.
+    Student s2 = {name: &quot;alex&quot;, studentId: &quot;4224C&quot;, ...g };
+    io:println(s2);
+}
+</code></pre>
+<h4 id="output-15"><a class="header" href="#output-15">Output</a></h4>
+<pre><code>{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:13}
+{&quot;studentId&quot;:&quot;2103X&quot;,&quot;name&quot;:&quot;Jane&quot;,&quot;age&quot;:25}
+{&quot;studentId&quot;:&quot;4224C&quot;,&quot;name&quot;:&quot;alex&quot;,&quot;age&quot;:25,&quot;maths&quot;:32,&quot;english&quot;:34,&quot;science&quot;:54}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="table"><a class="header" href="#table">Table</a></h1>
+<ul>
+<li>A table is a collection of records. Each record represents a row of the table.</li>
+<li>The tables also preserve the order of the rows.</li>
+<li>You can either iterate over the table, item by item, like arrays, or directly point to the item using the associated key.</li>
+<li>The rows are identified by keys.
+<ul>
+<li>table stores the keys as fields in the rows (Similar to SQL based database table where one of the columns is designated as a primary key)</li>
+<li>Key is not limited to string type. You can also have keys belonging to any subtype of plain data, which also includes structured types.</li>
+<li>You can have a table that has a multiple part key spread over several fields.</li>
+<li>Key is immutable. So have to mark as <code>readonly</code> when defining it. A value cannot be assigned to such a field after the record is created.</li>
+</ul>
+</li>
+</ul>
+<h4 id="sample-16"><a class="header" href="#sample-16">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+type Student record {
+    readonly string name; // This will be used as key
+    int age;
+};
+
+type Employee record {
+    readonly string name;
+    readonly int id;
+    string country;
+    decimal salary;
+};
+
+type Manager record {
+    readonly record {
+        string name;
+        int id;
+    } identity;
+    string country;
+    decimal salary;
+};
+
+public function main() {
+    //Table with string key
+    table&lt;Student&gt; key(name) t1 = table [
+            {name: &quot;John&quot;, age: 11},
+            {name: &quot;Jane&quot;, age: 12}
+        ];
+    io:println(t1);
+
+    Student? s = t1[&quot;John&quot;];
+    io:println(s.toString());
+
+    Student s2 = {name: &quot;Anne&quot;, age: 21};
+    t1.add(s2);
+    io:println(t1);
+
+    //Table with multiple key fields
+    table&lt;Employee&gt; key(name, id) t2 = table [
+            {name: &quot;Mike&quot;, id: 1239, country: &quot;UK&quot;, salary: 435},
+            {name: &quot;Mike&quot;, id: 4323, country: &quot;US&quot;, salary: 510}
+        ];
+    io:println(t2);
+
+    //Table with structured key
+    table&lt;Manager&gt; key(identity) t3 = table [
+            {
+                identity: {
+                    name: &quot;Mike&quot;,
+                    id: 1239
+                },
+                country: &quot;LK&quot;,
+                salary: 453
+            },
+            {
+                identity: {
+                    name: &quot;Mike&quot;,
+                    id: 2342
+                },
+                country: &quot;LK&quot;,
+                salary: 453
+            }
+        ];
+
+        Manager m = t3.get({name:&quot;Mike&quot;, id: 1239});
+        io:println(m);
+}
+</code></pre>
+<h4 id="output-16"><a class="header" href="#output-16">Output</a></h4>
+<pre><code>[{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:11},{&quot;name&quot;:&quot;Jane&quot;,&quot;age&quot;:12}]
+{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:11}
+[{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:11},{&quot;name&quot;:&quot;Jane&quot;,&quot;age&quot;:12},{&quot;name&quot;:&quot;Anne&quot;,&quot;age&quot;:21}]
+[{&quot;name&quot;:&quot;Mike&quot;,&quot;id&quot;:1239,&quot;country&quot;:&quot;UK&quot;,&quot;salary&quot;:435},{&quot;name&quot;:&quot;Mike&quot;,&quot;id&quot;:4323,&quot;country&quot;:&quot;US&quot;,&quot;salary&quot;:510}]
+{&quot;identity&quot;:{&quot;name&quot;:&quot;Mike&quot;,&quot;id&quot;:1239},&quot;country&quot;:&quot;LK&quot;,&quot;salary&quot;:453}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="behavioral-types"><a class="header" href="#behavioral-types">Behavioral Types</a></h1>
+<p>Ballerina supports following behavioral types.</p>
+<ul>
+<li><a href="behavioral_types.html">Behavioral Types</a>
+<ul>
+<li><a href="behavioral_types/object.html">object</a></li>
+<li><a href="behavioral_types/stream.html">stream</a></li>
+<li><a href="behavioral_types/error.html">error</a></li>
+<li><a href="behavioral_types/typedesc.html">typedesc</a></li>
+<li><a href="behavioral_types/function.html">function</a></li>
+<li><a href="behavioral_types/future.html">future</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="object"><a class="header" href="#object">Object</a></h1>
+<h4 id="why-objects"><a class="header" href="#why-objects">Why Objects?</a></h4>
+<ul>
+<li>Object encapsulates data with functions that operate on the data.</li>
+</ul>
+<h4 id="introduction"><a class="header" href="#introduction">Introduction</a></h4>
+<ul>
+<li>An object consists of named members, 
+<ul>
+<li>field -  stores a value</li>
+<li>method - a function that can be invoked on the object</li>
+</ul>
+</li>
+<li>When a method is invoked on an object, the function can access the object using the <code>self</code> variable.</li>
+<li>It is not possible for an object to have a field and a method with the same name.</li>
+<li>Need to use the <code>new</code> operator with a <code>class</code> to get an object. </li>
+<li>There are three visibility levels.
+<ul>
+<li>private - only visible within the object and its functions.</li>
+<li>public - visible to any module.</li>
+<li>protected - visible only within the same module.</li>
+</ul>
+</li>
+</ul>
+<h4 id="init-function"><a class="header" href="#init-function">Init Function</a></h4>
+<ul>
+<li>The <code>init</code> method in the class initializes the object. </li>
+<li>Arguments to <code>new</code> are passed as arguments to <code>init</code>.</li>
+<li>The return type of <code>init</code> must be a subtype of <code>error?</code>. 
+<ul>
+<li>If <code>init</code> returns <code>()</code>: The <code>new</code> returns the newly constructed object. </li>
+<li>If <code>init</code> returns an <code>error</code> : The <code>new</code> returns that error. </li>
+<li>If <code>init</code> does not specify a return type: 
+<ul>
+<li>the return type defaults to <code>()</code>.</li>
+<li>Then <code>new</code> will never return an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="sample-17"><a class="header" href="#sample-17">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/object.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/object.bal -->
+<pre><code class="language-bal">import ballerina/io;
+
+class Customer {
+    private string firstName;
+    string lastName;
+    public int id;
+
+    function init(string firstName = &quot;A&quot;, string lastName = &quot;B&quot;, int id = 0) {
+        self.firstName = firstName;
+        self.lastName = lastName;
+        self.id = id;
+    }
+
+    function getFullName() returns string {
+        return self.firstName + &quot; &quot; + self.lastName;
+    }
+}
+
+public function main() {
+    //Calls init function with all parameters
+    Customer cust1 = new (&quot;Anupama&quot;, &quot;Pathirage&quot;, 10032);
+    string fullName = cust1.getFullName(); //Access  a method
+    io:println(fullName);
+
+    //Default values are used 
+    Customer cust2 = new;
+    int id = cust2.id; // Access a public id;
+    io:println(id);
+
+    //This inintialization is useful when the type of the object 
+    //cannot be determined based on nthe context(e.g., when the LHS is var or union)
+    var cust3 = new Customer(&quot;Bill&quot;, &quot;Gates&quot;, 10031);
+    string lastName = cust3.lastName;
+    io:println(lastName);
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/object.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-17"><a class="header" href="#output-17">Output</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/object.bash) -->
+<!-- The below code snippet is automatically added from ./../../code/object.bash -->
+<pre><code class="language-bash">Anupama Pathirage
+0
+Gates
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/object.bash -->
+<!-- MARKDOWN-AUTO-DOCS:END --><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="error"><a class="header" href="#error">error</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="other-types"><a class="header" href="#other-types">Other types</a></h1>
+<p>Following types do not add to the universe of values. They are just adding new ways to describe subsets of this universe. </p>
+<ul>
+<li><a href="other_types.html">Other Types</a>
+<ul>
+<li><a href="other_types/any.html">object</a></li>
+<li><a href="other_types/anydata.html">stream</a></li>
+<li><a href="other_types/byte.html">error</a></li>
+<li><a href="other_types/json.html">typedesc</a></li>
+<li><a href="other_types/union.html">function</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="any"><a class="header" href="#any">Any</a></h1>
+<ul>
+<li>The <code>any</code> type consisting of all values other than errors. A value belongs to the <code>any</code> type if and only if its basic type is not error.</li>
+<li>Thus all values belong to the type any|error. </li>
+<li>Equivalent to a union of all non-error basic types.</li>
+<li>Langlib <code>lang.value</code> module contains functions that apply to multiple basic types.</li>
+<li>A variable of type any can be cast to a specific type using the <code>&lt; &gt;</code> symbol enclosure.</li>
+</ul>
+<h4 id="sample-18"><a class="header" href="#sample-18">Sample</a></h4>
+<pre><code class="language-go">import ballerina/io;
+
+public function main() {
+    // Can cast `any` to specific type.
+    any x = 1.4;
+    float n = &lt;float&gt;x;
+    io:println(n);
+
+    if (x is decimal) {
+        io:println(&quot;x is decimal&quot;);
+    } else if (x is string) {
+        io:println(&quot;x is string&quot;);
+    } else if (x is float) {
+        io:println(&quot;x is float&quot;);
+    }
+}
+</code></pre>
+<h4 id="output-18"><a class="header" href="#output-18">Output</a></h4>
+<pre><code>1.4
+x is float
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="anydata"><a class="header" href="#anydata">Anydata</a></h1>
+<ul>
+<li>This is used to represent plain data.</li>
+<li>It can be defined as:
+<pre><code>() | boolean | int | float | decimal
+| string | xml
+| anydata[] | map&lt;anydata&gt; | table&lt;map&lt;anydata&gt;&gt;
+</code></pre>
+</li>
+<li>It is a subtype of <code>any</code>. </li>
+<li>The <code>==</code> and <code>!=</code> operators on anydata test for deep equality.</li>
+<li>The equality operation also takes care of cycles within anydata structure values.</li>
+</ul>
+<h4 id="sample-19"><a class="header" href="#sample-19">Sample</a></h4>
+<pre><code class="language-bal">import ballerina/io;
+public function main() {
+    anydata[] fArr = [1.34, 3.43];
+    float f = &lt;float&gt;fArr[0];
+    io:println(f);
+}
+</code></pre>
+<h4 id="output-19"><a class="header" href="#output-19">Output</a></h4>
+<pre><code>1.34
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="byte"><a class="header" href="#byte">byte</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="json"><a class="header" href="#json">Json</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="union"><a class="header" href="#union">union</a></h1>
+<ul>
+<li>A union type describes a value that can be one of several types.</li>
+<li>Why union types?
+<ul>
+<li>Union is useful when the program expects a value to be either many different types. e.g., A  parameter to the function or return value can be either  <code>int</code> or <code>float</code> etc.</li>
+<li>In traditional object-oriented code, we have to abstract over the two types by creating a hierarchy of types to achieve this.</li>
+</ul>
+</li>
+<li><code>T1|T2|T3</code> represents a union of the sets  <code>T1</code>, <code>T2</code> and <code>T3</code>. 
+<ul>
+<li>e.g., The type <code>int|float|string</code> can hold either <code>int</code>, <code>float</code> or <code>string</code>.</li>
+</ul>
+</li>
+<li>The  <code>is</code> operator is used to check whether the value belongs to a specific type.   The type will be narrowed with the use of the <code>is</code> operator. Narrowing occurs when Ballerina can deduce a more specific type for a value based on the structure of the code.</li>
+<li><code>T1|()</code> can be written as <code>T?</code> as well.</li>
+</ul>
+<h4 id="sample-20"><a class="header" href="#sample-20">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/union.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/union.bal -->
+<pre><code class="language-bal">import ballerina/io;
+
+type Address record {
+    string city;
+    string country;
+    int code;
+};
+
+//Instead of writing longer union, it is  easy to  use a  type defintion.
+type Location Address|string|int;
+
+public function main() {
+    int|string|float u1 = &quot;this is a string&quot;;
+    if u1 is int {
+        io:println(&quot;union contains a int  value&quot;);
+    } else if u1 is float {
+        io:println(&quot;union contains a float  value&quot;);
+    } else { //Type narrowed  to  string  here.
+        io:println(&quot;union contains a string  value&quot;);
+    }
+
+    //Union types with nil.
+    int|() i1 = 4;
+    io:println(i1);
+    float? f1 = ();
+    io:println(f1);
+
+    //Union type with type descriptors
+    Location loc = &quot;UK&quot;;
+    io:println(loc);
+}
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/union.bal -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-20"><a class="header" href="#output-20">Output</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/union.bash) -->
+<!-- The below code snippet is automatically added from ./../../code/union.bash -->
+<pre><code class="language-bash">union contains a string  value
+4
+
+UK
+</code></pre>
+<!-- The below code snippet is automatically added from ./../../code/union.bash -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ballerina-how-to-snippets"><a class="header" href="#ballerina-how-to-snippets">Ballerina How To Snippets</a></h1>
+<p>This is a collection of Ballerina code snippets for quick reference.</p>
+<ul>
+<li><a href="how_to_snippets/download_file.html">Download a file from URL using Ballerina</a></li>
+<li><a href="how_to_snippets/validating_email.html">Validating email address using Regex in Ballerina</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="download-a-file-from-url-using-ballerina"><a class="header" href="#download-a-file-from-url-using-ballerina">Download a file from URL using Ballerina</a></h1>
+<p>This example shows how to download a small file from the web on to your local machine. </p>
+<h4 id="sample-21"><a class="header" href="#sample-21">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/how_to/download_file.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/how_to/download_file.bal -->
+<pre><code class="language-bal">import ballerina/io;
+import ballerina/http;
+
+function downloadFile(string filePath, string url) returns error? {
+    http:Client httpEP = check new (url);
+    http:Response e = check httpEP-&gt;get(&quot;&quot;);
+    return io:fileWriteBytes(filePath, check e.getBinaryPayload());
+}
+
+public function main() {
+    error? status = downloadFile(&quot;../img/logo.png&quot;, &quot;https://ballerina.io/img/branding/ballerina_logo_dgrey_png.png&quot;);
+    if (status is error) {
+        io:println(status);
+    } else {
+        io:println(&quot;File downloaded successfully&quot;);
+    }
+}
+</code></pre>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-21"><a class="header" href="#output-21">Output</a></h4>
+<pre><code>File downloaded successfully
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="validate-email-address-using-regex-in-ballerina"><a class="header" href="#validate-email-address-using-regex-in-ballerina">Validate email address using Regex in Ballerina</a></h1>
+<p>This example shows how to download a small file from the web on to your local machine. </p>
+<h4 id="sample-22"><a class="header" href="#sample-22">Sample</a></h4>
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./../../code/how_to/validating_email.bal) -->
+<!-- The below code snippet is automatically added from ./../../code/how_to/validating_email.bal -->
+<pre><code class="language-bal">import ballerina/io;
+import ballerina/regex;
+
+public function main() {
+    string email = &quot;hello$example.com&quot;;
+    io:println(email + &quot; is valid:&quot;, isValid(email));
+    email = &quot;hello@abc.com&quot;;
+    io:println(email + &quot; is valid:&quot;, isValid(email));
+}
+
+function isValid(string email) returns boolean {
+    if email.length() &lt; 3 || email.length() &gt; 254 {
+        return false;
+    }
+    return regex:matches(email, &quot;^[a-zA-Z0-9.!#$%&amp;'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$&quot;);
+}
+</code></pre>
+<!-- MARKDOWN-AUTO-DOCS:END -->
+<h4 id="output-22"><a class="header" href="#output-22">Output</a></h4>
+<pre><code>hello$example.com is valid:false
+hello@abc.com is valid:true
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="usecases"><a class="header" href="#usecases">Usecases</a></h1>
+<ul>
+<li><a href="usecases/graphql_with_multiple_sources.html">Ballerina GraphQL with multiple datasources</a> - Bookstore example using Ballerina with MySQL DB and Google Books API as datasources. </li>
+<li><a href="usecases/websocket_for_realtime_stock_updates.html">Ballerina WebSocket for real-time stock updates</a> - Stock data management service, exchange and client using WebSocket. </li>
+<li><a href="usecases/http_service_for_searching_books.html">Ballerina HTTP Service for book and movie search</a> - HTTP service to search book and movie data</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ballerina-graphql-with-multiple-datasources"><a class="header" href="#ballerina-graphql-with-multiple-datasources">Ballerina GraphQL with multiple datasources</a></h1>
+<h2 id="source-code"><a class="header" href="#source-code">Source code</a></h2>
+<p>The full source code for the scenario can be found in <a href="https://github.com/anupama-pathirage/ballerina-scenarios/tree/main/ballerina-graphql-with-multiple-datasources">ballerina-scenarios repo.</a></p>
+<h2 id="sample-use-case"><a class="header" href="#sample-use-case">Sample use case</a></h2>
+<p>The data source to the GraphQL server can be anything such as a database, API, or service that holds data. Also, GraphQL can interact with any combination of data sources. In this use case, let’s see how we can implement a GraphQL server using the Ballerina language to expose data in the MySQL database and data retrieved via another API call.</p>
+<p>The MySQL database holds data about a book store, and it has book data and author data. Additional information related to  Books is retrieved using  Google Books API. Clients of the book store can do the following operations via the GraphQL server.</p>
+<ul>
+<li>Retrieve the details of all the books</li>
+<li>Retrieve the details of the book by providing the book name</li>
+<li>Add new books to the database</li>
+</ul>
+<p>The information sources for the above operations are as follows.</p>
+<ul>
+<li>Title, published year, ISBN number, author  name, author country  - Retrieved from DB</li>
+<li>Average rating and rating count - Retrieved from Google  Books API filtered using ISBN number of the book.<br />
+E.g.: https://www.googleapis.com/books/v1/volumes?q=isbn:9781101042472</li>
+</ul>
+<p><img src="usecases/../img/Graphql-With-Ballerina.png" alt="GraphQL with Balleirna" /></p>
+<h2 id="set-up-the-database"><a class="header" href="#set-up-the-database">Set up the Database</a></h2>
+<p>Create the sample MySQL database and  populate data with the <a href="usecases/data.sql">data.sql</a> script as follows.</p>
+<pre><code>mysql -uroot -p &lt; /path/to/data.sql
+
+</code></pre>
+<h2 id="run-the-code"><a class="header" href="#run-the-code">Run the code</a></h2>
+<p>Execute <code>bal run</code> command  within the <code>bookstore</code> project folder.</p>
+<h2 id="test-the-service"><a class="header" href="#test-the-service">Test the service</a></h2>
+<p>To call the GraphQL server, we need to use a client. We can do this from the command line with <a href="https://curl.se/">curl</a> by sending an HTTP POST request to the endpoint, passing the GraphQL query as the query field in a JSON payload. If you prefer to use a graphical user interface, you can use clients such as <a href="https://github.com/graphql/graphiql">GraphiQL</a> or <a href="https://altair.sirmuel.design/#download">Altair</a>.</p>
+<p>For all the requests the endpoint is  : http://localhost:4000/bookstore</p>
+<h3 id="sample-request-1--get-the-titles-of-all-books"><a class="header" href="#sample-request-1--get-the-titles-of-all-books">Sample Request 1:  Get the titles of all books</a></h3>
+<p>GraphQL query: </p>
+<pre><code>{allBooks {title}}
+</code></pre>
+<p>Response: </p>
+<pre><code class="language-json">{
+ &quot;data&quot;: {
+   &quot;allBooks&quot;: [
+     { &quot;title&quot;: &quot;Pride and Prejudice&quot; },
+     { &quot;title&quot;: &quot;Sense and Sensibility&quot; },
+     { &quot;title&quot;: &quot;Emma&quot; },
+     { &quot;title&quot;: &quot;War and Peace&quot; },
+     { &quot;title&quot;: &quot;Anna Karenina&quot; }
+   ]
+ }
+}
+</code></pre>
+<p>CURL command  to request the same:
+curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quot;: &quot;{allBooks {title}}&quot; }' 'http://localhost:4000/bookstore'</p>
+<h3 id="sample-request-2--get-more-details-of-all-books"><a class="header" href="#sample-request-2--get-more-details-of-all-books">Sample Request 2:  Get more details of all books</a></h3>
+<p>This is where the true power of GraphQL comes in. Users can request the exact information they need in the format they prefer without having different endpoints, but just by changing the query.</p>
+<p>GraphQL query : </p>
+<pre><code>{allBooks {title, author{name}, reviews{ratingsCount, averageRating}}}
+</code></pre>
+<p>Response :</p>
+<pre><code class="language-json">{
+ &quot;data&quot;: {
+   &quot;allBooks&quot;: [
+     {
+       &quot;title&quot;: &quot;Pride and Prejudice&quot;,
+       &quot;author&quot;: {
+         &quot;name&quot;: &quot;Jane Austen&quot;
+       },
+       &quot;reviews&quot;: {
+         &quot;ratingsCount&quot;: 1,
+         &quot;averageRating&quot;: 5
+       }
+     },
+     {
+       &quot;title&quot;: &quot;Sense and Sensibility&quot;,
+       &quot;author&quot;: {
+         &quot;name&quot;: &quot;Jane Austen&quot;
+       },
+       &quot;reviews&quot;: {
+         &quot;ratingsCount&quot;: 3,
+         &quot;averageRating&quot;: 4
+       }
+     },
+     {
+       &quot;title&quot;: &quot;Emma&quot;,
+       &quot;author&quot;: {
+         &quot;name&quot;: &quot;Jane Austen&quot;
+       },
+       &quot;reviews&quot;: {
+         &quot;ratingsCount&quot;: null,
+         &quot;averageRating&quot;: null
+       }
+     },
+     {
+       &quot;title&quot;: &quot;War and Peace&quot;,
+       &quot;author&quot;: {
+         &quot;name&quot;: &quot;Leo Tolstoy&quot;
+       },
+       &quot;reviews&quot;: {
+         &quot;ratingsCount&quot;: 5,
+         &quot;averageRating&quot;: 4
+       }
+     },
+     {
+       &quot;title&quot;: &quot;Anna Karenina&quot;,
+       &quot;author&quot;: {
+         &quot;name&quot;: &quot;Leo Tolstoy&quot;
+       },
+       &quot;reviews&quot;: {
+         &quot;ratingsCount&quot;: 1,
+         &quot;averageRating&quot;: 4
+       }
+     }
+   ]
+ }
+}
+</code></pre>
+<p>CURL command to send the same request:</p>
+<pre><code>curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quot;: &quot;{allBooks {title, author{name}, reviews{ratingsCount, averageRating}}}&quot; }' 'http://localhost:4000/bookstore'
+</code></pre>
+<h3 id="sample-request-3--get-details-of-books-with--input-parameter"><a class="header" href="#sample-request-3--get-details-of-books-with--input-parameter">Sample Request 3:  Get details of books with  input parameter</a></h3>
+<p>GraphQL Query:</p>
+<pre><code>{bookByName(title: &quot;Emma&quot;) {title, published_year}}
+</code></pre>
+<p>Response:</p>
+<pre><code class="language-json">{ &quot;data&quot;: { &quot;bookByName&quot;: [{ &quot;title&quot;: &quot;Emma&quot;, &quot;published_year&quot;: 1815 }] } }
+</code></pre>
+<p>CURL Command to send the same request:</p>
+<pre><code>curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quot;: &quot;{bookByName(title: \&quot;Emma\&quot;) {title, published_year}}&quot; }' 'http://localhost:4000/bookstore'
+</code></pre>
+<h3 id="sample-request-4-mutation-to-insert-data-into-the-database"><a class="header" href="#sample-request-4-mutation-to-insert-data-into-the-database">Sample Request 4: Mutation to insert data into the database</a></h3>
+<p>GraphQL Query:</p>
+<pre><code>mutation {addBook(authorName: &quot;J. K. Rowling&quot;, authorCountry: &quot;United Kingdom&quot;, title: &quot;Harry Potter&quot;, published_year: 2007, isbn: &quot;9781683836223&quot;)}
+</code></pre>
+<p>Response:</p>
+<pre><code class="language-json">{
+ &quot;data&quot;: {
+   &quot;addBook&quot;: 6
+ }
+}
+</code></pre>
+<p>CURL Command to send the same request:</p>
+<pre><code>curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quot;: &quot;mutation {addBook(authorName: \&quot;J. K. Rowling\&quot;, authorCountry: \&quot;United Kingdom\&quot;, title: \&quot;Harry Potter\&quot;, published_year: 2007, isbn: \&quot;9781683836223\&quot;)}&quot; }' 'http://localhost:4000/bookstore'
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ballerina-websocket-for-real-time-stock-updates"><a class="header" href="#ballerina-websocket-for-real-time-stock-updates">Ballerina WebSocket for real-time stock updates</a></h1>
+<h2 id="source-code-1"><a class="header" href="#source-code-1">Source code</a></h2>
+<p>The full source code for the scenario can be found in <a href="https://github.com/anupama-pathirage/ballerina-scenarios/tree/main/ballerina-graphql-with-multiple-datasources">ballerina-scenarios repo.</a></p>
+<h2 id="sample-use-case-1"><a class="header" href="#sample-use-case-1">Sample Use case</a></h2>
+<p>The WebSocket-based stock management server is getting stock data feed via WebSocket-based connections from different exchanges. The client applications will subscribe to the preferred stock symbols by registering those symbols with the stock management server. </p>
+<p>When the stock management server receives updates to the subscribed symbols, it will broadcast the data to the subscribed clients using a WebSocket connection.</p>
+<p><img src="usecases/../img/websocket_exchange_interactions.png" alt="WebSocket with Balleirna" /></p>
+<h2 id="running-the-applications"><a class="header" href="#running-the-applications">Running the applications</a></h2>
+<p>Let's run the three applications using the below commands in the following order.</p>
+<p><code>bal run ws_stock_mgt_server.bal. </code></p>
+<p><code>bal run client.bal</code></p>
+<p><code>bal run exchange.bal</code></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ballerina-http-service-for-book-and-movie-search"><a class="header" href="#ballerina-http-service-for-book-and-movie-search">Ballerina HTTP Service for book and movie search</a></h1>
+<h2 id="source-code-2"><a class="header" href="#source-code-2">Source code</a></h2>
+<p>The full source code for the scenario can be found in <a href="https://github.com/anupama-pathirage/ballerina-scenarios/tree/main/ballerina-http-service-for-books-search">ballerina-scenarios repo.</a></p>
+<h2 id="sample-use-case-2"><a class="header" href="#sample-use-case-2">Sample Use case</a></h2>
+<p>Refer to the scenario below. </p>
+<p><img src="usecases/../img/http_service.png" alt="HTTP Service in Balleirna" /></p>
+<h2 id="external-calls"><a class="header" href="#external-calls">External Calls</a></h2>
+<h3 id="google-books-api"><a class="header" href="#google-books-api">Google Books API</a></h3>
+<p>https://www.googleapis.com/books/v1/volumes?q=intitle:war%20and%20peace</p>
+<h3 id="imdb-movie-api"><a class="header" href="#imdb-movie-api">IMDB Movie API</a></h3>
+<p>https://imdb-api.com/en/API/SearchMovie/k_mhb0408y/war%20and%20peace</p>
+<p>https://imdb-api.com/en/API/Trailer/k_mhb0408y/tt3910804</p>
+<h2 id="test-url"><a class="header" href="#test-url">Test URL</a></h2>
+<p>curl &quot;localhost:9090/books/search?name=war%20and%20peace&quot; | jq</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="articles-and-blogs"><a class="header" href="#articles-and-blogs">Articles and Blogs</a></h1>
+<ul>
+<li><a href="https://dzone.com/articles/real-time-stock-data-updates-with-websockets-using">Dzone - Real-Time Stock Data Updates with WebSockets using Ballerina</a></li>
+<li><a href="https://dzone.com/articles/event-driven-apis-with-webhook-and-websub">Dzone - Event-Driven APIs With Webhook and WebSub</a></li>
+<li><a href="https://dzone.com/articles/quickstart-openapi-with-ballerina">Dzone - Quickstart OpenAPI With Ballerina</a></li>
+<li><a href="https://medium.com/ballerina-techblog/introduction-to-grpc-on-ballerina-7819d98c4e2b">Medium - Introduction to gRPC on Ballerina</a></li>
+<li><a href="https://medium.com/mycodeideas/sql-injection-introduction-with-ballerina-30b75abad8fe">Medium - SQL Injection — Introduction with Ballerina</a></li>
+<li><a href="https://medium.com/ballerina-techblog/managing-data-using-ballerina-vs-go-fcbc9d20f691">Medium - Managing data using Ballerina vs Go</a></li>
+<li><a href="https://dzone.com/articles/data-integration-with-ballerina">Dzone - Data Integration With Ballerina</a></li>
+<li><a href="https://dzone.com/articles/introduction-to-data-integration-with-ballerina">Dzone - Introduction to Data Integration With Ballerina</a></li>
+<li><a href="https://medium.com/ballerina-techblog/introduction-to-ballerina-tables-205286a53752">Medium - Introduction to Ballerina Tables</a></li>
+<li><a href="https://medium.com/ballerina-techblog/connect-to-your-data-with-ballerina-902b2bad872d">Medium - Connect to your data with Ballerina</a></li>
+<li><a href="https://medium.com/ballerina-techblog/insert-batch-of-data-using-ballerina-4c1a7d72c35e">Medium - Insert batch of data to DB using Ballerina</a></li>
+<li><a href="https://medium.com/ballerina-techblog/ballerina-sql-connector-performing-db-operations-8e555e3688be">Medium - Ballerina JDBC Client — Performing DB Operations</a></li>
+<li><a href="https://medium.com/ballerina-techblog/ballerina-sql-connector-connecting-to-db-ee31a81c8df6">Medium - Ballerina JDBC Client— Connecting to DB</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="videos-and-talks-1"><a class="header" href="#videos-and-talks-1">Videos and talks</a></h1>
+<h2 id="videos"><a class="header" href="#videos">Videos</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AAY27kLgcIE&amp;list=PLYcbbYyKmCXMlgAe1qZVZSfxTurnWBmN9&amp;index=1">Get Started With Ballerina</a></li>
+<li><a href="https://www.youtube.com/watch?v=Kk4tbN8FcZ4&amp;list=PLYcbbYyKmCXMlgAe1qZVZSfxTurnWBmN9&amp;index=2">Create Your First Service With Ballerina</a></li>
+<li><a href="https://www.youtube.com/watch?v=wq3u79-wCS4&amp;list=PLYcbbYyKmCXMlgAe1qZVZSfxTurnWBmN9&amp;index=3">How To Use Ballerina Tool</a></li>
+<li><a href="https://www.youtube.com/watch?v=0bNpsbn4Y7w&amp;list=PLYcbbYyKmCXMlgAe1qZVZSfxTurnWBmN9&amp;index=4">Structuring Ballerina Code</a></li>
+<li><a href="https://www.youtube.com/watch?v=yE-bYK6wP5g&amp;list=PLYcbbYyKmCXMlgAe1qZVZSfxTurnWBmN9&amp;index=5">Use Ballerina VSCode Extension</a></li>
+</ul>
+<h2 id="talks"><a class="header" href="#talks">Talks</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4ss0yrSscL4&amp;list=PLYcbbYyKmCXPSCM_qNVoWmJ-QRnTrhAzO&amp;index=2">Data Integration, Ballerina Day 2018 - EU</a></li>
+</ul>
+
+                    </main>
+                    <script src="https://utteranc.es/client.js" repo="anupama-pathirage/learning_ballerina" issue-term="pathname" theme="github-light"
+                    crossorigin="anonymous" async>
+                    </script>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+                        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+                
+    </body>
+</html>
