@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](index.md)
+[Home](index.md)
 
 - [Introduction to Ballerina](introduction.md)
 - [Hello World](hello_world.md)
