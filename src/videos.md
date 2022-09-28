@@ -12,4 +12,7 @@
 
 ## Talks
 
+- [Programming language Designed for Cloud Native Applications, DeveloperWeek Cloud - 2022](https://www.slideshare.net/AnupamaPiyumaliPathi/developerweek-cloud-2022programming-language-designed-for-cloud-native-applications)
+- [Cloud-Native Middleware as a Programming Language, Women in Tech Global Conference - 2022](https://www.slideshare.net/AnupamaPiyumaliPathi/women-in-tech-global-conference-2022pdfcloudnative-middleware-as-a-programming-language)
 - [Data Integration, Ballerina Day 2018 - EU](https://www.youtube.com/watch?v=4ss0yrSscL4&list=PLYcbbYyKmCXPSCM_qNVoWmJ-QRnTrhAzO&index=2)
+
