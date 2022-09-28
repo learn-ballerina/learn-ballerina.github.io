@@ -7,8 +7,8 @@
 - Ballerina is NOT a JVM language.
 - Ballerina is a programming language which is 
     - compiled : (Compiled languages are converted directly into machine code that the processor can execute. C, C++, Rust, Go are examples. In interpreted Languages, interpreters run through a program line by line and execute each command. PHP, Ruby, Python are examples.    )
-    - type safe :
-    - concurrent :
+    - type safe
+    - concurrent
 - Ballerina is neither an object oriented language nor a functional one.
     - While the language has objects, the development methods are not completely OOP-based.
     - Both objects and functions are first class concepts, giving developers the ability to choose the best option based on their requirements.   
