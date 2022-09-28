@@ -1,2 +1,3 @@
-# learn-ballerina.github.io
-Learn Ballerina Programming Language
+#Learn Ballerina
+
+https://learn-ballerina.github.io
