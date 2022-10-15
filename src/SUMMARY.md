@@ -4,8 +4,7 @@
 
 - [Hello Ballerina](introduction.md)
     - [Hello World](hello_world.md)
-- [Ballerina Type System](type_system.md)
-    - [Type System Fundamentals](type_system/type_system_fundamentals.md)
+- [Ballerina Type System](type_system/type_system_fundamentals.md)
     - [LangLib Modules](type_system/langlib.md)
     - [Values and Types](values_and_types.md)
         - [Simple Basic Types](simple_basic_types.md)
