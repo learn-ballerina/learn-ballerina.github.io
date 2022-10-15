@@ -6,11 +6,14 @@ This is a collection of code examples that illustrate various Ballerina concepts
 
 Let’s begin learning Ballerina.
 
-## Language Basics
+## Hello Ballerina
 
 - [Introduction to Ballerina](introduction.md) - An introduction to the language.
 
 - [Hello World](hello_world.md) - A traditional Hello World program.
+
+## Ballerina Type System 
+
 - [Introduction to Type System](type_system.md) - An introduction to Ballerina type system.
     - [Type System Fundamentals](type_system/type_system_fundamentals.md)
     - [LangLib Modules](type_system/langlib.md)
