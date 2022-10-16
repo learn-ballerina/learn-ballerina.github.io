@@ -1,4 +1,6 @@
-# Generate string by concatenating values
+# Generate  String by Concatenating Values
+
+<h3><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h3>
 
 ```bal
 int age = 10;
