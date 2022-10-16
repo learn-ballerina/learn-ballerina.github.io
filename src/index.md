@@ -22,13 +22,15 @@ Let’s begin learning Ballerina.
 ## Ballerina Best Practices Guide
 
 - [Language Best Practices](best_practices/language_best_practices.md)
-    - [Handle nil values](best_practices/handling_nil_values.md)
+    - [Represent optionality](best_practices/represent_optionality.md)
+    - [Handle nil values](best_practices/handle_nil_values.md)
     - [Generate string by concatenating values](best_practices/string_concat.md)
     - [Handle unions of string constants](best_practices/string_unions.md)
     - [Handle unions of integer constants](best_practices/int_unions.md)
     - [Work with value ranges](best_practices/value_ranges.md)
 - [Code Style Best Practices](best_practices/code_style_best_practices.md)
     - [Use early returns](best_practices/early_returns.md)
+    - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
 
 ## How-to Code snippets
 
