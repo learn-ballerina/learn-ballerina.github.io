@@ -174,8 +174,11 @@
 <h2 id="ballerina-best-practices-guide"><a class="header" href="#ballerina-best-practices-guide">Ballerina Best Practices Guide</a></h2>
 <ul>
 <li><a href="best_practices/language_best_practices.html">Language Best Practices</a>
-- <a href="best_practices/handling_nil_values.html">Handle Nil Values</a>
-- <a href="best_practices/string_concat.html">Generate string by concatenating values</a></li>
+<ul>
+<li><a href="best_practices/handling_nil_values.html">Handle Nil Values</a></li>
+<li><a href="best_practices/string_concat.html">Generate string by concatenating values</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="how-to-code-snippets"><a class="header" href="#how-to-code-snippets">How-to Code snippets</a></h2>
 <ul>
@@ -1527,8 +1530,9 @@ UK
 <li><a href="best_practices/best_practices/string_concat.html">Generate string by concatenating values</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="handling-nil-values"><a class="header" href="#handling-nil-values">Handling Nil Values</a></h1>
+<p>Use Elvis operator.</p>
 <p>Elvis operator is a conditional operator that can be used to handle nil values. It evaluates an expression and if the value is nil, executes the second expression. The Elvis operator takes two operands and uses the <code>?:</code> symbol to form it.</p>
-<p><strong>Example 1:</strong> </p>
+<h3 id="example-1"><a class="header" href="#example-1">Example 1:</a></h3>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">int? age = ();
 int validAge = &lt;int&gt;age;
@@ -1537,7 +1541,7 @@ int validAge = &lt;int&gt;age;
 <pre><code>int? age = ();
 int validAge = age ?: 0;
 </code></pre>
-<p><strong>Example 2:</strong></p>
+<h3 id="example-2"><a class="header" href="#example-2">Example 2:</a></h3>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-1"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-1"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">string? name = ();
 string validName = name.toString();
@@ -1563,11 +1567,17 @@ string validName = name ?: &quot;&quot;;
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="generate--string-by-concatenating-values"><a class="header" href="#generate--string-by-concatenating-values">Generate  String by Concatenating Values</a></h1>
+<p>Use string backtick template.</p>
+<p>A backtick template is composed of a tag followed by a backtick string, enclosed within the backtick notation, where you can have expressions that are enclosed in <code>${...}</code>.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-3"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">int age = 10;
 string name = &quot;Anne&quot;;
 log:printInfo(&quot;Child name is &quot; + name + &quot; and age is &quot; + age.toString());
 </code></pre>
+<ul>
+<li>Need to convert non string values to strings.</li>
+<li>Need to handle spaces in the text properly along with the <code>+</code>. </li>
+</ul>
 <h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">int age = 10;
 string name = &quot;Anne&quot;;

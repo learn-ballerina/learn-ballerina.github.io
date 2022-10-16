@@ -148,11 +148,17 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="generate--string-by-concatenating-values"><a class="header" href="#generate--string-by-concatenating-values">Generate  String by Concatenating Values</a></h1>
+<p>Use string backtick template.</p>
+<p>A backtick template is composed of a tag followed by a backtick string, enclosed within the backtick notation, where you can have expressions that are enclosed in <code>${...}</code>.</p>
 <h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-code"><img align="center" height="30" src="../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">int age = 10;
 string name = &quot;Anne&quot;;
 log:printInfo(&quot;Child name is &quot; + name + &quot; and age is &quot; + age.toString());
 </code></pre>
+<ul>
+<li>Need to convert non string values to strings.</li>
+<li>Need to handle spaces in the text properly along with the <code>+</code>. </li>
+</ul>
 <h4 id="img-aligncenter-height30-srcimggoodcodepng-good-code"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-code"><img align="center" height="30" src="../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">int age = 10;
 string name = &quot;Anne&quot;;
