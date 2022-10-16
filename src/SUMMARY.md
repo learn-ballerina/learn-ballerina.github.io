@@ -42,6 +42,12 @@
             - [byte](other_types/byte.md)
             - [json](other_types/json.md)
             - [union](other_types/union.md)
+
+- [Ballerina Best Practices Guide](best_practices.md)
+    - [Language Best Practices](best_practices/language_best_practices.md)
+        - [Handle Nil Values](best_practices/handling_nil_values.md)
+        - [Generate string by concatenating values](best_practices/string_concat.md)
+
 - [Ballerina How To Snippets](how_to.md)
     - [Download a file from URL using Ballerina](how_to_snippets/download_file.md)
     - [Validating email address using Regex in Ballerina](how_to_snippets/validating_email.md)

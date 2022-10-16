@@ -19,6 +19,12 @@ Let’s begin learning Ballerina.
     - [LangLib Modules](type_system/langlib.md)
 - [Values and Types](values_and_types.md) -  Details on Ballerina type system.
 
+## Ballerina Best Practices Guide
+
+- [Language Best Practices](best_practices/language_best_practices.md)
+        - [Handle Nil Values](best_practices/handling_nil_values.md)
+        - [Generate string by concatenating values](best_practices/string_concat.md)
+
 ## How-to Code snippets
 
  - [Code snippets using Ballerina](how_to.md)
