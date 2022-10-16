@@ -36,7 +36,7 @@ string? name = ();
 string validName = name ?: "";
 ```
 
-**Example 3:**
+<h3>Example 3:</h3>
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
