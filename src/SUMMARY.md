@@ -50,6 +50,8 @@
         - [Handle unions of string constants](best_practices/string_unions.md)
         - [Handle unions of integer constants](best_practices/int_unions.md)
         - [Work with value ranges](best_practices/value_ranges.md)
+    - [Code Style Best Practices](best_practices/code_style_best_practices.md)
+        - [Use early returns](best_practices/early_returns.md)
 
 - [Ballerina How To Snippets](how_to.md)
     - [Download a file from URL using Ballerina](how_to_snippets/download_file.md)

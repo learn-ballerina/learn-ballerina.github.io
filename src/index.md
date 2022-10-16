@@ -27,6 +27,8 @@ Let’s begin learning Ballerina.
     - [Handle unions of string constants](best_practices/string_unions.md)
     - [Handle unions of integer constants](best_practices/int_unions.md)
     - [Work with value ranges](best_practices/value_ranges.md)
+- [Code Style Best Practices](best_practices/code_style_best_practices.md)
+    - [Use early returns](best_practices/early_returns.md)
 
 ## How-to Code snippets
 
