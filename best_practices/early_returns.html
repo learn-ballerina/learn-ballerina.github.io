@@ -151,9 +151,56 @@
 <p>Use early returns to avoid nested if conditions. Then the code will become more readable and maintainable.</p>
 <p>Note: This is not a Ballerina language specific thing, but can simplify the code a lot.</p>
 <h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-code"><img align="center" height="30" src="../img/BadCode.png"> Bad Code</a></h4>
-<pre><code class="language-bal"></code></pre>
+<pre><code class="language-bal">function handleCSVBodyParts(http:Request request) returns string[][]|error {
+    var bodyParts = request.getBodyParts();
+    if bodyParts is mime:Entity[] {
+        string[][] csvLines = [];
+        foreach var bodyPart in bodyParts {
+            var mediaType = mime:getMediaType(bodyPart.getContentType());
+            if mediaType is mime:MediaType {
+                string baseType = mediaType.getBaseType();
+                if &quot;text/csv&quot; == baseType {
+                    byte[] payload = check bodyPart.getByteArray();
+                    csvLines = check getCSVData(payload);
+                } else {
+                    return error(&quot;Invalid base type, not text/csv&quot;);
+                }
+            } else {
+                return error(&quot;Invalid media type&quot;);
+            }
+        }
+        return csvLines;
+    } else {
+        return error(&quot;Error in decoding multiparts!&quot;);
+    }
+}
+</code></pre>
+<ul>
+<li>Actual logic resides after many depths.</li>
+<li>Code is not readable.</li>
+</ul>
 <h4 id="img-aligncenter-height30-srcimggoodcodepng-good-code"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-code"><img align="center" height="30" src="../img/GoodCode.png"> Good Code</a></h4>
-<pre><code class="language-bal"></code></pre>
+<pre><code class="language-bal">function handleCSVBodyParts2(http:Request request) returns string[][]|error {
+    mime:Entity[]|error bodyParts = request.getBodyParts();
+    if bodyParts is error {
+        return error(&quot;Error in decoding multiparts!&quot;);
+    }
+    string[][] csvLines = [];
+    foreach var bodyPart in bodyParts {
+        mime:MediaType|error mediaType = mime:getMediaType(bodyPart.getContentType());
+        if mediaType is error {
+            return error(&quot;Invalid media type&quot;);
+        }
+        string baseType = mediaType.getBaseType();
+        if &quot;text/csv&quot; != baseType {
+            return error(&quot;Invalid base type, not text/csv&quot;);
+        }
+        byte[] payload = check bodyPart.getByteArray();
+        csvLines = check getCSVData(payload);
+    }
+    return csvLines;
+}
+</code></pre>
 
                     </main>
                     <script src="https://utteranc.es/client.js" repo="anupama-pathirage/learning_ballerina" issue-term="pathname" theme="github-light"
