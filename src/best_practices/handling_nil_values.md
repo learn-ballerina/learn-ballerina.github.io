@@ -4,10 +4,14 @@ Elvis operator is a conditional operator that can be used to handle nil values. 
 
 **Example 1:** 
 
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
+
 ```bal
 int? age = ();
 int validAge = <int>age;
 ```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
 ```
 int? age = ();
@@ -16,10 +20,14 @@ int validAge = age ?: 0;
 
 **Example 2:**
 
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
+
 ```bal
 string? name = ();
 string validName = name.toString();
 ```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
 ```bal
 string? name = ();
@@ -27,6 +35,8 @@ string validName = name ?: "";
 ```
 
 **Example 3:**
+
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
 ```bal
 function getUsers() returns string[]|error {
@@ -37,6 +47,8 @@ function getUsers() returns string[]|error {
    return [];
 }
 ```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
 ```bal
 function getUsers() returns string[]|error {
