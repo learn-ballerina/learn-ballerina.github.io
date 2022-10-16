@@ -43,11 +43,12 @@
             - [json](other_types/json.md)
             - [union](other_types/union.md)
 
-- [Ballerina Best Practices Guide](best_practices.md)
+- [Ballerina Best Practices Guide](best_practices/best_practices.md)
     - [Language Best Practices](best_practices/language_best_practices.md)
         - [Handle nil values](best_practices/handling_nil_values.md)
         - [Generate string by concatenating values](best_practices/string_concat.md)
         - [Handle unions of string constants](best_practices/string_unions.md)
+        - [Handle unions of int constants](best_practices/int_unions.md)
 
 - [Ballerina How To Snippets](how_to.md)
     - [Download a file from URL using Ballerina](how_to_snippets/download_file.md)

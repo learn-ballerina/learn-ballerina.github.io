@@ -2,3 +2,5 @@
 
 - [Handle Nil Values](best_practices/handling_nil_values.md)
 - [Generate string by concatenating values](best_practices/string_concat.md)
+- [Handle unions of string constants](best_practices/string_unions.md)
+- [Handle unions of int constants](best_practices/int_unions.md)

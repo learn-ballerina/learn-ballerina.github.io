@@ -1,6 +1,6 @@
 # Handle unions of string constants
 
-Use enums, unions of singletons or unions of constants.
+Use enums, unions of singletons or unions of constants. Enum seems to be a better option out of those three.
 
 Let's say we have a string variable named `deparment` which can only be  `Finance`, `Engineering` or `HR`.
 
@@ -71,5 +71,6 @@ Employee e = {name: "John Doe", department: HR};
 ```
 
 <h4>Conclusion</h4>
+
 - In all three approaches, the User can’t specify anything other than specified values which is good.
 - Option 1: Enums is a better choice if we consider the readability and simplicity of the code.
