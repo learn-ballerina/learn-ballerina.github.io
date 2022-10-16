@@ -1529,20 +1529,25 @@ UK
 <div style="break-before: page; page-break-before: always;"></div><h1 id="handling-nil-values"><a class="header" href="#handling-nil-values">Handling Nil Values</a></h1>
 <p>Elvis operator is a conditional operator that can be used to handle nil values. It evaluates an expression and if the value is nil, executes the second expression. The Elvis operator takes two operands and uses the <code>?:</code> symbol to form it.</p>
 <p><strong>Example 1:</strong> </p>
+<h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">int? age = ();
 int validAge = &lt;int&gt;age;
 </code></pre>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code>int? age = ();
 int validAge = age ?: 0;
 </code></pre>
 <p><strong>Example 2:</strong></p>
+<h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-1"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-1"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">string? name = ();
 string validName = name.toString();
 </code></pre>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-1"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-1"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">string? name = ();
 string validName = name ?: &quot;&quot;;
 </code></pre>
 <p><strong>Example 3:</strong></p>
+<h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-2"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-2"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">function getUsers() returns string[]|error {
    string[]? users = check httpClient-&gt;get(&quot;/users&quot;);
    if users is string[] {
@@ -1551,17 +1556,19 @@ string validName = name ?: &quot;&quot;;
    return [];
 }
 </code></pre>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-2"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-2"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">function getUsers() returns string[]|error {
     string[]? users = check httpClient-&gt;get(&quot;/users&quot;);
     return users ?: [];
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="generate--string-by-concatenating-values"><a class="header" href="#generate--string-by-concatenating-values">Generate  String by Concatenating Values</a></h1>
-<h3 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h3>
+<h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-3"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">int age = 10;
 string name = &quot;Anne&quot;;
 log:printInfo(&quot;Child name is &quot; + name + &quot; and age is &quot; + age.toString());
 </code></pre>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">int age = 10;
 string name = &quot;Anne&quot;;
 log:printInfo(string `Child name is ${name} and age is ${age}`);
