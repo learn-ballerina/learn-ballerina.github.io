@@ -22,7 +22,8 @@ Issue issue = {title: "Incorrect input parameters", priority: 1};
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
 <h5>Option 1:Unions of singletons</h5>
- 
+
+```bal 
 type Priority 1|2|3;
  
 type Issue record {|
@@ -31,9 +32,11 @@ type Issue record {|
 |};
  
 Issue issue = {title: "Incorrect input parameters", priority: 1};
+```
  
 <h5>Option 2: Unions of constants</h5>
 
+```bal
 const HIGH = 1;
 const MEDIUM = 2;
 const LOW = 3;
@@ -46,8 +49,9 @@ type Issue record {|
 |};
  
 Issue issue = {title: "Incorrect input parameters", priority: HIGH};
+```
  
-<h4>Good Code</h4>
+<h4>Conclusion</h4>
 
 - Both Option 1 and 2 restrict the users from having arbitrary integer values for priority.
 - But in option 1, by looking at the priority value, we can’t understand whether 1 means high or low.
