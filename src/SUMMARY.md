@@ -51,6 +51,7 @@
         - [Work with value ranges](best_practices/value_ranges.md)
         - [Represent optionality](best_practices/represent_optionality.md)
         - [Handle nil values](best_practices/handle_nil_values.md)
+        - [Using included record parameters](included_record_params.md)
     - [Code Style Best Practices](best_practices/code_style_best_practices.md)
         - [Use early returns](best_practices/early_returns.md)
         - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)

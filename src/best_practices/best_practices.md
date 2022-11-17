@@ -8,6 +8,7 @@
 - [Work with value ranges](value_ranges.md)
 - [Represent optionality](represent_optionality.md)
 - [Handle nil values](handle_nil_values.md)
+- [Using included record parameters](included_record_params.md)
 
 ## Code Style Best Practices
 
