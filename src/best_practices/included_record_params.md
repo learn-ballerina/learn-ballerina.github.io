@@ -6,7 +6,7 @@ Including record fields as named arguments in a function provides a consistent e
 
 The function register() has a `int` parameter `admissionYear` and a record parameter of the `Student` record type.  This function can be called by directly passing a value of the `Student` record type as follows.
 
-```
+```bal
 import ballerina/io;
 
 type Student record {|
