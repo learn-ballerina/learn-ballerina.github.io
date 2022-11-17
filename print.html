@@ -1775,7 +1775,7 @@ string validName = name ?: &quot;&quot;;
 <p>Including record fields as named arguments in a function provides a consistent experience to the caller.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgalertpng-without-included-record-parameters"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgalertpng-without-included-record-parameters"><img align="center" height="30" src="best_practices/../img/alert.png"> Without included record parameters</a></h4>
 <p>The function register() has a <code>int</code> parameter <code>admissionYear</code> and a record parameter of the <code>Student</code> record type.  This function can be called by directly passing a value of the <code>Student</code> record type as follows.</p>
-<pre><code>import ballerina/io;
+<pre><code class="language-bal">import ballerina/io;
 
 type Student record {|
     string firstName;
