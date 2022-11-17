@@ -7,3 +7,4 @@
 - [Represent optionality](represent_optionality.md)
 - [Handle nil values](handle_nil_values.md)
 - [Using included record parameters](included_record_params.md)
+- [Simplify mapping constructor](mapping_constructors.md)
