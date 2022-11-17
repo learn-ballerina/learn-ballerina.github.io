@@ -1,4 +1,4 @@
-# Handle Nil Values
+# Handle Nil values
 
 Use Elvis operator.
 
