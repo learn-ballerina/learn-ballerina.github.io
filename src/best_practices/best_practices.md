@@ -1,5 +1,13 @@
 # Ballerina Best Practices Guide
 
+Welcome to Ballerina best practices guide!
+
+This guide is opinionated and not Ballerina's official documentation. You won’t find a list of every Ballerina syntax and standard library usage help here. Rather, you’ll find a concise list of highly recommended options.
+
+## Structure your project
+
+- [Naming conventions](naming_conventions.md)
+
 ## Language Best Practices
 
 - [Generate string by concatenating values](string_concat.md)
@@ -10,6 +18,7 @@
 - [Handle nil values](handle_nil_values.md)
 - [Using included record parameters](included_record_params.md)
 - [Simplify mapping constructor](mapping_constructors.md)
+- [Use expression bodied functions](expression_bodied_func.md)
 
 ## Code Style Best Practices
 

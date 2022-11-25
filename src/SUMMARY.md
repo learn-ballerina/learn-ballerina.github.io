@@ -44,6 +44,8 @@
             - [union](other_types/union.md)
 
 - [Ballerina Best Practices Guide](best_practices/best_practices.md)
+    - [Structure your project](best_practices/structure_your_project.md)
+        - [Naming conventions](best_practices/naming_conventions.md)
     - [Language Best Practices](best_practices/language_best_practices.md)
         - [Generate string by concatenating values](best_practices/string_concat.md)
         - [Handle unions of string constants](best_practices/string_unions.md)
@@ -53,7 +55,9 @@
         - [Handle nil values](best_practices/handle_nil_values.md)
         - [Using included record parameters](best_practices/included_record_params.md)
         - [Simplify mapping constructor](best_practices/mapping_constructors.md)
+        - [Use expression bodied functions](best_practices/expression_bodied_func.md)
     - [Code Style Best Practices](best_practices/code_style_best_practices.md)
+        - [Naming conventions](best_practices/naming_conventions.md)
         - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
         - [Using constants](best_practices/constants.md)
         - [Use early returns](best_practices/early_returns.md)
