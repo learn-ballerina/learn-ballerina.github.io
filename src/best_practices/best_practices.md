@@ -4,8 +4,9 @@ Welcome to Ballerina best practices guide!
 
 This guide is opinionated and not Ballerina's official documentation. You won’t find a list of every Ballerina syntax and standard library usage help here. Rather, you’ll find a concise list of highly recommended options.
 
-## Structure your project
+## Project Best Practices
 
+- [Structure your code](structure_your_code.md)
 - [Naming conventions](naming_conventions.md)
 
 ## Language Best Practices
@@ -19,6 +20,7 @@ This guide is opinionated and not Ballerina's official documentation. You won’
 - [Using included record parameters](included_record_params.md)
 - [Simplify mapping constructor](mapping_constructors.md)
 - [Use expression bodied functions](expression_bodied_func.md)
+- [Use precise types](use_precise_types.md)
 
 ## Code Style Best Practices
 
