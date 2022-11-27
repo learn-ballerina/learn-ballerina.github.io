@@ -22,7 +22,7 @@ Let’s begin learning Ballerina.
 ## Ballerina Best Practices Guide
 
 - [Project Best Practices](best_practices/project_best_practices.md)
-    - [Structure your code](structure_your_code.md)
+    - [Structure your code](best_practices/structure_your_code.md)
     - [Naming conventions](best_practices/naming_conventions.md)
 - [Language Best Practices](best_practices/language_best_practices.md)
     - [Generate string by concatenating values](best_practices/string_concat.md)
@@ -36,7 +36,6 @@ Let’s begin learning Ballerina.
     - [Use expression bodied functions](best_practices/expression_bodied_func.md)
     - [Use precise types](best_practices/use_precise_types.md)
 - [Code Style Best Practices](best_practices/code_style_best_practices.md)
-    - [Naming conventions](best_practices/naming_conventions.md)
     - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
     - [Using constants](best_practices/constants.md)
     - [Use early returns](best_practices/early_returns.md)

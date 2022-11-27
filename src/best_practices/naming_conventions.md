@@ -1,4 +1,4 @@
-# Naming conentions
+# Naming conventions
 
 <h3>Organizations</h3>
 
