@@ -57,13 +57,14 @@
         - [Handle nil values](best_practices/handle_nil_values.md)
         - [Using included record parameters](best_practices/included_record_params.md)
         - [Simplify mapping constructor](best_practices/mapping_constructors.md)
-        - [Use expression bodied functions](best_practices/expression_bodied_func.md)
+        - [Use expression-bodied functions](best_practices/expression_bodied_func.md)
         - [Use precise types](best_practices/use_precise_types.md)
     - [Code Style Best Practices](best_practices/code_style_best_practices.md)
         - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
         - [Using constants](best_practices/constants.md)
         - [Use early returns](best_practices/early_returns.md)
-
+        
+- [Ballerina FAQ](faq.md)
 - [Ballerina How To Snippets](how_to.md)
     - [Download a file from URL using Ballerina](how_to_snippets/download_file.md)
     - [Validating email address using Regex in Ballerina](how_to_snippets/validating_email.md)

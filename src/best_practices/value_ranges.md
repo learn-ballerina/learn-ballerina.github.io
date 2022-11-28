@@ -17,8 +17,8 @@ function processData(string[] data) {
 }
 ```
 
-- Need to maintain a seperate index.
-- Need to check whether value equals to one in each iteration.
+- Need to maintain a separate index.
+- Need to check whether the value equals to `1` in each iteration.
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 

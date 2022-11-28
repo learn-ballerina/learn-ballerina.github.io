@@ -1,12 +1,12 @@
 # Handle unions of string constants
 
-Use enums, unions of singletons or unions of constants. Enum seems to be a better option out of those three.
+Use enums, unions of singletons, or unions of constants. Enum seems to be a better option out of those three.
 
-Let's say we have a string variable named `deparment` which can only be  `Finance`, `Engineering` or `HR`.
+Let's say we have a string variable named `department`, which can only be  `Finance`, `Engineering`, or `HR`.
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
-```bal
+"`bal
 type Employee record {|
    string name;
    string department;
@@ -22,7 +22,7 @@ Employee e = {name: "John Doe", department: "HR"};
 
 <h5>Option 1: Usage of enums </h5>
 
-```bal
+"`bal
 enum Department {
    Finance,
    Engineering,
@@ -37,12 +37,12 @@ type Employee record {|
 Employee e = {name: "John Doe", department: HR};
 ```
 
-**Note:** Ballerina doesn’t allow numeric enums.
-	
+**Note:** Ballerina doesn't allow numeric enums.
+   
 
 <h5>Option 2: Unions of singletons</h5>
 
-```bal
+"`bal
 type Department "Finance"|"Engineering"|"HR";
  
 type Employee record {|
@@ -55,7 +55,7 @@ Employee e = {name: "John Doe", department: "HR"};
  
 <h5>Option 3: Unions of constants</h5>
 
-```bal
+"`bal
 const Eng = "Engineering";
 const Fin = "Finance";
 const HR = "HR";
@@ -72,5 +72,5 @@ Employee e = {name: "John Doe", department: HR};
 
 <h4>Conclusion</h4>
 
-- In all three approaches, the User can’t specify anything other than specified values which is good.
+- In all three approaches, the User can't specify anything other than specified values which is good.
 - Option 1: Enums is a better choice if we consider the readability and simplicity of the code.

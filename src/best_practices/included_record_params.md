@@ -4,7 +4,7 @@ Including record fields as named arguments in a function provides a consistent e
 
 <h4><img align="center" height="30" src="../img/alert.png"> Without included record parameters</h4>
 
-The function register() has a `int` parameter `admissionYear` and a record parameter of the `Student` record type.  This function can be called by directly passing a value of the `Student` record type as follows.
+The function register() has an `int` parameter `admissionYear` and a record parameter of the `Student` record type. This function can be called by directly passing a value of the `Student` record type as follows.
 
 ```bal
 import ballerina/io;

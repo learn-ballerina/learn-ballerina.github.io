@@ -1,8 +1,8 @@
 # Handle Nil values
 
-Use Elvis operator.
+Use the Elvis operator.
 
-Elvis operator is a conditional operator that can be used to handle nil values. It evaluates an expression and if the value is nil, executes the second expression. The Elvis operator takes two operands and uses the `?:` symbol to form it.
+Elvis operator is a conditional operator that can be used to handle nil values. It evaluates an expression and, if the value is nil, executes the second expression. The Elvis operator takes two operands and uses the `?:` symbol to form them.
 
 <h3>Example 1:</h3>
 

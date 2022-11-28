@@ -1,6 +1,6 @@
 # Simplify mapping constructor
 
-If the variable name is equal to the key of mapping constructor we can simplify code `{k: k}` to `{k}`.
+If the variable name is equal to the key of the mapping constructor, we can simplify code `{k: k}` to `{k}`.
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
