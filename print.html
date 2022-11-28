@@ -1792,22 +1792,20 @@ log:printInfo(string `Child name is ${name} and age is ${age}`);
 <p>Use enums, unions of singletons, or unions of constants. Enum seems to be a better option out of those three.</p>
 <p>Let's say we have a string variable named <code>department</code>, which can only be  <code>Finance</code>, <code>Engineering</code>, or <code>HR</code>.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-1"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-1"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
-<p>&quot;`bal
-type Employee record {|
-string name;
-string department;
-|};</p>
-<p>Employee e = {name: &quot;John Doe&quot;, department: &quot;HR&quot;};</p>
-<pre><code> 
-- No idea what are the possible department types
-- Users can specify any string value as the department. It is syntactically correct but incorrect from the scenario point of view. 
-
-&lt;h4&gt;&lt;img align=&quot;center&quot; height=&quot;30&quot; src=&quot;../img/GoodCode.png&quot;&gt; Good Code&lt;/h4&gt;
-
-&lt;h5&gt;Option 1: Usage of enums &lt;/h5&gt;
-
-&quot;`bal
-enum Department {
+<pre><code class="language-bal">type Employee record {|
+   string name;
+   string department;
+|};
+ 
+Employee e = {name: &quot;John Doe&quot;, department: &quot;HR&quot;};
+</code></pre>
+<ul>
+<li>No idea what are the possible department types</li>
+<li>Users can specify any string value as the department. It is syntactically correct but incorrect from the scenario point of view. </li>
+</ul>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-1"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-1"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h5 id="option-1-usage-of-enums"><a class="header" href="#option-1-usage-of-enums">Option 1: Usage of enums </a></h5>
+<pre><code class="language-bal">enum Department {
    Finance,
    Engineering,
    HR
@@ -1822,18 +1820,17 @@ Employee e = {name: &quot;John Doe&quot;, department: HR};
 </code></pre>
 <p><strong>Note:</strong> Ballerina doesn't allow numeric enums.</p>
 <h5 id="option-2-unions-of-singletons"><a class="header" href="#option-2-unions-of-singletons">Option 2: Unions of singletons</a></h5>
-<p>&quot;`bal
-type Department &quot;Finance&quot;|&quot;Engineering&quot;|&quot;HR&quot;;</p>
-<p>type Employee record {|
-string name;
-Department department;
-|};</p>
-<p>Employee e = {name: &quot;John Doe&quot;, department: &quot;HR&quot;};</p>
-<pre><code> 
-&lt;h5&gt;Option 3: Unions of constants&lt;/h5&gt;
-
-&quot;`bal
-const Eng = &quot;Engineering&quot;;
+<pre><code class="language-bal">type Department &quot;Finance&quot;|&quot;Engineering&quot;|&quot;HR&quot;;
+ 
+type Employee record {|
+   string name;
+   Department department;
+|};
+ 
+Employee e = {name: &quot;John Doe&quot;, department: &quot;HR&quot;};
+</code></pre>
+<h5 id="option-3-unions-of-constants"><a class="header" href="#option-3-unions-of-constants">Option 3: Unions of constants</a></h5>
+<pre><code class="language-bal">const Eng = &quot;Engineering&quot;;
 const Fin = &quot;Finance&quot;;
 const HR = &quot;HR&quot;;
  
@@ -1855,23 +1852,21 @@ Employee e = {name: &quot;John Doe&quot;, department: HR};
 <p>Use unions of singletons or unions of constants. Unions of constants seem to be a better option out of those three.</p>
 <p>Let's say we have an int variable named <code>priority</code> which can only be  <code>1</code>, <code>2</code>, or <code>3</code> where <code>1</code> is the highest priority.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-2"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-2"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
-<p>&quot;`bal
-type Issue record {|
-string title;
-int priority;
-|};</p>
-<p>Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: 1};</p>
-<pre><code>
-- No idea what are the possible priority values
-- By looking at the issue value, we can't get a sense of priority level. Whether priority 1 means the highest priority or lowest priority. 
-- Users can specify any int value as the priority. It is syntactically correct but incorrect from the scenario point of view. 
-
-&lt;h4&gt;&lt;img align=&quot;center&quot; height=&quot;30&quot; src=&quot;../img/GoodCode.png&quot;&gt; Good Code&lt;/h4&gt;
-
-&lt;h5&gt;Option 1:Unions of singletons&lt;/h5&gt;
-
-&quot;`bal 
-type Priority 1|2|3;
+<pre><code class="language-bal">type Issue record {|
+   string title;
+   int priority;
+|};
+ 
+Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: 1};
+</code></pre>
+<ul>
+<li>No idea what are the possible priority values</li>
+<li>By looking at the issue value, we can't get a sense of priority level. Whether priority 1 means the highest priority or lowest priority. </li>
+<li>Users can specify any int value as the priority. It is syntactically correct but incorrect from the scenario point of view. </li>
+</ul>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-2"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-2"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h5 id="option-1unions-of-singletons"><a class="header" href="#option-1unions-of-singletons">Option 1:Unions of singletons</a></h5>
+<pre><code class="language-bal">type Priority 1|2|3;
  
 type Issue record {|
   string title;
@@ -1881,23 +1876,25 @@ type Issue record {|
 Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: 1};
 </code></pre>
 <h5 id="option-2-unions-of-constants"><a class="header" href="#option-2-unions-of-constants">Option 2: Unions of constants</a></h5>
-<p>&quot;`bal
-const HIGH = 1;
+<pre><code class="language-bal">const HIGH = 1;
 const MEDIUM = 2;
-const LOW = 3;</p>
-<p>type Priority HIGH|MEDIUM|LOW;</p>
-<p>type Issue record {|
-string title;
-Priority priority;
-|};</p>
-<p>Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: HIGH};</p>
-<pre><code> 
-&lt;h4&gt;Conclusion&lt;/h4&gt;
-
-- Both Options 1 and 2 restrict the users from having arbitrary integer values for priority.
-- But in option 1, by looking at the priority value, we can't understand whether `1` means high or low.
-- So Option 2: Unions of constants is the best option.
+const LOW = 3;
+ 
+type Priority HIGH|MEDIUM|LOW;
+ 
+type Issue record {|
+   string title;
+   Priority priority;
+|};
+ 
+Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: HIGH};
 </code></pre>
+<h4 id="conclusion-1"><a class="header" href="#conclusion-1">Conclusion</a></h4>
+<ul>
+<li>Both Options 1 and 2 restrict the users from having arbitrary integer values for priority.</li>
+<li>But in option 1, by looking at the priority value, we can't understand whether <code>1</code> means high or low.</li>
+<li>So Option 2: Unions of constants is the best option.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="work-with-value-ranges"><a class="header" href="#work-with-value-ranges">Work with value ranges</a></h1>
 <p>Use range expressions.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-3"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
@@ -1916,7 +1913,7 @@ Priority priority;
 <li>Need to maintain a separate index.</li>
 <li>Need to check whether the value equals to <code>1</code> in each iteration.</li>
 </ul>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-1"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-1"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">function processData(string[] data) {
     foreach int lineNo in 1 ..&lt; data.length() {
         io:println(data[lineNo]);
@@ -1931,7 +1928,7 @@ Priority priority;
    string middleName = &quot;&quot;; //middleName is not specified
 };
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-2"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-2"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-4"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-4"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">type Employee record {
    string? middleName = ();
 };
@@ -1945,7 +1942,7 @@ Priority priority;
     return -1;
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-3"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-5"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-5"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">function getMarks(string name) returns int? {
     if marks.hasKey(name) {
         return marks.get(name);
@@ -1961,7 +1958,7 @@ Priority priority;
 <pre><code class="language-bal">int? age = ();
 int validAge = &lt;int&gt;age;
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-4"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-4"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-6"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-6"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code>int? age = ();
 int validAge = age ?: 0;
 </code></pre>
@@ -1970,7 +1967,7 @@ int validAge = age ?: 0;
 <pre><code class="language-bal">string? name = ();
 string validName = name.toString();
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-5"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-5"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-7"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-7"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">string? name = ();
 string validName = name ?: &quot;&quot;;
 </code></pre>
@@ -1984,7 +1981,7 @@ string validName = name ?: &quot;&quot;;
    return [];
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-6"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-6"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-8"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-8"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">function getUsers() returns string[]|error {
     string[]? users = check httpClient-&gt;get(&quot;/users&quot;);
     return users ?: [];
@@ -2049,7 +2046,7 @@ function registerStudent(string name, int age) {
     //...
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-7"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-7"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-9"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-9"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">type Student record {|
     string name;
     int age;
@@ -2068,7 +2065,7 @@ function registerStudent(string name, int age) {
     return matchesCrieteria(username) &amp;&amp; isAvailable(username);
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-8"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-8"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-10"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-10"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">function isValid(string username) returns boolean 
     =&gt; matchesCrieteria(username) &amp;&amp; isAvailable(username);
 </code></pre>
@@ -2082,7 +2079,7 @@ function registerStudent(string name, int age) {
 var age = 30;
 addUser(name, age);
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-9"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-9"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-11"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-11"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">string name = &quot;Alice&quot;;
 int age = 30;
 addUser(name, age);
@@ -2093,7 +2090,7 @@ addUser(name, age);
 <pre><code class="language-bal">http:Client httpClient = check new (&quot;http://localhost:9090&quot;);
 json albums = check httpClient-&gt;/albums;
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-10"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-10"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-12"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-12"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">type Album readonly &amp; record {|
     string title;
     string artist;
@@ -2116,7 +2113,7 @@ Album[] albums = check httpClient-&gt;/albums;
     //
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-11"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-11"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-13"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-13"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">if x == 0 {
     //
 }
@@ -2127,7 +2124,7 @@ Album[] albums = check httpClient-&gt;/albums;
 <pre><code class="language-bal">const int MAX_SIZE = 1000;
 const string FILE_NAME_PREFIX = &quot;Summary&quot;;
 </code></pre>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-12"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-12"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-14"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-14"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">const MAX_SIZE = 1000;
 const FILE_NAME_PREFIX = &quot;Summary&quot;;
 </code></pre>
@@ -2163,7 +2160,7 @@ const FILE_NAME_PREFIX = &quot;Summary&quot;;
 <li>Actual logic resides after many depths.</li>
 <li>Code is not readable.</li>
 </ul>
-<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-13"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-13"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
+<h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-15"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-15"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
 <pre><code class="language-bal">function handleCSVBodyParts2(http:Request request) returns string[][]|error {
     mime:Entity[]|error bodyParts = request.getBodyParts();
     if bodyParts is error {

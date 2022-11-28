@@ -151,23 +151,21 @@
 <p>Use unions of singletons or unions of constants. Unions of constants seem to be a better option out of those three.</p>
 <p>Let's say we have an int variable named <code>priority</code> which can only be  <code>1</code>, <code>2</code>, or <code>3</code> where <code>1</code> is the highest priority.</p>
 <h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-code"><img align="center" height="30" src="../img/BadCode.png"> Bad Code</a></h4>
-<p>&quot;`bal
-type Issue record {|
-string title;
-int priority;
-|};</p>
-<p>Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: 1};</p>
-<pre><code>
-- No idea what are the possible priority values
-- By looking at the issue value, we can't get a sense of priority level. Whether priority 1 means the highest priority or lowest priority. 
-- Users can specify any int value as the priority. It is syntactically correct but incorrect from the scenario point of view. 
-
-&lt;h4&gt;&lt;img align=&quot;center&quot; height=&quot;30&quot; src=&quot;../img/GoodCode.png&quot;&gt; Good Code&lt;/h4&gt;
-
-&lt;h5&gt;Option 1:Unions of singletons&lt;/h5&gt;
-
-&quot;`bal 
-type Priority 1|2|3;
+<pre><code class="language-bal">type Issue record {|
+   string title;
+   int priority;
+|};
+ 
+Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: 1};
+</code></pre>
+<ul>
+<li>No idea what are the possible priority values</li>
+<li>By looking at the issue value, we can't get a sense of priority level. Whether priority 1 means the highest priority or lowest priority. </li>
+<li>Users can specify any int value as the priority. It is syntactically correct but incorrect from the scenario point of view. </li>
+</ul>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-code"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-code"><img align="center" height="30" src="../img/GoodCode.png"> Good Code</a></h4>
+<h5 id="option-1unions-of-singletons"><a class="header" href="#option-1unions-of-singletons">Option 1:Unions of singletons</a></h5>
+<pre><code class="language-bal">type Priority 1|2|3;
  
 type Issue record {|
   string title;
@@ -177,23 +175,25 @@ type Issue record {|
 Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: 1};
 </code></pre>
 <h5 id="option-2-unions-of-constants"><a class="header" href="#option-2-unions-of-constants">Option 2: Unions of constants</a></h5>
-<p>&quot;`bal
-const HIGH = 1;
+<pre><code class="language-bal">const HIGH = 1;
 const MEDIUM = 2;
-const LOW = 3;</p>
-<p>type Priority HIGH|MEDIUM|LOW;</p>
-<p>type Issue record {|
-string title;
-Priority priority;
-|};</p>
-<p>Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: HIGH};</p>
-<pre><code> 
-&lt;h4&gt;Conclusion&lt;/h4&gt;
-
-- Both Options 1 and 2 restrict the users from having arbitrary integer values for priority.
-- But in option 1, by looking at the priority value, we can't understand whether `1` means high or low.
-- So Option 2: Unions of constants is the best option.
+const LOW = 3;
+ 
+type Priority HIGH|MEDIUM|LOW;
+ 
+type Issue record {|
+   string title;
+   Priority priority;
+|};
+ 
+Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: HIGH};
 </code></pre>
+<h4 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h4>
+<ul>
+<li>Both Options 1 and 2 restrict the users from having arbitrary integer values for priority.</li>
+<li>But in option 1, by looking at the priority value, we can't understand whether <code>1</code> means high or low.</li>
+<li>So Option 2: Unions of constants is the best option.</li>
+</ul>
 
                     </main>
                     <script src="https://utteranc.es/client.js" repo="anupama-pathirage/learning_ballerina" issue-term="pathname" theme="github-light"
