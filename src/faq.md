@@ -59,20 +59,23 @@ A static type checker uses either the names or the structure of the types in ord
 **Ballerina has semantic subtyping.**
 
 The syntax - describes which strings of characters comprise a valid program. i.e., the form of the Language. 
-The semantics - describes what syntactically valid programs mean, and what they do. i.e. the meaning of the Language. Semantic subtyping is an approach for defining subtyping relations based on set-theoretic models, rather than syntactic rules.
+
+The semantics - describes what syntactically valid programs mean, and what they do. i.e. the meaning of the Language. 
+
+Semantic subtyping is an approach for defining subtyping relations based on set-theoretic models, rather than syntactic rules.
 
 **Ballerina has network aware type system.** 
 
 Ballerina's type system is specifically focused on aiding the development of networked and distributed applications. It has constructs that seamlessly map to network programming concepts such as services and network resources.
 
-# What is the future of the Language?
+## What is the future of the Language?
 
 The long-term vision for Ballerina includes a number of important features which are not yet implemented but which have a foundation in existing language features.
 - Event streams (unbounded streams of records with timestamps). Be able to both generate them and query them (using various kinds of windows). Related to this is more first-class support for a client subscribing to a stream of events from the server.
 - Network security. Language support to help the user avoid network security problems (we have experimented with a feature similar to tainting in Perl); this can leverage the explicitness of network interactions in Ballerina.
 - Workflow. Support long-running process execution. Be able to suspend a program and later resume it as a result of an incoming network message. This also requires that transactions get better support for compensation.
 
-# Is Ballerina only for WSO2 usage?
+## Is Ballerina only for WSO2 usage?
 
 Ballerina's development is funded by WSO2 and WSO2's ultimate goal is to create a product that is useful to its customers. 
 But Ballerina is not itself the product: both Ballerina the Language and Ballerina the platform are free and open source. 
