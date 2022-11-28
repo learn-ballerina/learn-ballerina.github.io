@@ -4,7 +4,7 @@ Well organized code is very important for the maintainability of the project.
 
 The goal is to best leverage Ballerina features to create clean, effective code. In practical terms, proper structure making clean code whose logic and dependencies are clear as well as how the files and folders are organized in the filesystem.
 
-<h4>The nomenclature</h4>
+<h3>The nomenclature</h3>
 
 **Single .bal file**
 - Smallest unit of compilation in ballerina build system. 
@@ -20,14 +20,14 @@ The goal is to best leverage Ballerina features to create clean, effective code.
 - Module is a collection of Ballerina source files, test files, and resources.  
 - Each module has its own directory, which organizes source files, test files, and resources.
 
-<h4><img align="center" height="30" src="../img/BadCode.png">Some signs of a poorly structured project</h4>
+<h3><img align="center" height="30" src="../img/BadCode.png">Some signs of a poorly structured project</h3>
 
 - Doing everything on a single .bal file without leveraging the Ballerina packages/modules.
 - Having lots of unrelated components in the default module of the package, without breaking them into multiple modules.
 - Lengthy `.bal` files without breaking the logic into meaningful files.
 - Heavy usage of global state or context which is not needed.
 
-<h4><img align="center" height="30" src="../img/GoodCode.png">Best practices to follow</h4>
+<h3><img align="center" height="30" src="../img/GoodCode.png">Best practices to follow</h3>
 
 **Project Structure**
 - Decide on logical seperation of your components and structure the project with modules accordingly. 

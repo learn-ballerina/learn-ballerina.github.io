@@ -8,6 +8,7 @@ This guide is opinionated and not Ballerina's official documentation. You won’
 
 - [Structure your code](structure_your_code.md)
 - [Naming conventions](naming_conventions.md)
+- [Coding Style](coding_style.md)
 
 ## Language Best Practices
 

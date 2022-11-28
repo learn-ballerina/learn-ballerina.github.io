@@ -24,6 +24,7 @@ Let’s begin learning Ballerina.
 - [Project Best Practices](best_practices/project_best_practices.md)
     - [Structure your code](best_practices/structure_your_code.md)
     - [Naming conventions](best_practices/naming_conventions.md)
+    - [Coding Style](best_practices/coding_style.md)
 - [Language Best Practices](best_practices/language_best_practices.md)
     - [Generate string by concatenating values](best_practices/string_concat.md)
     - [Handle unions of string constants](best_practices/string_unions.md)
