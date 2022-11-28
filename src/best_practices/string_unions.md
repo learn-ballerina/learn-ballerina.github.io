@@ -6,7 +6,7 @@ Let's say we have a string variable named `department`, which can only be  `Fina
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
-"`bal
+```bal
 type Employee record {|
    string name;
    string department;
@@ -22,7 +22,7 @@ Employee e = {name: "John Doe", department: "HR"};
 
 <h5>Option 1: Usage of enums </h5>
 
-"`bal
+```bal
 enum Department {
    Finance,
    Engineering,
@@ -42,7 +42,7 @@ Employee e = {name: "John Doe", department: HR};
 
 <h5>Option 2: Unions of singletons</h5>
 
-"`bal
+```bal
 type Department "Finance"|"Engineering"|"HR";
  
 type Employee record {|
@@ -55,7 +55,7 @@ Employee e = {name: "John Doe", department: "HR"};
  
 <h5>Option 3: Unions of constants</h5>
 
-"`bal
+```bal
 const Eng = "Engineering";
 const Fin = "Finance";
 const HR = "HR";

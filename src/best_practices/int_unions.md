@@ -6,7 +6,7 @@ Let's say we have an int variable named `priority` which can only be  `1`, `2`, 
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
-"`bal
+```bal
 type Issue record {|
    string title;
    int priority;
@@ -23,7 +23,7 @@ Issue issue = {title: "Incorrect input parameters", priority: 1};
 
 <h5>Option 1:Unions of singletons</h5>
 
-"`bal 
+```bal 
 type Priority 1|2|3;
  
 type Issue record {|
@@ -36,7 +36,7 @@ Issue issue = {title: "Incorrect input parameters", priority: 1};
  
 <h5>Option 2: Unions of constants</h5>
 
-"`bal
+```bal
 const HIGH = 1;
 const MEDIUM = 2;
 const LOW = 3;
