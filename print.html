@@ -1582,13 +1582,13 @@ UK
 <li><a href="best_practices/coding_style.html">Coding Style</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="structure-your-code"><a class="header" href="#structure-your-code">Structure your code</a></h1>
-<p>Well organized code is very important for the maintainability of the project.</p>
-<p>The goal is to best leverage Ballerina features to create clean, effective code. In practical terms, proper structure making clean code whose logic and dependencies are clear as well as how the files and folders are organized in the filesystem.</p>
+<p>Well-organized code is very important for the maintainability of the project.</p>
+<p>The goal is to best leverage Ballerina features to create clean, effective code. In practical terms, the proper structure makes clean code whose logic and dependencies are clear, as well as how the files and folders are organized in the filesystem.</p>
 <h2 id="the-nomenclature"><a class="header" href="#the-nomenclature">The nomenclature</a></h2>
 <p><strong>Single .bal file</strong></p>
 <ul>
-<li>Smallest unit of compilation in ballerina build system. </li>
-<li>Can be used for simple applications and not recommended for larger applications.</li>
+<li>Smallest unit of compilation in the Ballerina build system. </li>
+<li>Can be used for simple applications and is not recommended for larger applications.</li>
 </ul>
 <p><strong>Package</strong></p>
 <ul>
@@ -1605,36 +1605,36 @@ UK
 <h2 id="img-aligncenter-height30-srcbest_practicesimgbadcodepngsome-signs-of-a-poorly-structured-project"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepngsome-signs-of-a-poorly-structured-project"><img align="center" height="30" src="best_practices/../img/BadCode.png">Some signs of a poorly structured project</a></h2>
 <ul>
 <li>Doing everything on a single .bal file without leveraging the Ballerina packages/modules.</li>
-<li>Having lots of unrelated components in the default module of the package, without breaking them into multiple modules.</li>
+<li>Having lots of unrelated components in the default module of the package without breaking them into multiple modules.</li>
 <li>Lengthy <code>.bal</code> files without breaking the logic into meaningful files.</li>
-<li>Heavy usage of global state or context which is not needed.</li>
+<li>Heavy usage of global state or context, which is not needed.</li>
 </ul>
 <h2 id="img-aligncenter-height30-srcbest_practicesimggoodcodepngbest-practices-to-follow"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepngbest-practices-to-follow"><img align="center" height="30" src="best_practices/../img/GoodCode.png">Best practices to follow</a></h2>
 <p><strong>Project Structure</strong></p>
 <ul>
-<li>Decide on logical seperation of your components and structure the project with modules accordingly. </li>
-<li>Depending on the complexity and usecase break the code into multiple <code>.bal</code> files. </li>
+<li>Decide on the logical separation of your components and structure the project with modules accordingly. </li>
+<li>Depending on the complexity and use case, break the code into multiple <code>.bal</code> files. </li>
 </ul>
 <p><strong>Naming and versioning</strong></p>
 <ul>
-<li>Use proper <code>org</code> name and <code>package</code> name for your project in <code>Ballerina.toml</code> file.</li>
-<li>When choosing an organization name, consider the restrictions for the organization name of a package when publishing to Ballerina Central. Organization name can only contain alphanumeric values with lower case letters and cannot start with numeric values. </li>
+<li>Use a proper <code>org</code> name and <code>package</code> name for your project in <code>Ballerina.toml</code> file.</li>
+<li>When choosing an organization name, consider the restrictions for the organization name of a package when publishing to Ballerina Central. Organization names can only contain alphanumeric values with lowercase letters and cannot start with numeric values. </li>
 <li>Follow <a href="https://semver.org/">Semantic Versioning</a> when version the package.</li>
 </ul>
 <p><strong>Documentation</strong></p>
 <ul>
-<li>Properly <a href="https://ballerina.io/learn/generate-code-documentation/">document</a> public APIs, and fucntions exposed via the package.</li>
-<li>Add up-to-date and meaningful overview to package and modules in <code>Package.md</code> and <code>Module.md</code> files as that will give a great overview for the users of your package. </li>
+<li>Properly <a href="https://ballerina.io/learn/generate-code-documentation/">document</a> public APIs and functions exposed via the package.</li>
+<li>Add up-to-date and meaningful overview of the package and modules in <code>Package.md</code> and <code>Module.md</code> files, as that will give a great overview for the users of your package. </li>
 </ul>
 <p><strong>Configuration Management</strong> </p>
 <ul>
 <li>Configuration values containing passwords or secrets should not be passed with the normal configuration.</li>
 <li>Such sensitive data can be passed to runtime using a different TOML file, and we can prioritize it higher than the normal configuration by prefixing the file path in the BAL_CONFIG_FILES environment variable.</li>
-<li>Add <code>Config.toml</code> file into <code>.gitignore</code> to avoid accidential commits of sensitive configs.</li>
+<li>Add <code>Config.toml</code> file into <code>.gitignore</code> to avoid accidental commits of sensitive configs.</li>
 </ul>
 <p><strong>Dependency Management</strong> </p>
 <ul>
-<li>By default, the compiler always looks up the latest compatible versions of the dependencies in the repositories when building a package. However, if you need to achieve reproducible builds use offline and sticky modes. Using the <code>--offline</code> flag along with the <code>--sticky</code> flag will ensure a predictable build with optimal time for compilation. It will stick to the exact versions locked in the <code>Dependencies.toml</code>.</li>
+<li>By default, the compiler always looks up the latest compatible versions of the dependencies in the repositories when building a package. However, if you need to achieve reproducible builds, use offline and sticky modes. Using the <code>--offline</code> flag along with the <code>--sticky</code> flag will ensure a predictable build with optimal time for compilation. It will stick to the exact versions locked in the <code>Dependencies.toml</code>.</li>
 <li>When it is needed to package JAR files with the archives, maintain Java libraries inside the package. The platform-specific library information needs to be specified in the <code>Ballerina.toml</code> file.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="naming-conventions"><a class="header" href="#naming-conventions">Naming conventions</a></h1>
