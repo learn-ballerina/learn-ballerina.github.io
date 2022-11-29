@@ -69,7 +69,7 @@
         - [Use early returns](best_practices/early_returns.md)
 
 - [Ballerina FAQ](faq.md)
-- Ballerina samples
+- [Ballerina samples](ballerina_samples.md)
     - [Ballerina How To Snippets](how_to.md)
         - [Download a file from URL using Ballerina](how_to_snippets/download_file.md)
         - [Validating email address using Regex in Ballerina](how_to_snippets/validating_email.md)
@@ -79,6 +79,6 @@
         - [Ballerina GraphQL with multiple data sources](usecases/graphql_with_multiple_sources.md)
         - [WebSocket based stock updates with Ballerina](usecases/websocket_for_realtime_stock_updates.md)
         - [Ballerina HTTP Service for book and movie search](usecases/http_service_for_searching_books.md)
-- Other resources
+- [Other resources](other_resources.md)
     - [Articles and blogs](articles.md)
     - [Videos and talks](videos.md)
