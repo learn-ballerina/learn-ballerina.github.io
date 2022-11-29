@@ -34,7 +34,7 @@ function getYear(string name) returns int|error {
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
-```
+```bal
 function getStudentYear(int id) returns int|error {
     string name = check getName(id);
     return getYear(name);
