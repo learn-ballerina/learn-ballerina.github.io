@@ -1,6 +1,6 @@
 # Language Best Practices
 
-List of common Ballerina language best practices to follow. The list is growing. 
+List of common Ballerina language best practices to follow.
 
 - [Represent optionality](represent_optionality.md)
 - [Handle nil values](handle_nil_values.md)

@@ -2,7 +2,7 @@
 
 Welcome to the Ballerina best practices guide!
 
-This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.
+This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!
 
 ## Project Best Practices
 
@@ -17,7 +17,7 @@ How to use Ballerina's features to create clean, effective code organized proper
 
 ## Language Best Practices
 
-List of common Ballerina language best practices to follow. The list is growing. 
+List of common Ballerina language best practices to follow.
 
 - [Represent optionality](represent_optionality.md)
 - [Handle nil values](handle_nil_values.md)
