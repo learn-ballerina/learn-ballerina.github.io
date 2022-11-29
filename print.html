@@ -1923,6 +1923,7 @@ version = &quot;&lt;version&gt;&quot;
 <div style="break-before: page; page-break-before: always;"></div><h1 id="represent-optionality"><a class="header" href="#represent-optionality">Represent optionality</a></h1>
 <p>Use nil (i.e. <code>()</code>) to represent optional values.</p>
 <h3 id="example-1"><a class="header" href="#example-1">Example 1:</a></h3>
+<p>Use <code>nil</code> to indicate the unavailability of value.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-4"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-4"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">type Employee record {
    string middleName = &quot;&quot;; //middleName is not specified
@@ -1934,6 +1935,7 @@ version = &quot;&lt;version&gt;&quot;
 };
 </code></pre>
 <h3 id="example-2"><a class="header" href="#example-2">Example 2:</a></h3>
+<p>Return <code>nil</code> to indicate the unavailability of value.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-5"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-5"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">function getMarks(string name) returns int {
     if marks.hasKey(name) {

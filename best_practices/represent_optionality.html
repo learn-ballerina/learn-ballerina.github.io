@@ -150,6 +150,7 @@
                         <h1 id="represent-optionality"><a class="header" href="#represent-optionality">Represent optionality</a></h1>
 <p>Use nil (i.e. <code>()</code>) to represent optional values.</p>
 <h3 id="example-1"><a class="header" href="#example-1">Example 1:</a></h3>
+<p>Use <code>nil</code> to indicate the unavailability of value.</p>
 <h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-code"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-code"><img align="center" height="30" src="../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">type Employee record {
    string middleName = &quot;&quot;; //middleName is not specified
@@ -161,6 +162,7 @@
 };
 </code></pre>
 <h3 id="example-2"><a class="header" href="#example-2">Example 2:</a></h3>
+<p>Return <code>nil</code> to indicate the unavailability of value.</p>
 <h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-code-1"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-code-1"><img align="center" height="30" src="../img/BadCode.png"> Bad Code</a></h4>
 <pre><code class="language-bal">function getMarks(string name) returns int {
     if marks.hasKey(name) {
