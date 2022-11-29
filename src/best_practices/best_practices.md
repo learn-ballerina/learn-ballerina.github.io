@@ -11,6 +11,9 @@ How to use Ballerina's features to create clean, effective code organized proper
 - [Structure your code](structure_your_code.md)
 - [Naming conventions](naming_conventions.md)
 - [Coding Style](coding_style.md)
+- [Logging](logging.md)
+- [Configuration management](configuration_management.md)
+- [Dependency management](dependency_management.md)
 
 ## Language Best Practices
 
@@ -26,6 +29,7 @@ List of common Ballerina language best practices to follow. The list is growing.
 - [Simplify mapping constructor](mapping_constructors.md)
 - [Use expression-bodied functions](expression_bodied_func.md)
 - [Use precise types](use_precise_types.md)
+- [Error handling](error_handling.md)
 
 ## Code Style Best Practices
 

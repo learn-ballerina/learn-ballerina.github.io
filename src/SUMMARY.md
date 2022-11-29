@@ -48,6 +48,9 @@
         - [Structure your code](best_practices/structure_your_code.md)
         - [Naming conventions](best_practices/naming_conventions.md)
         - [Coding Style](best_practices/coding_style.md)
+        - [Logging](best_practices/logging.md)
+        - [Configuration management](best_practices/configuration_management.md)
+        - [Dependency management](best_practices/dependency_management.md)
     - [Language Best Practices](best_practices/language_best_practices.md)
         - [Generate string by concatenating values](best_practices/string_concat.md)
         - [Handle unions of string constants](best_practices/string_unions.md)
@@ -59,11 +62,12 @@
         - [Simplify mapping constructor](best_practices/mapping_constructors.md)
         - [Use expression-bodied functions](best_practices/expression_bodied_func.md)
         - [Use precise types](best_practices/use_precise_types.md)
+        - [Error handling](best_practices/error_handling.md)
     - [Code Style Best Practices](best_practices/code_style_best_practices.md)
         - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
         - [Using constants](best_practices/constants.md)
         - [Use early returns](best_practices/early_returns.md)
-        
+
 - [Ballerina FAQ](faq.md)
 - [Ballerina How To Snippets](how_to.md)
     - [Download a file from URL using Ballerina](how_to_snippets/download_file.md)

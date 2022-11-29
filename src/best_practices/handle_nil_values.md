@@ -42,7 +42,7 @@ string validName = name ?: "";
 
 ```bal
 function getUsers() returns string[]|error {
-   string[]? users = check httpClient->get("/users");
+   string[]? users = check httpClient->/users;
    if users is string[] {
        return users;
    }
@@ -54,7 +54,7 @@ function getUsers() returns string[]|error {
 
 ```bal
 function getUsers() returns string[]|error {
-    string[]? users = check httpClient->get("/users");
+    string[]? users = check httpClient->/users;
     return users ?: [];
 }
 ```

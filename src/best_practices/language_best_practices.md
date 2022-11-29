@@ -10,3 +10,4 @@
 - [Simplify mapping constructor](mapping_constructors.md)
 - [Use expression bodied functions](expression_bodied_func.md)
 - [Use precise types](use_precise_types.md)
+- [Error handling](error_handling.md)

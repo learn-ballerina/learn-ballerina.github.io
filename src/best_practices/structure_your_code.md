@@ -41,13 +41,3 @@ The goal is to best leverage Ballerina features to create clean, effective code.
 **Documentation**
 - Properly [document](https://ballerina.io/learn/generate-code-documentation/) public APIs and functions exposed via the package.
 - Add up-to-date and meaningful overview of the package and modules in `Package.md` and `Module.md` files, as that will give a great overview for the users of your package. 
-
-**Configuration Management** 
-- Configuration values containing passwords or secrets should not be passed with the normal configuration.
-- Such sensitive data can be passed to runtime using a different TOML file, and we can prioritize it higher than the normal configuration by prefixing the file path in the BAL_CONFIG_FILES environment variable.
-- Add `Config.toml` file into `.gitignore` to avoid accidental commits of sensitive configs.
-
-**Dependency Management** 
-
-- By default, the compiler always looks up the latest compatible versions of the dependencies in the repositories when building a package. However, if you need to achieve reproducible builds, use offline and sticky modes. Using the `--offline` flag along with the `--sticky` flag will ensure a predictable build with optimal time for compilation. It will stick to the exact versions locked in the `Dependencies.toml`.
-- When it is needed to package JAR files with the archives, maintain Java libraries inside the package. The platform-specific library information needs to be specified in the `Ballerina.toml` file.   
