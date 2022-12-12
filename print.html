@@ -2886,9 +2886,12 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 <li><a href="resources/index.html#grpc">gRPC</a></li>
 <li><a href="resources/index.html#database">Database</a></li>
 <li><a href="resources/index.html#kafka">Kafka</a></li>
+<li><a href="resources/index.html#time">Time</a></li>
 <li><a href="resources/index.html#cache">Cache</a></li>
 <li><a href="resources/index.html#ftp">FTP</a></li>
 <li><a href="resources/index.html#soap">SOAP</a></li>
+<li><a href="resources/index.html#encodingdecoding">Encoding/Decoding</a></li>
+<li><a href="resources/index.html#csv-io">CSV I/O</a></li>
 </ul>
 </li>
 <li><a href="resources/index.html#security">Security</a>
@@ -3004,6 +3007,7 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 </tbody></table>
 <h4 id="language-integrated-queries"><a class="header" href="#language-integrated-queries">Language integrated queries</a></h4>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72806142/efficient-joins-with-ballerina-query-expressions">Efficient Joins with Ballerina Query Expressions</a></td><td><a href="https://stackoverflow.com/users/6570185/lasinicl">Lasini Liyanage</a></td><td>2022-06-29</td></tr>
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72666852/query-expressions-in-ballerina">Query Expressions in Ballerina</a></td><td><a href="https://stackoverflow.com/users/6570185/lasinicl">Lasini Liyanage</a></td><td>2022-06-22</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/language-integrated-queries-in-ballerina">Language Integrated Queries In Ballerina</a></td><td><a href="https://dzone.com/users/4448705/mohanadarshan.html">Mohanadarshan Vivekanandalingam</a></td><td>2020-10-16</td></tr>
 </tbody></table>
@@ -3125,24 +3129,26 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 </tbody></table>
 <h3 id="database"><a class="header" href="#database">Database</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="hhttps://stackoverflow.com/collectives/wso2/articles/74602985/avoiding-sql-injection-in-ballerina">Avoiding SQL Injection in Ballerina</a></td><td><a href="https://stackoverflow.com/users/4027644/niveathika">Niveathika</a></td><td>2022-12-08</td></tr>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73795707/interacting-with-a-rdbms-using-ballerina">Interacting with a RDBMS using Ballerina</a></td><td><a href="https://stackoverflow.com/users/2782646/extremum">Extremum</a></td><td>2022-09-21</td></tr>
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72986543/create-a-data-api-with-ballerina-and-h2">Create a Data API with Ballerina and H2</a></td><td><a href="https://stackoverflow.com/users/14645116/dakshitha-ratnayake">Dakshitha Ratnayake</a></td><td>2022-07-17</td></tr>
 <tr><td>Blog</td><td><a href="https://mshazninazeer.medium.com/interacting-with-a-rdbms-using-ballerina-63edd89f79f6">Interacting with a RDBMS using Ballerina</a></td><td><a href="https://medium.com/@mshazninazeer">shazni nazeer</a></td><td>2022-09-21</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/mycodeideas/sql-injection-introduction-with-ballerina-30b75abad8fe">SQL Injection — Introduction with Ballerina</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2020-08-03</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/interact-with-an-oracle-database-with-ballerina-ed84052713e8">Interact with an Oracle database with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2019-03-30</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/containerized-ballerina-service-with-a-mongodb-data-backend-c5c0a867720e">Containerized Ballerina service with a MongoDB data backend</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-11-25</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/lets-connect-to-mongodb-atlas-with-ballerina-8fd46f168fb6">How to connect to MongoDB Atlas with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-11-02</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-database-connection-pool-exhausted-738e5cfba4be">[Ballerina] Database connection pool exhausted?</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-10-27</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/interact-with-an-oracle-database-with-ballerina-ed84052713e8">Interact with an Oracle database with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2019-03-30</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/containerized-ballerina-service-with-a-mongodb-data-backend-c5c0a867720e">Containerized Ballerina service with a MongoDB data backend</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-11-25</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/lets-connect-to-mongodb-atlas-with-ballerina-8fd46f168fb6">How to connect to MongoDB Atlas with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-11-02</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-database-connection-pool-exhausted-738e5cfba4be">[Ballerina] Database connection pool exhausted?</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-10-27</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/data-services-with-ballerina-70ba17bd5c80">Data Access for Microservices</a></td><td><a href="https://medium.com/@lafernando">Anjana Fernando</a></td><td>2018-08-21</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/xa-transaction-example-with-ballerina-df9221bcf664">XA transaction example with Ballerina — Oracle and MySQL as resource managers</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-08-13</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/@Manuri/using-a-ballerina-table-as-a-proxy-to-an-actual-database-table-48024792a434">Using a Ballerina table as a proxy to an actual database table</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-08-12</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/interact-with-a-postgresql-database-with-ballerina-301fd5bc2c01">Interact with a Postgresql database with Ballerina!</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-08-12</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/oracle-refcursor-example-with-ballerina-1448cc3aef11">Oracle RefCursor Example with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-08-11</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/oracle-pl-sql-example-with-ballerina-b978eb8a768">Oracle PL/SQL example with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-08-09</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/example-of-select-iterable-operation-on-ballerina-tables-91f46d408597">“select” iterable operation on Ballerina tables</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-08-13</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/xa-transaction-example-with-ballerina-df9221bcf664">XA transaction example with Ballerina — Oracle and MySQL as resource managers</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-08-13</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/@Manuri/using-a-ballerina-table-as-a-proxy-to-an-actual-database-table-48024792a434">Using a Ballerina table as a proxy to an actual database table</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-08-12</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/interact-with-a-postgresql-database-with-ballerina-301fd5bc2c01">Interact with a Postgresql database with Ballerina!</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-08-12</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/oracle-refcursor-example-with-ballerina-1448cc3aef11">Oracle RefCursor Example with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-08-11</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/oracle-pl-sql-example-with-ballerina-b978eb8a768">Oracle PL/SQL example with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-08-09</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/example-of-select-iterable-operation-on-ballerina-tables-91f46d408597">“select” iterable operation on Ballerina tables</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-08-13</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/redis-caching-example-with-ballerina-16f875f31faf">Redis Caching example with Ballerina !</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2018-07-21</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/connect-to-your-data-with-ballerina-902b2bad872d">Connect to your data with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-07-08</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/connect-to-your-data-with-ballerina-902b2bad872d">Connect to your data with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-07-08</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/insert-batch-of-data-using-ballerina-4c1a7d72c35e">Insert batch of data to DB using Ballerina</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2018-06-09</td></tr>
-<tr><td>Blog</td><td><a href="https://medium.com/@Manuri/talking-to-a-database-with-ballerina-f551e0a3fe77">Talking to a database with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Amaya Perera</a></td><td>2018-04-30</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/@Manuri/talking-to-a-database-with-ballerina-f551e0a3fe77">Talking to a database with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-04-30</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-sql-connector-performing-db-operations-8e555e3688be">Ballerina JDBC Client — Performing DB Operations</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2017-12-02</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-sql-connector-connecting-to-db-ee31a81c8df6">Ballerina JDBC Client— Connecting to DB</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2017-11-26</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/data-integration-with-ballerina-c5bcf6de49b3">Data Integration with Ballerina</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2017-11-25</td></tr>
@@ -3152,6 +3158,10 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-kafka-serialization-with-avro-83126a7df9a1">Ballerina Kafka Serialization with Avro</a></td><td><a href="https://medium.com/@thisaru">Thisaru Guruge</a></td><td>2020-05-05</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/building-a-simple-review-filtering-system-using-ballerina-kafka-42cee518ecef">Building a Simple Review Filtering System Using Ballerina Kafka</a></td><td><a href="https://medium.com/@thisaru">Thisaru Guruge</a></td><td>2019-02-12</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/get-along-with-ballerina-kafka-754c28de685c">Getting Started with Ballerina Kafka</a></td><td><a href="https://medium.com/@thisaru">Thisaru Guruge</a></td><td>2019-02-05</td></tr>
+</tbody></table>
+<h3 id="time"><a class="header" href="#time">Time</a></h3>
+<table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73277351/a-guide-for-date-time-conversion-in-ballerina-language">A guide for Date/Time conversion in Ballerina Language</a></td><td><a href="https://stackoverflow.com/users/6795551/sahanhe">sahanhe</a></td><td>2022-08-08</td></tr>
 </tbody></table>
 <h3 id="cache"><a class="header" href="#cache">Cache</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
@@ -3164,6 +3174,14 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 <h3 id="soap"><a class="header" href="#soap">SOAP</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>Blog</td><td><a href="https://bhashineen.medium.com/ballerina-soap-connector-3974b6efaf2b">Ballerina SOAP Connector</a></td><td><a href="https://medium.com/@bhashineen">Bhashinee Nirmali</a></td><td>2019-04-17</td></tr>
+</tbody></table>
+<h3 id="encodingdecoding"><a class="header" href="#encodingdecoding">Encoding/Decoding</a></h3>
+<table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73147933/different-types-of-encoding-decoding-with-ballerina">Different Types of Encoding/Decoding with Ballerina</a></td><td><a href="https://stackoverflow.com/users/4314651/ldclakmal">Chanaka Lakmal</a></td><td>2022-07-28</td></tr>
+</tbody></table>
+<h3 id="csv-io"><a class="header" href="#csv-io">CSV I/O</a></h3>
+<table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73574768/upload-csv-files-to-ballerina-service">Upload CSV files to Ballerina Service</a></td><td><a href="https://stackoverflow.com/users/1308004/anupama-pathirage">Anupama Pathirage</a></td><td>2022-09-01</td></tr>
 </tbody></table>
 <h2 id="security"><a class="header" href="#security">Security</a></h2>
 <h3 id="ballerina-security-overview"><a class="header" href="#ballerina-security-overview">Ballerina security overview</a></h3>
@@ -3201,6 +3219,8 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 </tbody></table>
 <h3 id="openid"><a class="header" href="#openid">OpenID</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73748619/secure-a-ballerina-rest-api-with-openid-connect-using-asgardeo-part-2">Secure a Ballerina REST API with OpenID Connect using Asgardeo-Part 2</a></td><td><a href="https://stackoverflow.com/users/14645116/dakshitha-ratnayake">Dakshitha Ratnayake</a></td><td>2022-09-16</td></tr>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73300996/secure-a-ballerina-rest-api-with-openid-connect-using-asgardeo-part-1">Secure a Ballerina REST API with OpenID Connect using Asgardeo-Part 1</a></td><td><a href="https://stackoverflow.com/users/14645116/dakshitha-ratnayake">Dakshitha Ratnayake</a></td><td>2022-08-10</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/building-a-secure-rest-api-with-openid-connect">Building a Secure REST API with OpenID Connect</a></td><td><a href="https://dzone.com/users/715279/lafernando.html">Anjana Fernando</a></td><td>2020-07-14</td></tr>
 </tbody></table>
 <h3 id="taint-checking-deprecated"><a class="header" href="#taint-checking-deprecated">Taint Checking (Deprecated)</a></h3>
@@ -3229,6 +3249,7 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 </tbody></table>
 <h3 id="azure-functions"><a class="header" href="#azure-functions">Azure functions</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/74323311/building-azure-functions-project-with-ballerina">Building Azure Functions Project With Ballerina</a></td><td><a href="https://stackoverflow.com/users/7980815/anjana-supun">Anjana Supun</a></td><td>2022-11-04</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/practical-serverless-a-scalable-ocr-solution-in-10-minutes-af9f88c6b008">Practical Serverless: A Scalable OCR Solution in 10 Minutes</a></td><td><a href="https://medium.com/@lafernando">Anjana Fernando</a></td><td>2020-08-03</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/introduction-to-azure-functions-in-ballerina-ffc774eae034">Introduction to Azure Functions in Ballerina</a></td><td><a href="https://medium.com/@lafernando">Anjana Fernando</a></td><td>2020-07-23</td></tr>
 <tr><td>Video</td><td><a href="https://youtu.be/mCJ_o-Sdd9U">Ballerina Azure Functions Walk-through</a></td><td><a href="https://www.youtube.com/@lafernando">Anjana Fernando</a></td><td>2020-07-23</td></tr>
@@ -3367,6 +3388,10 @@ curl -X POST -H &quot;Content-type: application/json&quot; -d '{ &quot;query&quo
 </tbody></table>
 <h2 id="usecases-2"><a class="header" href="#usecases-2">Usecases</a></h2>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/74021013/document-your-github-repo-changes-to-google-sheets-using-ballerina">Document Your GitHub Repo Changes to Google Sheets Using Ballerina</a></td><td><a href="https://stackoverflow.com/users/7866464/tharushi-jayasekara">Tharushi J</a></td><td>2022-10-10</td></tr>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/74173754/server-for-moving-object-monitoring-system-in-ballerina-part-3">Server for moving object monitoring system in Ballerina - Part 3</a></td><td><a href="https://stackoverflow.com/users/10721779/kavindu-gimhan-zoysa">Kavindu Zoysa</a></td><td>2022-10-23</td></tr>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73808623/server-for-moving-object-monitoring-system-in-ballerina-part-2">Server for moving object monitoring system in Ballerina - Part 2</a></td><td><a href="https://stackoverflow.com/users/10721779/kavindu-gimhan-zoysa">Kavindu Zoysa</a></td><td>2022-09-22</td></tr>
+<tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73564233/server-for-moving-object-monitoring-system-in-ballerina-part-1">Server for moving object monitoring system in Ballerina - Part 1</a></td><td><a href="https://stackoverflow.com/users/10721779/kavindu-gimhan-zoysa">Kavindu Zoysa</a></td><td>2022-09-01</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/better-programming/get-daily-exchange-rates-via-sms-using-ballerina-6cfb577633c9">Get Daily Exchange Rates via SMS Using Ballerina</a></td><td><a href="https://medium.com/@malintha1996">Malintha Ranasinghe</a></td><td>2022-08-25</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/overview-of-manipulating-data-in-ballerina-with-different-apis-paypal-api-and-randomuser-me-720828919fab">Overview of manipulating data in Ballerina with different APIs (PayPal API and randomuser.me)</a></td><td><a href="https://medium.com/@dulajdilshan">Dulaj Dilshan</a></td><td>2022-08-16</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/@aquib_49146/extract-data-from-a-mail-and-upload-it-to-a-google-spreadsheet-using-ballerina-integrator-82e6e23ea2fb">Extract data from a mail and upload it to a Google Spreadsheet using Ballerina Integrator</a></td><td><a href="https://medium.com/@aquib_49146">Aquib Zulfikar</a></td><td>2020-01-02</td></tr>
