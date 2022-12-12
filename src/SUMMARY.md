@@ -80,5 +80,3 @@
         - [WebSocket based stock updates with Ballerina](usecases/websocket_for_realtime_stock_updates.md)
         - [Ballerina HTTP Service for book and movie search](usecases/http_service_for_searching_books.md)
 - [Ballerina resources](resources/README.md)
-    <!-- - [Articles and blogs](articles.md)
-    - [Videos and talks](videos.md) -->
