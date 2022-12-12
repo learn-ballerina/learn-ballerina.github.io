@@ -165,7 +165,7 @@
 <li><a href="#functions">Functions</a></li>
 <li><a href="#type-conversions">Type conversions</a></li>
 <li><a href="#language-integrated-queries">Language integrated queries</a></li>
-<li><a href="#listners">Listners</a></li>
+<li><a href="#services-and-listners">Services and Listners</a></li>
 <li><a href="#other-data-types">Other Data types</a></li>
 <li><a href="#statements">Statements</a></li>
 </ul>
@@ -233,6 +233,7 @@
 <li><a href="#semver-validator">SemVer validator</a></li>
 <li><a href="#strand-dump-tool">Strand dump tool</a></li>
 <li><a href="#ballerina-shell">Ballerina shell</a></li>
+<li><a href="#debugger">Debugger</a></li>
 <li><a href="#homebrew">Homebrew</a></li>
 </ul>
 </li>
@@ -253,16 +254,24 @@
 <li><a href="#cicd">CI/CD</a></li>
 <li><a href="#comparisons-with-other-languages">Comparisons with other languages</a></li>
 <li><a href="#usecases">Usecases</a></li>
+<li><a href="#user-stories">User stories</a></li>
 <li><a href="#integration-and-design-patterns">Integration and design Patterns</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="general"><a class="header" href="#general">General</a></h2>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Podcast</td><td><a href="https://thenewstack.io/simplifying-cloud-native-application-development-with-ballerina/">Simplifying Cloud Native Application Development with Ballerina</a></td><td><a href="https://www.linkedin.com/in/enewcomer/">Eric Newcomer</a></td><td>2022-07-01</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/seven-reasons-to-try-out-ballerina-f3934c4c53f0">Seven reasons to try out Ballerina</a></td><td><a href="https://medium.com/@mshazninazeer">shazni nazeer</a></td><td>2022-06-28</td></tr>
+<tr><td>InfoQ</td><td><a href="https://blog.jclark.com/2022/05/why-ballerina-is-language.html">Why Ballerina is a language</a></td><td><a href="https://blog.jclark.com/">James Clark</a></td><td>2022-05-04</td></tr>
+<tr><td>TNS</td><td><a href="https://thenewstack.io/why-should-you-program-with-ballerina/">Why Should You Program with Ballerina?</a></td><td><a href="https://thenewstack.io/author/vishva-ahangama/">Vishva Ahangama</a></td><td>2022-04-21</td></tr>
+<tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/ballerina-fullstack-rest-api">Ballerina for Full-Stack Developers: a Guide to Creating Backend APIs</a></td><td><a href="https://www.infoq.com/profile/Imesha-Sudasingha/">Imesha Sudasingha</a></td><td>2022-03-14</td></tr>
 <tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/ballerina-data-oriented-language/">Ballerina: a Data-Oriented Programming Language</a></td><td><a href="https://www.infoq.com/profile/Yehonathan-Sharvit/">Yehonathan Sharvit</a></td><td>2022-05-10</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=9ZqDZ3TgnDU&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=8">Highlights of Ballerina Swan Lake Release</a></td><td></td><td>2021-06-29</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-integration-programming-language-5d8e1b52e582">Ballerina: Integration Programming Language</a></td><td><a href="https://medium.com/@ayesh9303">Ayesh Almeida</a></td><td>2021-05-08</td></tr>
 <tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/ballerina-cloud-native-programming/">Ballerina Swan Lake: 10 Compelling Language Characteristics for Cloud Native Programming</a></td><td><a href="https://www.infoq.com/profile/Dakshitha-Ratnayake/">Dakshitha Ratnayake</a></td><td>2021-09-15</td></tr>
+<tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/cloud-native-programming-ballerina">Rethinking Programming: Language and Platform for Cloud-Era Application Developers</a></td><td><a href="https://www.infoq.com/profile/Lakmal-Warusawithana/">Lakmal W</a></td><td>2022-03-15</td></tr>
+<tr><td>InfoQ</td><td><a href="https://www.infoq.com/podcasts/james-clark-ballerina-language-network-data-concurrency/">James Clark on How Ballerina Handles Network Interaction, Data, and Concurrency</a></td><td><a href="https://www.infoq.com/profile/James-Clark/">James Clark</a></td><td>2021-11-29</td></tr>
 <tr><td>InfoQ</td><td><a href="https://www.infoq.com/news/2020/01/wso2-releases-ballerina-1-1/">Ballerina - An Open Source JVM Language and Platform for Cloud-Era Application Programmers</a></td><td><a href="https://www.infoq.com/profile/Michael-Redlich/">Michael Redlich</a></td><td>2020-01-29</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-part-1-concept-ec889b064de5">Ballerina — Part 1: Concept</a></td><td><a href="https://medium.com/@jclark_th">James Clark</a></td><td>2019-09-12</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-programming-language-1821e55baa85">Ballerina — Part 0: Context</a></td><td><a href="https://medium.com/@jclark_th">James Clark</a></td><td>2019-09-11</td></tr>
@@ -283,6 +292,7 @@
 </tbody></table>
 <h4 id="json"><a class="header" href="#json">JSON</a></h4>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Blog</td><td><a href="https://betterprogramming.pub/intuitive-rest-apis-and-json-handling-with-ballerina-a-detailed-walkthrough-c5c7c48aa0de">Intuitive REST APIs and JSON Handling With Ballerina Programming Language</a></td><td><a href="https://duckster.medium.com/">Dakshitha Ratnayake</a></td><td>2022-05-05</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-working-with-json-part-i-json-to-record-conversion-1e810b0a30f0">[Ballerina] Working with JSON — JSON to record conversion</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2021-01-27</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-converting-csv-to-json-22954918731">[Ballerina] Converting CSV to JSON</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2019-09-25</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerinas-json-type-and-lax-static-typing-3b952f6add01">Ballerina’s JSON type and lax static typing</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2019-09-13</td></tr>
@@ -314,13 +324,16 @@
 </tbody></table>
 <h4 id="language-integrated-queries"><a class="header" href="#language-integrated-queries">Language integrated queries</a></h4>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/ballerina-data-functional-programming/">Data Manipulation with Functional Programming and Queries in Ballerina</a></td><td><a href="https://www.infoq.com/profile/Yehonathan-Sharvit/">Yehonathan Sharvit</a></td><td>2022-08-11</td></tr>
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72806142/efficient-joins-with-ballerina-query-expressions">Efficient Joins with Ballerina Query Expressions</a></td><td><a href="https://stackoverflow.com/users/6570185/lasinicl">Lasini Liyanage</a></td><td>2022-06-29</td></tr>
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72666852/query-expressions-in-ballerina">Query Expressions in Ballerina</a></td><td><a href="https://stackoverflow.com/users/6570185/lasinicl">Lasini Liyanage</a></td><td>2022-06-22</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=81XCTewSo8I&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=5">Using Language Integrated Queries</a></td><td></td><td>2021-09-28</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/language-integrated-queries-in-ballerina">Language Integrated Queries In Ballerina</a></td><td><a href="https://dzone.com/users/4448705/mohanadarshan.html">Mohanadarshan Vivekanandalingam</a></td><td>2020-10-16</td></tr>
 </tbody></table>
-<h4 id="listners"><a class="header" href="#listners">Listners</a></h4>
+<h4 id="services-and-listners"><a class="header" href="#services-and-listners">Services and Listners</a></h4>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>SO</td><td>[<a href="https://stackoverflow.com/collectives/wso2/articles/73277198/attaching-multiple-services-to-the-same-listener-in-ballerina">Attaching multiple services to the same listener in Ballerina</a></td><td><a href="https://stackoverflow.com/users/8887779/maryamzi">Maryam Ziyad</a></td><td>2022-08-09</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=hKBjatIFxyw&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=10">Services and Network Communication</a></td><td></td><td>2021-02-03</td></tr>
 </tbody></table>
 <h4 id="other-data-types"><a class="header" href="#other-data-types">Other Data types</a></h4>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
@@ -361,6 +374,7 @@
 </tbody></table>
 <h3 id="java-interoperability"><a class="header" href="#java-interoperability">Java interoperability</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=4EINEJAtAg4&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=12">Java Interoperability in Ballerina</a></td><td></td><td>2020-12-08</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/@lanka.vitharana/ballerina-interop-and-all-you-need-to-know-81eef0931120">Ballerina Interop and all you need to know</a></td><td><a href="https://medium.com/@lanka.vitharana">Rajith Vitharana</a></td><td>2019-12-10</td></tr>
 </tbody></table>
 <h3 id="transactions"><a class="header" href="#transactions">Transactions</a></h3>
@@ -379,6 +393,7 @@
 <h2 id="standard-and-extended-library"><a class="header" href="#standard-and-extended-library">Standard and Extended library</a></h2>
 <h3 id="http"><a class="header" href="#http">HTTP</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=l5KWZwHZdSA&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=7">Changes in the HTTP Package in Ballerina Swan Lake</a></td><td></td><td>2021-07-27</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/single-liner-payload-read-85a16e3265fc">Single Liner Payload Read…</a></td><td><a href="https://medium.com/@chamilelle">Chamil Elladeniya</a></td><td>2021-06-06</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/http-deep-dive-with-ballerina-services-7a6e69af2fbb">HTTP Deep-Dive with Ballerina: Services</a></td><td><a href="https://medium.com/@lafernando">Anjana Fernando</a></td><td>2021-01-28</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/http-deep-dive-with-ballerina-client-communication">HTTP Deep-Dive With Ballerina: Client Communication</a></td><td><a href="https://dzone.com/users/715279/lafernando.html">Anjana Fernando</a></td><td>2020-12-17</td></tr>
@@ -395,6 +410,8 @@
 <h3 id="graphql"><a class="header" href="#graphql">GraphQL</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/graphql-subscriptions-with-ballerina-a-step-by-step-guide-5a75e3a12813">GraphQL Subscriptions with Ballerina: A Step-By-Step Guide</a></td><td><a href="https://medium.com/@nuvidu-18">Nuvindu Dias</a></td><td>2022-09-30</td></tr>
+<tr><td>Blog</td><td><a href="https://www.infoq.com/articles/graphql-ballerina/">Using GraphQL and Ballerina with Multiple Data Sources</a></td><td><a href="https://www.infoq.com/profile/Anupama-Pathirage/">Anupama Pathirage</a></td><td>2022-07-01</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=clmGc2oZpYE&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=6">GraphQL and Ballerina: A Match Made in Heaven</a></td><td></td><td>2021-08-31</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/rest-is-history-lets-do-graphql-with-ballerina-dce7510b61e8">REST is History, Let’s Do GraphQL (with Ballerina)</a></td><td><a href="https://medium.com/@thisaru">Thisaru Guruge</a></td><td>2021-06-29</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/graphql-made-easy-with-ballerina-5ca04d9536d0">Introduction to GraphQL with Ballerina</a></td><td><a href="https://medium.com/@lafernando">Anjana Fernando</a></td><td>2021-02-09</td></tr>
 </tbody></table>
@@ -403,6 +420,7 @@
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/understanding-ballerina-websocket-service-4babb128f9a5">Ballerina WebSocket Service — The Anatomy</a></td><td><a href="https://medium.com/@bhashineen">Bhashinee Nirmali</a></td><td>2022-05-24</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/real-time-stock-data-updates-with-websockets-using-ballerina-7ecb2d4dcfa9">Real-Time Stock Data Updates with WebSockets using Ballerina</a></td><td><a href="https://medium.com/@bhashineen">Bhashinee Nirmali</a></td><td>2021-11-26</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/go-real-time-with-ballerina-websockets-58c40ac11d6">Go Real-Time with Ballerina WebSockets</a></td><td><a href="https://medium.com/@bhashineen">Bhashinee Nirmali</a></td><td>2021-07-28</td></tr>
+<tr><td>TNS</td><td><a href="https://thenewstack.io/an-introduction-to-websockets-with-ballerina/">An Introduction to WebSockets with Ballerina</a></td><td><a href="https://thenewstack.io/author/anjanafernando/do">Anjana Fernando</a></td><td>2020-12-18</td></tr>
 <tr><td>Video</td><td><a href="https://youtu.be/UT51LC-bKgs">How to use WebSocket with Ballerina</a></td><td><a href="https://www.youtube.com/@lafernando">Anjana Fernando</a></td><td>2020-11-05</td></tr>
 </tbody></table>
 <h3 id="pubsub"><a class="header" href="#pubsub">Pub/Sub</a></h3>
@@ -424,6 +442,7 @@
 </tbody></table>
 <h3 id="websub-and-webhooks"><a class="header" href="#websub-and-webhooks">Websub and webhooks</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=ga_cyzIXW38&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=3">Building Real-time Systems with WebSub</a></td><td></td><td>2021-11-30</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/event-driven-apis-with-webhook-and-websub-83b0834f08f3">Event-Driven APIs With Webhook and WebSub</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2021-11-08</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-registering-a-github-webhook-1bd7a75cb32d">[Ballerina] Registering a GitHub Webhook</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2018-08-12</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-event-notification-via-webhooks-bc7cc63f4b6e">[Ballerina] Event Notification via Webhooks</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2018-07-21</td></tr>
@@ -431,6 +450,8 @@
 <h3 id="grpc"><a class="header" href="#grpc">gRPC</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/introduction-to-grpc-on-ballerina-7819d98c4e2b">Introduction to gRPC on Ballerina</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2021-08-28</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=ADZPZtXK5e8&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=15">gRPC in Ballerina</a></td><td></td><td>2020-09-01</td></tr>
+<tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/microservices-grpc-ballerina-go">Building Effective Microservices with gRPC, Ballerina, and Go</a></td><td><a href="https://www.infoq.com/profile/Lakmal-Warusawithana/">Lakmal W</a></td><td>2020-08-25</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/grpc-basics-why-when-and-how">gRPC Basics: Why, When, and How?</a></td><td><a href="https://dzone.com/users/715279/lafernando.html">Anjana Fernando</a></td><td>2020-07-24</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-grpc-9ee601c0968d">Ballerina + gRPC</a></td><td><a href="https://medium.com/@buddhikothalawala">Buddhi Kothalawala</a></td><td>2020-04-07</td></tr>
 </tbody></table>
@@ -440,6 +461,8 @@
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73795707/interacting-with-a-rdbms-using-ballerina">Interacting with a RDBMS using Ballerina</a></td><td><a href="https://stackoverflow.com/users/2782646/extremum">Extremum</a></td><td>2022-09-21</td></tr>
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72986543/create-a-data-api-with-ballerina-and-h2">Create a Data API with Ballerina and H2</a></td><td><a href="https://stackoverflow.com/users/14645116/dakshitha-ratnayake">Dakshitha Ratnayake</a></td><td>2022-07-17</td></tr>
 <tr><td>Blog</td><td><a href="https://mshazninazeer.medium.com/interacting-with-a-rdbms-using-ballerina-63edd89f79f6">Interacting with a RDBMS using Ballerina</a></td><td><a href="https://medium.com/@mshazninazeer">shazni nazeer</a></td><td>2022-09-21</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/@kaneeldias/connecting-to-and-using-googles-cloud-sql-with-ballerina-13e2d6594686">Connecting to and using Google’s Cloud SQL with Ballerina</a></td><td><a href="https://medium.com/@kaneeldias">Kaneel Dias</a></td><td>2021-10-21</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=lLqvaLtC3m0&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=13">Data Access in Ballerina</a></td><td></td><td>2020-11-10</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/mycodeideas/sql-injection-introduction-with-ballerina-30b75abad8fe">SQL Injection — Introduction with Ballerina</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2020-08-03</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/interact-with-an-oracle-database-with-ballerina-ed84052713e8">Interact with an Oracle database with Ballerina</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2019-03-30</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/containerized-ballerina-service-with-a-mongodb-data-backend-c5c0a867720e">Containerized Ballerina service with a MongoDB data backend</a></td><td><a href="https://medium.com/@Manuri">Manuri Perera</a></td><td>2018-11-25</td></tr>
@@ -538,6 +561,7 @@
 <h3 id="kubernetesc2c"><a class="header" href="#kubernetesc2c">Kubernetes/C2C</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/deploying-ballerina-code-to-cloud">Deploying Ballerina Code on the Cloud</a></td><td><a href="https://dzone.com/users/4637886/anuruddhal.html">Anuruddha Liyanarachchi</a></td><td>2021-11-18</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=36U5RoTdYhc&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=11">Code to Cloud with Ballerina</a></td><td></td><td>2021-01-26</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/microservices-in-practice-deployment">Microservices in Practice: Deployment Shouldn't Be an Afterthought</a></td><td><a href="https://dzone.com/users/1141403/lakwarus.html">Lakmal Warusawithana</a></td><td>2020-07-06</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/how-ballerina-makes-deploying-to-kubernetes-easier">How Ballerina Makes Deploying to Kubernetes Easier for Developers</a></td><td><a href="https://dzone.com/users/1141403/lakwarus.html">Lakmal Warusawithana</a></td><td>2020-02-13</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/yaml-less-kubernetes">Generate Kubernetes YAML Right From Your App Code</a></td><td><a href="https://dzone.com/users/295907/DSotnikov.html">Dmitry Sotnikov</a></td><td>2018-07-11</td></tr>
@@ -549,8 +573,10 @@
 </tbody></table>
 <h3 id="aws-lambda"><a class="header" href="#aws-lambda">AWS Lambda</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=12gosblVlhY&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=14">Serverless in Ballerina</a></td><td></td><td>2020-10-13</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/practical-serverless-integrating-amazon-s3-and-rekognition-with-ballerina-f338cdf6015c">Practical Serverless: Integrating Amazon S3 and Rekognition with Ballerina</a></td><td><a href="https://medium.com/@lafernando">Anjana Fernando</a></td><td>2020-08-31</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/test-your-ballerina-function-written-for-aws-lambda-4dceff6c461a">Test your Ballerina Function written for AWS Lambda</a></td><td><a href="https://medium.com/@hemika.kodikara">Hemika Kodikara</a></td><td>2020-02-20</td></tr>
+<tr><td>TNS</td><td><a href="https://thenewstack.io/a-step-by-step-guide-for-aws-lambda-deployments-with-ballerina/">A Step-by-Step Guide For AWS Lambda Deployments with Ballerina</a></td><td><a href="https://thenewstack.io/author/anjanafernando/do">Anjana Fernando</a></td><td>2019-05-28</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/ballerina-services-in-serverless-world">Running a Ballerina Service as a Serverless Function in AWS Lambda</a></td><td><a href="https://dzone.com/users/887623/chrishantha.html">Isuru Perera</a></td><td>2018-01-19</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/implementing-serverless-functions-with-ballerina-o">Implementing Serverless Functions With Ballerina on AWS Lambda</a></td><td><a href="https://dzone.com/users/238910/imesh.html">Imesh Gunaratne</a></td><td>2017-06-27</td></tr>
 </tbody></table>
@@ -580,6 +606,7 @@
 <h3 id="openapi"><a class="header" href="#openapi">OpenAPI</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/72670105/generating-proper-openapi-documentation-for-ballerina-resource-apis">Generating proper OpenAPI Documentation for Ballerina Resource APIs</a></td><td><a href="https://stackoverflow.com/users/10716900/lnash">Sumudu Nissanka</a></td><td>2022-06-18</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=cJwstQ8yynk&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=2">Ballerina OpenAPI Support </a></td><td></td><td>2022-01-25</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/introduction-to-openapi-with-ballerina-5b3212bd71a8">Introduction to OpenAPI with Ballerina</a></td><td><a href="https://medium.com/@anupama.pathirage">Anupama Pathirage</a></td><td>2021-09-04</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/make-your-own-ballerina-client-connector-using-ballerina-openapi-tool-3b375d89882">Make your Own Ballerina Client Connector using the Ballerina OpenAPI Tool</a></td><td><a href="https://medium.com/@lnash94">Sumudu Nissanka</a></td><td>2021-07-23</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/how-ballerina-addresses-your-code-first-and-design-first-api-approaches-3b9b0086fda9">How Ballerina OpenAPI Tool addresses your Code-First and Design-First API Approaches</a></td><td><a href="https://medium.com/@lnash94">Sumudu Nissanka</a></td><td>2021-04-04</td></tr>
@@ -605,8 +632,13 @@
 </tbody></table>
 <h3 id="ballerina-shell"><a class="header" href="#ballerina-shell">Ballerina shell</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=dYito-DW6ZA&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=9">Ballerina Shell and Debugging Tools</a></td><td></td><td>2021-03-30</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-shell-repl-implementation-overview-ee7e909da20c">Ballerina Shell REPL — Implementation Overview</a></td><td><a href="https://medium.com/@kdsuneraavinash">Sunera Avinash</a></td><td>2021-03-01</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-shell-a-repl-for-ballerina-d5053c94363f">Ballerina Shell — A REPL for Ballerina</a></td><td><a href="https://medium.com/@kdsuneraavinash">Sunera Avinash</a></td><td>2021-02-28</td></tr>
+</tbody></table>
+<h3 id="debugger"><a class="header" href="#debugger">Debugger</a></h3>
+<table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>Blog</td><td><a href="https://praveennadarajah.medium.com/a-practical-guide-to-ballerina-remote-debugging-b3f8e2f9309">A Practical Guide to Ballerina Remote Debugging</a></td><td><a href="https://praveennadarajah.medium.com/">Praveen Nadarajah</a></td><td>2021-03-31</td></tr>
 </tbody></table>
 <h3 id="homebrew"><a class="header" href="#homebrew">Homebrew</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
@@ -616,6 +648,7 @@
 <h3 id="vs-code"><a class="header" href="#vs-code">VS Code</a></h3>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-statement-editor-a03ae23478d0">Ballerina statement editor</a></td><td><a href="https://medium.com/@madushagunasekara">Madusha Gunasekara</a></td><td>2022-09-20</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=sZmRCRgVnuI&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=1">Ballerina Programming with VS Code </a></td><td></td><td>2022-02-23</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-development-with-vscode-4a2ee4c82602">Ballerina Development With VSCode</a></td><td><a href="https://medium.com/@nadeeshaangunasinghe">Nadeeshaan Gunasinghe</a></td><td>2018-11-04</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-vscode-plugin-graphical-editor-for-ballerina-b6af226178d6">Ballerina VSCode Plugin — Graphical Editor for Ballerina</a></td><td><a href="https://medium.com/@nadeeshaangunasinghe">Nadeeshaan Gunasinghe</a></td><td>2018-11-03</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-vscode-plugin-language-intelligence-39b278912b57">Ballerina VSCode Plugin — Language Intelligence</a></td><td><a href="https://medium.com/@nadeeshaangunasinghe">Nadeeshaan Gunasinghe</a></td><td>2018-11-03</td></tr>
@@ -659,6 +692,7 @@
 <h2 id="package-management"><a class="header" href="#package-management">Package management</a></h2>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/how-to-use-ballerina-local-repository">How to Use Ballerina Local Repository</a></td><td><a href="https://dzone.com/users/4656527/pramodya.html">Pramodya Mendis</a></td><td>2021-12-10</td></tr>
+<tr><td>Video</td><td><a href="https://www.youtube.com/watch?v=8Z-i0VxTvK4&amp;list=PL7JOecNWBb0JAdYWqeGmD35MjE0KTjHXU&amp;index=4">Managing Dependencies in Ballerina</a></td><td></td><td>2021-10-26</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/internals-of-module-management-in-ballerina-8dfaac3b52f1">Internals of Module Management in Ballerina</a></td><td><a href="https://medium.com/@nwijesekare">Natasha Wijesekare</a></td><td>2018-12-23</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/cheat-sheet-for-ballerina-commands-associated-with-module-management-f56555705aff">Cheat Sheet for Ballerina Commands associated with Module Management</a></td><td><a href="https://medium.com/@nwijesekare">Natasha Wijesekare</a></td><td>2018-10-21</td></tr>
 </tbody></table>
@@ -701,10 +735,17 @@
 <tr><td>SO</td><td><a href="https://stackoverflow.com/collectives/wso2/articles/73564233/server-for-moving-object-monitoring-system-in-ballerina-part-1">Server for moving object monitoring system in Ballerina - Part 1</a></td><td><a href="https://stackoverflow.com/users/10721779/kavindu-gimhan-zoysa">Kavindu Zoysa</a></td><td>2022-09-01</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/better-programming/get-daily-exchange-rates-via-sms-using-ballerina-6cfb577633c9">Get Daily Exchange Rates via SMS Using Ballerina</a></td><td><a href="https://medium.com/@malintha1996">Malintha Ranasinghe</a></td><td>2022-08-25</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/overview-of-manipulating-data-in-ballerina-with-different-apis-paypal-api-and-randomuser-me-720828919fab">Overview of manipulating data in Ballerina with different APIs (PayPal API and randomuser.me)</a></td><td><a href="https://medium.com/@dulajdilshan">Dulaj Dilshan</a></td><td>2022-08-16</td></tr>
+<tr><td>Blog</td><td><a href="https://medium.com/geekculture/uncovering-interesting-2020-olympics-stats-with-ballerina-language-integrated-queries-7d5d0995b112">Uncovering Interesting 2020 Olympics Stats with Ballerina Language-integrated Queries</a></td><td><a href="https://medium.com/@loneidealist">Imesha Sudasingha</a></td><td>2021-09-16</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/@aquib_49146/extract-data-from-a-mail-and-upload-it-to-a-google-spreadsheet-using-ballerina-integrator-82e6e23ea2fb">Extract data from a mail and upload it to a Google Spreadsheet using Ballerina Integrator</a></td><td><a href="https://medium.com/@aquib_49146">Aquib Zulfikar</a></td><td>2020-01-02</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-event-notification-via-webhooks-bc7cc63f4b6e">[Ballerina] Event Notification via Webhooks</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2018-05-01</td></tr>
 <tr><td>DZone</td><td><a href="https://dzone.com/articles/three-programming-languages-that-will-drive-the-en">Three Programming Languages That Will Drive Enterprise Development</a></td><td><a href="https://dzone.com/users/2726658/chanakaudaya.html">Chanaka Fernando</a></td><td>2019-09-19</td></tr>
+<tr><td>InfoQ</td><td><a href="https://www.infoq.com/articles/ballerina-api-gateway/">Building an API Gateway with the Ballerina Programming Language</a></td><td><a href="https://www.infoq.com/profile/Nuwan-Dias/">Nuwan Dias</a></td><td>2018-07-18</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/@maryamzi/tweet-my-stars-ballerina-3a9652226116">Tweet my Stars, Ballerina!</a></td><td><a href="https://medium.com/@shan1024">Shan Mahanama</a></td><td>2017-10-23</td></tr>
+</tbody></table>
+<h2 id="user-stories"><a class="header" href="#user-stories">User stories</a></h2>
+<table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
+<tr><td>TNS</td><td><a href="https://thenewstack.io/how-mosip-uses-ballerina-websubhub-for-event-driven-integration/">How MOSIP Uses Ballerina WebSubHub for Event-Driven Integration</a></td><td><a href="https://thenewstack.io/author/dakshitha-ratnayake/">Dakshitha Ratnayake</a></td><td>2022-06-28</td></tr>
+<tr><td>Blog</td><td><a href="https://techventuras.com/tech_blogs/build-employee-onboarding-automation-with-wso2-ballerina-and-choreo/">Build Employee Onboarding Automation With WSO2 Ballerina &amp; Choreo</a></td><td>Sudaraka Jayashanka</td><td>2022-11-01</td></tr>
 </tbody></table>
 <h2 id="integration-and-design-patterns"><a class="header" href="#integration-and-design-patterns">Integration and design Patterns</a></h2>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
