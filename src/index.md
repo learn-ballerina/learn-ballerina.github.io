@@ -56,5 +56,5 @@ Let’s begin learning Ballerina.
 
 ## Other resources
 
-- [Articles and Blogs on Ballerina](articles.md)
-- [Videos and talks on Ballerina](videos.md)
+- [Articles, Blogs and Videos on Ballerina](README.md)
+<!-- - [Videos and talks on Ballerina](videos.md) -->
