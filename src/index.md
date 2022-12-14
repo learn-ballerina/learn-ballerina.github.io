@@ -6,18 +6,16 @@ This is a collection of code examples that illustrate various Ballerina concepts
 
 Let’s begin learning Ballerina.
 
-## Hello Ballerina
+## Introduction
 
 - [Introduction to Ballerina](introduction.md) - An introduction to the language.
 
-- [Hello World](hello_world.md) - A traditional Hello World program.
 
-## Ballerina Type System 
+## Type System 
 
-- [Introduction to Type System](type_system.md) - An introduction to Ballerina type system.
-    - [Type System Fundamentals](type_system/type_system_fundamentals.md)
-    - [LangLib Modules](type_system/langlib.md)
-- [Values and Types](values_and_types.md) -  Details on Ballerina type system.
+- [Type system](type_system/type_system_fundamentals.md) - An introduction to Ballerina type system.
+    - [Values and Types](type_system/values_and_types.md) -  Details on Ballerina type system.
+    - [LangLib Modules](type_system/langlib.md) - Details on how lang lib support types.
 
 ## Ballerina Best Practices Guide
 
@@ -47,14 +45,8 @@ Let’s begin learning Ballerina.
 
 ## Ballerina FAQ 
 
-- [Frequently-asked-questions](faq.md)
-
-## Ballerina samples
-
- - [Code snippets using Ballerina](how_to.md)
- - [Real-world usecases with Ballerina](usecases.md)
+- [Frequently asked questions](faq.md)
 
 ## Other resources
 
 - [Articles, Blogs and Videos on Ballerina](resources/README.md)
-<!-- - [Videos and talks on Ballerina](videos.md) -->
