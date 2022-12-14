@@ -1,4 +1,4 @@
-# Language Best Practices
+# Language best practices
 
 List of common Ballerina language best practices to follow.
 

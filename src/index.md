@@ -10,23 +10,24 @@ Let’s begin learning Ballerina.
 
 - [Introduction to Ballerina](introduction.md) - An introduction to the language.
 
-
-## Type System 
+## Type system 
 
 - [Type system](type_system/type_system_fundamentals.md) - An introduction to Ballerina type system.
     - [Values and Types](type_system/values_and_types.md) -  Details on Ballerina type system.
     - [LangLib Modules](type_system/langlib.md) - Details on how lang lib support types.
 
-## Ballerina Best Practices Guide
+## Ballerina best practices guide
 
-- [Project Best Practices](best_practices/project_best_practices.md)
+A list of most frequently used Ballerina project, language, code style and protocol specific best practices are as follows. 
+
+- [Project best practices](best_practices/project_best_practices.md)
     - [Structure your code](best_practices/structure_your_code.md)
     - [Naming conventions](best_practices/naming_conventions.md)
     - [Coding Style](best_practices/coding_style.md)
     - [Logging](best_practices/logging.md)
     - [Configuration management](best_practices/configuration_management.md)
     - [Dependency management](best_practices/dependency_management.md)
-- [Language Best Practices](best_practices/language_best_practices.md)
+- [Language best practices](best_practices/language_best_practices.md)
     - [Represent optionality](best_practices/represent_optionality.md)
     - [Handle nil values](best_practices/handle_nil_values.md)
     - [Use precise types](best_practices/use_precise_types.md)
@@ -38,15 +39,23 @@ Let’s begin learning Ballerina.
     - [Generate string by concatenating values](best_practices/string_concat.md)
     - [Handle unions of string constants](best_practices/string_unions.md)
     - [Handle unions of integer constants](best_practices/int_unions.md)
-- [Code Style Best Practices](best_practices/code_style_best_practices.md)
+- [Code style best practices](best_practices/code_style_best_practices.md)
+    - [Format the code](best_practices/coding_style.md)
     - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
     - [Using constants](best_practices/constants.md)
-    - [Use early returns](best_practices/early_returns.md)
+
+## Common best practices guide
+
+These are common some best practices which are common for any language. 
+
+- [Common best practices guide](common_best_practices/common_best_practices.md)
+    - [Use early returns](common_best_practices/early_returns.md)
+
+## Resources
+
+- [Articles, Blogs and Videos on Ballerina](resources/README.md)
 
 ## Ballerina FAQ 
 
 - [Frequently asked questions](faq.md)
 
-## Other resources
-
-- [Articles, Blogs and Videos on Ballerina](resources/README.md)

@@ -1,10 +1,10 @@
-# Ballerina Best Practices Guide
+# Ballerina best practices guide
 
 Welcome to the Ballerina best practices guide!
 
 This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!
 
-## Project Best Practices
+## Project best practices
 
 How to use Ballerina's features to create clean, effective code organized properly in the file system.  
 
@@ -15,7 +15,7 @@ How to use Ballerina's features to create clean, effective code organized proper
 - [Configuration management](configuration_management.md)
 - [Dependency management](dependency_management.md)
 
-## Language Best Practices
+## Language best practices
 
 List of common Ballerina language best practices to follow.
 
@@ -31,7 +31,7 @@ List of common Ballerina language best practices to follow.
 - [Handle unions of string constants](string_unions.md)
 - [Handle unions of integer constants](int_unions.md)
 
-## Code Style Best Practices
+## Code style best practices
 
 Nice to use best practices to improve the code style and consistency.  
 
