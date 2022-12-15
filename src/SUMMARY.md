@@ -3,9 +3,9 @@
 [Home](index.md)
 
 - [Introduction](introduction.md)
-- [Type system](type_system/type_system_fundamentals.md)
-    - [Values and Types](type_system/values_and_types.md)
-    - [LangLib Modules](type_system/langlib.md)
+    - [Type system](type_system/type_system_fundamentals.md)
+        - [Values and Types](type_system/values_and_types.md)
+        - [LangLib Modules](type_system/langlib.md)
 - [Ballerina best practices guide](best_practices/best_practices.md)
     - [Project best practices](best_practices/project_best_practices.md)
         - [Structure your code](best_practices/structure_your_code.md)

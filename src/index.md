@@ -8,10 +8,7 @@ Let’s begin learning Ballerina.
 
 ## Introduction
 
-- [Introduction to Ballerina](introduction.md) - An introduction to the language.
-
-## Type system 
-
+- [Introduction to Ballerina](introduction.md) - An introduction to the language
 - [Type system](type_system/type_system_fundamentals.md) - An introduction to Ballerina type system.
     - [Values and Types](type_system/values_and_types.md) -  Details on Ballerina type system.
     - [LangLib Modules](type_system/langlib.md) - Details on how lang lib support types.
