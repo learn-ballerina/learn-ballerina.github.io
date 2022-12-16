@@ -252,6 +252,82 @@ const maxSize = 1000;
     int age;
 |};
 </code></pre>
+<h2 id="rest-service-and-resource-paths"><a class="header" href="#rest-service-and-resource-paths">REST Service and resource paths</a></h2>
+<ul>
+<li>The <code>service path</code> represents the absolute path to the service. If the <code>service path</code> is omitted, then it defaults to <code>/</code>. Use meaningful grouping name if it is not omitting. </li>
+<li>Use lowercase letters.</li>
+<li>Try to use simple single words, but when it is needed to have multiple words use dashes instead of underscore. </li>
+</ul>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-7"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-7"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<pre><code class="language-bal">service /MusicStore on new http:Listener(9090) {
+
+}
+</code></pre>
+<pre><code class="language-bal">service &quot;/music_store&quot; on new http:Listener(9090) {
+
+}
+</code></pre>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-7"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-7"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<pre><code class="language-bal">service &quot;/store&quot; on new http:Listener(9090) {
+
+}
+</code></pre>
+<pre><code class="language-bal">service &quot;/music-store&quot; on new http:Listener(9090) {
+
+}
+</code></pre>
+<p>OR the same can be done as follows.</p>
+<pre><code class="language-bal">service /music\-store on new http:Listener(9090) {
+
+}
+</code></pre>
+<ul>
+<li>Use nouns instead of verbs for resource function names. Verbs should not be used in endpoint paths. </li>
+</ul>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-8"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-8"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<pre><code class="language-bal">service / on new http:Listener(9090) {
+
+    resource function get getAlbums() returns Album[] {
+
+    }
+}
+</code></pre>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-8"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-8"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<pre><code class="language-bal">service / on new http:Listener(9090) {
+
+    resource function get albums() returns Album[] {
+
+    }
+}
+</code></pre>
+<ul>
+<li>Use plural resource nouns.</li>
+</ul>
+<p>Use the plural form for resource nouns, because this fits all types of endpoints.</p>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-9"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-9"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<pre><code class="language-bal">service / on new http:Listener(9090) {
+
+    resource function get albums() returns Album[] {
+        return [{title: &quot;title1&quot;, artist: &quot;artist1&quot;}, {title: &quot;title2&quot;, artist: &quot;artist2&quot;}];
+    }
+
+    resource function get album/[string title]() returns Album {
+        return {title: &quot;title1&quot;, artist: &quot;artist1&quot;};
+    }
+}
+</code></pre>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-9"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-9"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<pre><code class="language-bal">service / on new http:Listener(9090) {
+
+    resource function get albums() returns Album[] {
+        return [{title: &quot;title1&quot;, artist: &quot;artist1&quot;}, {title: &quot;title2&quot;, artist: &quot;artist2&quot;}];
+    }
+
+    resource function get albums/[string title]() returns Album {
+        return {title: &quot;title1&quot;, artist: &quot;artist1&quot;};
+    }
+}
+</code></pre>
 
                     </main>
                     <script src="https://utteranc.es/client.js" repo="anupama-pathirage/learning_ballerina" issue-term="pathname" theme="github-light"
