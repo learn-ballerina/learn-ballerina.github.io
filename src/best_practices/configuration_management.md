@@ -3,7 +3,7 @@
 <h3>Handle sensitive configurations</h3>
 
 - Configuration values containing passwords or secrets should not be passed with the normal configuration.
-- Sensitive data can be passed to runtime using a different TOML file, and we can prioritize it higher than the normal configuration by prefixing the file path in the BAL_CONFIG_FILES environment variable.
+- Sensitive data can be passed to runtime using a different TOML file, and we can prioritize it higher than the normal configuration by prefixing the file path in the `BAL_CONFIG_FILES` environment variable.
 - If `Config.toml` has sensitive configs, add `Config.toml` file into `.gitignore` to avoid accidental commits of those.
 - Avoid having default values for sensitive configurable values.
 

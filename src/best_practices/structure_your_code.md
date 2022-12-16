@@ -22,7 +22,7 @@ The goal is to best leverage Ballerina features to create clean, effective code.
 
 <h2><img align="center" height="30" src="../img/BadCode.png">Some signs of a poorly structured project</h2>
 
-- Doing everything on a single .bal file without leveraging the Ballerina packages/modules.
+- Doing everything on a single `.bal` file without leveraging the Ballerina packages/modules.
 - Having lots of unrelated components in the default module of the package without breaking them into multiple modules.
 - Lengthy `.bal` files without breaking the logic into meaningful files.
 - Heavy usage of global state or context, which is not needed.

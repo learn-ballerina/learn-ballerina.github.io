@@ -1,9 +1,9 @@
 # Dependency management
 
-- If you are a Ballerina library package developer, always use the local repository to test the package before pushing it to Central. Refer [Use dependencies from the local repository](https://ballerina.io/learn/manage-dependencies/#use-dependencies-from-the-local-repository).
+- If you are a Ballerina library package developer, always use the local repository to test the package before pushing it to [Central](https://central.ballerina.io/). Refer [Use dependencies from the local repository](https://ballerina.io/learn/manage-dependencies/#use-dependencies-from-the-local-repository).
 Once the package is published to Central, it cannot be deleted.
 
-- By default, the compiler always looks up the latest compatible versions of the dependencies in the repositories when building a package. The latest patch version of the locked dependencies will be automatically resolved.
+- By default, the compiler always looks up the latest compatible versions of the dependencies in the repositories when building a package. The latest patch version of the locked dependencies in `Dependencies.toml` will be automatically resolved.
 
     E.g. ballerina/io `1.0.0` is locked, `1.1.0` and `1.0.1` has been released. 
     The compiler will pick `1.0.1` in the next build and will update the `Dependencies.toml`.

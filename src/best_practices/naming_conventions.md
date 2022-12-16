@@ -147,3 +147,104 @@ public type Employee record {|
     int age;
 |};
 ``` 
+
+<h2>REST Service and resource paths</h2>
+
+- The `service path` represents the absolute path to the service. If the `service path` is omitted, then it defaults to `/`. Use meaningful grouping name if it is not omitting. 
+- Use lowercase letters.
+- Try to use simple single words, but when it is needed to have multiple words use dashes instead of underscore. 
+
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
+
+```bal
+service /MusicStore on new http:Listener(9090) {
+
+}
+```
+
+```bal
+service "/music_store" on new http:Listener(9090) {
+
+}
+```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
+
+```bal
+service "/store" on new http:Listener(9090) {
+
+}
+```
+
+```bal
+service "/music-store" on new http:Listener(9090) {
+
+}
+``` 
+
+OR the same can be done as follows.
+
+```bal
+service /music\-store on new http:Listener(9090) {
+
+}
+```
+
+- Use nouns instead of verbs for resource function names. Verbs should not be used in endpoint paths. 
+
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
+
+```bal
+service / on new http:Listener(9090) {
+
+    resource function get getAlbums() returns Album[] {
+
+    }
+}
+```
+
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
+
+```bal
+service / on new http:Listener(9090) {
+
+    resource function get albums() returns Album[] {
+
+    }
+}
+```
+
+- Use plural resource nouns.
+
+Use the plural form for resource nouns, because this fits all types of endpoints.
+
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
+
+```bal
+service / on new http:Listener(9090) {
+
+    resource function get albums() returns Album[] {
+        return [{title: "title1", artist: "artist1"}, {title: "title2", artist: "artist2"}];
+    }
+
+    resource function get album/[string title]() returns Album {
+        return {title: "title1", artist: "artist1"};
+    }
+}
+```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
+
+```bal
+service / on new http:Listener(9090) {
+
+    resource function get albums() returns Album[] {
+        return [{title: "title1", artist: "artist1"}, {title: "title2", artist: "artist2"}];
+    }
+
+    resource function get albums/[string title]() returns Album {
+        return {title: "title1", artist: "artist1"};
+    }
+}
+```
