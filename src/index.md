@@ -22,6 +22,7 @@ A list of most frequently used Ballerina project, language, code style and proto
     - [Naming conventions](best_practices/naming_conventions.md)
     - [Coding Style](best_practices/coding_style.md)
     - [Logging](best_practices/logging.md)
+    - [Documenting the source code](best_practices/documenting_the_source_code.md)
     - [Configuration management](best_practices/configuration_management.md)
     - [Dependency management](best_practices/dependency_management.md)
 - [Language best practices](best_practices/language_best_practices.md)

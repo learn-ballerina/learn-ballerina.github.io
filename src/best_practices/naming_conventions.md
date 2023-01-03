@@ -75,7 +75,7 @@ stock_quote_service.bal
 
 ```
 function TotalWidth()
-function addStudent( int age, string FullName)
+function AddStudent( int age, string FullName)
 function buildRSAPublicKey()
 ```
 

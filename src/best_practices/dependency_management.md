@@ -1,7 +1,11 @@
 # Dependency management
 
+## Test with local repository
+
 - If you are a Ballerina library package developer, always use the local repository to test the package before pushing it to [Central](https://central.ballerina.io/). Refer [Use dependencies from the local repository](https://ballerina.io/learn/manage-dependencies/#use-dependencies-from-the-local-repository).
 Once the package is published to Central, it cannot be deleted.
+
+## Dependency version resolution
 
 - By default, the compiler always looks up the latest compatible versions of the dependencies in the repositories when building a package. The latest patch version of the locked dependencies in `Dependencies.toml` will be automatically resolved.
 
@@ -12,9 +16,13 @@ Once the package is published to Central, it cannot be deleted.
 
 - Updating to a compatible minor version is the user’s call. Specify the preferred minor version of the dependency in Ballerina.toml
 
+## Have reproducible builds vs getting latest dependency versions
+
 - However, if you need to achieve reproducible builds, use offline and sticky modes. Using the `--offline` flag along with the `--sticky` flag will ensure a predictable build with optimal time for compilation. It will stick to the exact versions locked in the `Dependencies.toml`.
 
 - If you need to make sure anyone who is working on the source code uses the latest versions of dependencies in their builds, do not commit the Dependencies.toml file to the source code repos. Since any dependency that you have used can be released with a new major version (which can contain incompatible changes), and when this dependency is resolved it would break your existing code.
+
+## Using platform-specific library libraries
 
 - When it is needed to package JAR files with the archives, maintain Java libraries inside the package. You can store the JAR files anywhere in your file system. As a best practice, maintain Java libraries inside the package. The platform-specific library information needs to be specified in the `Ballerina.toml` file. 
 
