@@ -1,6 +1,0 @@
-# Code style best practices
-
-Nice to use best practices to improve the code style and consistency. 
-
-- [Avoid parentheses in if statement](avoid_parentheses.md)
-- [Using constants](constants.md)

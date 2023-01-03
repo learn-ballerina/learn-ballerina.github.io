@@ -1,4 +1,4 @@
-# Coding Style
+# Format the code
 
 Ballerina has an opiniated style guide. See [Coding conventions](https://ballerina.io/learn/style-guide/coding-conventions/)
 
