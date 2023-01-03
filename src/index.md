@@ -21,13 +21,13 @@ A list of most frequently used Ballerina project, language, code style and proto
 
 How to use Ballerina's features to create clean, effective code organized properly in the file system.  
 
-- [Structure your code](structure_your_code.md)
-- [Naming conventions](naming_conventions.md)
-- [Format the code](format_the_code.md)
-- [Logging](logging.md)
+- [Structure your code](best_practices/structure_your_code.md)
+- [Naming conventions](best_practices/naming_conventions.md)
+- [Format the code](best_practices/format_the_code.md)
+- [Logging](best_practices/logging.md)
 - [Documenting the source code](best_practices/documenting_the_source_code.md)
-- [Configuration management](configuration_management.md)
-- [Dependency management](dependency_management.md)
+- [Configuration management](best_practices/configuration_management.md)
+- [Dependency management](best_practices/dependency_management.md)
 
 ### Language best practices
 
@@ -35,37 +35,37 @@ List of common Ballerina language best practices to follow.
 
 #### Optionality and nil values
 
-- [Represent optionality](represent_optionality.md)
-- [Handle nil values](handle_nil_values.md)
+- [Represent optionality](best_practices/represent_optionality.md)
+- [Handle nil values](best_practices/handle_nil_values.md)
 
 #### Values and types
 
-- [Use precise types](use_precise_types.md)
-- [Work with value ranges](value_ranges.md)
+- [Use precise types](best_practices/use_precise_types.md)
+- [Work with value ranges](best_practices/value_ranges.md)
 
 #### Functions and parameters
 
-- [Using included record parameters](included_record_params.md)
-- [Use expression-bodied functions](expression_bodied_func.md)
+- [Using included record parameters](best_practices/included_record_params.md)
+- [Use expression-bodied functions](best_practices/expression_bodied_func.md)
 
 #### Error handling
 
-- [Error handling](error_handling.md)
+- [Error handling](best_practices/error_handling.md)
 
 #### Records
 
-- [Simplify mapping constructor](mapping_constructors.md)
+- [Simplify mapping constructor](best_practices/mapping_constructors.md)
 
 #### Working with constants and strings
 
-- [Using constants](constants.md)
-- [Handle unions of string constants](string_unions.md)
-- [Handle unions of integer constants](int_unions.md)
-- [Generate string by concatenating values](string_concat.md)
+- [Using constants](best_practices/constants.md)
+- [Handle unions of string constants](best_practices/string_unions.md)
+- [Handle unions of integer constants](best_practices/int_unions.md)
+- [Generate string by concatenating values](best_practices/string_concat.md)
 
 #### Conditionals
 
-- [Avoid parentheses in if statement](avoid_parentheses.md)
+- [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
 
 ### Common best practices guide
 
