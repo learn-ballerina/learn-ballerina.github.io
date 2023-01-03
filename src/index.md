@@ -17,7 +17,7 @@ Let’s begin learning Ballerina.
 
 A list of most frequently used Ballerina project, language, code style and protocol specific best practices are as follows. 
 
-## Project best practices
+### Project best practices
 
 How to use Ballerina's features to create clean, effective code organized properly in the file system.  
 
@@ -29,45 +29,45 @@ How to use Ballerina's features to create clean, effective code organized proper
 - [Configuration management](configuration_management.md)
 - [Dependency management](dependency_management.md)
 
-## Language best practices
+### Language best practices
 
 List of common Ballerina language best practices to follow.
 
-### Optionality and nil values
+#### Optionality and nil values
 
 - [Represent optionality](represent_optionality.md)
 - [Handle nil values](handle_nil_values.md)
 
-### Values and types
+#### Values and types
 
 - [Use precise types](use_precise_types.md)
 - [Work with value ranges](value_ranges.md)
 
-### Functions and parameters
+#### Functions and parameters
 
 - [Using included record parameters](included_record_params.md)
 - [Use expression-bodied functions](expression_bodied_func.md)
 
-### Error handling
+#### Error handling
 
 - [Error handling](error_handling.md)
 
-### Records
+#### Records
 
 - [Simplify mapping constructor](mapping_constructors.md)
 
-### Working with constants and strings
+#### Working with constants and strings
 
 - [Using constants](constants.md)
 - [Handle unions of string constants](string_unions.md)
 - [Handle unions of integer constants](int_unions.md)
 - [Generate string by concatenating values](string_concat.md)
 
-### Conditionals
+#### Conditionals
 
 - [Avoid parentheses in if statement](avoid_parentheses.md)
 
-## Common best practices guide
+### Common best practices guide
 
 These are common some best practices which are common for any language. 
 
