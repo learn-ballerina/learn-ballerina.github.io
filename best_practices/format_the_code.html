@@ -163,6 +163,24 @@
 </ul>
 </li>
 </ul>
+<h2 id="order-of-the-imports-in-a-bal-file"><a class="header" href="#order-of-the-imports-in-a-bal-file">Order of the imports in a .bal file</a></h2>
+<p>The sorting makes it simple to browse the list when there are many imports.</p>
+<ul>
+<li>First import the modules from same package.</li>
+<li>Second comes modules from the <code>ballerina/</code> and <code>ballerinax/</code> organizations.</li>
+<li>Third import the modules from 3rd party organizations.</li>
+<li>Seperate each group by an extra line. And each group has their imports in alphabetical order.</li>
+</ul>
+<pre><code class="language-ballerina">import bar;
+import foo;
+import ballerina/log;
+import ballerina/time;
+import ballerinax/jdbc;
+import ballerinax/oracledb;
+import abc/bar;
+import abc/baz;
+import cde/abz;
+</code></pre>
 
                     </main>
                     <script src="https://utteranc.es/client.js" repo="anupama-pathirage/learning_ballerina" issue-term="pathname" theme="github-light"

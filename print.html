@@ -668,6 +668,24 @@ const maxSize = 1000;
 </ul>
 </li>
 </ul>
+<h2 id="order-of-the-imports-in-a-bal-file"><a class="header" href="#order-of-the-imports-in-a-bal-file">Order of the imports in a .bal file</a></h2>
+<p>The sorting makes it simple to browse the list when there are many imports.</p>
+<ul>
+<li>First import the modules from same package.</li>
+<li>Second comes modules from the <code>ballerina/</code> and <code>ballerinax/</code> organizations.</li>
+<li>Third import the modules from 3rd party organizations.</li>
+<li>Seperate each group by an extra line. And each group has their imports in alphabetical order.</li>
+</ul>
+<pre><code class="language-ballerina">import bar;
+import foo;
+import ballerina/log;
+import ballerina/time;
+import ballerinax/jdbc;
+import ballerinax/oracledb;
+import abc/bar;
+import abc/baz;
+import cde/abz;
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="logging"><a class="header" href="#logging">Logging</a></h1>
 <p>The Ballerina log module has four log levels with their priority in descending order as follows.</p>
 <ol>
@@ -754,6 +772,12 @@ public function main() {
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="documenting-the-source-code"><a class="header" href="#documenting-the-source-code">Documenting the source code</a></h1>
 <p>The Ballerina documentation framework allows developers to write the documentation in line with the Ballerina source code using the lightweight markdown markup language.</p>
+<ul>
+<li>Always document all public constructs in your module.</li>
+<li>As the best practice, document non-public constructs where necessary for better understandability.</li>
+<li>Add meaningful and useful documentation without just repeating the construct name.</li>
+<li>Add code snippets to make the usage clearer.</li>
+</ul>
 <h2 id="documenting-functions"><a class="header" href="#documenting-functions">Documenting functions</a></h2>
 <p>Always add a period (.) at the end of a function description. However, for the parameter and return type descriptions, omit the period if you have only one sentence. If there are multiple sentences, add the period at the end of each sentence. For example,</p>
 <pre><code class="language-bal"># Description of the function.
@@ -860,18 +884,39 @@ version = &quot;&lt;version&gt;&quot;
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="language-best-practices-2"><a class="header" href="#language-best-practices-2">Language best practices</a></h1>
 <p>List of common Ballerina language best practices to follow.</p>
+<h4 id="optionality-and-nil-values-2"><a class="header" href="#optionality-and-nil-values-2">Optionality and nil values</a></h4>
 <ul>
 <li><a href="best_practices/represent_optionality.html">Represent optionality</a></li>
 <li><a href="best_practices/handle_nil_values.html">Handle nil values</a></li>
+</ul>
+<h4 id="values-and-types-2"><a class="header" href="#values-and-types-2">Values and types</a></h4>
+<ul>
 <li><a href="best_practices/use_precise_types.html">Use precise types</a></li>
-<li><a href="best_practices/error_handling.html">Error handling</a></li>
+<li><a href="best_practices/value_ranges.html">Work with value ranges</a></li>
+</ul>
+<h4 id="functions-and-parameters-2"><a class="header" href="#functions-and-parameters-2">Functions and parameters</a></h4>
+<ul>
 <li><a href="best_practices/included_record_params.html">Using included record parameters</a></li>
 <li><a href="best_practices/expression_bodied_func.html">Use expression-bodied functions</a></li>
-<li><a href="best_practices/value_ranges.html">Work with value ranges</a></li>
+</ul>
+<h4 id="error-handling-2"><a class="header" href="#error-handling-2">Error handling</a></h4>
+<ul>
+<li><a href="best_practices/error_handling.html">Error handling</a></li>
+</ul>
+<h4 id="records-2"><a class="header" href="#records-2">Records</a></h4>
+<ul>
 <li><a href="best_practices/mapping_constructors.html">Simplify mapping constructor</a></li>
-<li><a href="best_practices/string_concat.html">Generate string by concatenating values</a></li>
+</ul>
+<h4 id="working-with-constants-and-strings-2"><a class="header" href="#working-with-constants-and-strings-2">Working with constants and strings</a></h4>
+<ul>
+<li><a href="best_practices/constants.html">Using constants</a></li>
 <li><a href="best_practices/string_unions.html">Handle unions of string constants</a></li>
 <li><a href="best_practices/int_unions.html">Handle unions of integer constants</a></li>
+<li><a href="best_practices/string_concat.html">Generate string by concatenating values</a></li>
+</ul>
+<h4 id="conditionals-2"><a class="header" href="#conditionals-2">Conditionals</a></h4>
+<ul>
+<li><a href="best_practices/avoid_parentheses.html">Avoid parentheses in if statement</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="represent-optionality"><a class="header" href="#represent-optionality">Represent optionality</a></h1>
 <p>Use nil (i.e. <code>()</code>) to represent optional values.</p>
@@ -1054,7 +1099,7 @@ function register(int admissionYear, *Student student) {
 <pre><code class="language-bal">function isValid(string username) returns boolean 
     =&gt; matchesCrieteria(username) &amp;&amp; isAvailable(username);
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="error-handling-2"><a class="header" href="#error-handling-2">Error handling</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="error-handling-3"><a class="header" href="#error-handling-3">Error handling</a></h1>
 <h3 id="return-errors-and-use-the-check"><a class="header" href="#return-errors-and-use-the-check">Return errors and use the check</a></h3>
 <p>Do not return invalid values when an error occurs; instead return the error.
 As much as possible, avoid the use of T|error in variable declarations. Instead, use <code>check</code> and add <code>error</code> to the return type</p>
@@ -1477,7 +1522,7 @@ log:printInfo(string `Child name is ${name} and age is ${age}`);
 </tbody></table>
 <h2 id="language-concepts"><a class="header" href="#language-concepts">Language Concepts</a></h2>
 <h3 id="general-language"><a class="header" href="#general-language">General Language</a></h3>
-<h4 id="error-handling-3"><a class="header" href="#error-handling-3">Error handling</a></h4>
+<h4 id="error-handling-4"><a class="header" href="#error-handling-4">Error handling</a></h4>
 <table><thead><tr><th>Type</th><th>Title</th><th>Author</th><th>Publisehd Date</th></tr></thead><tbody>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-error-handling-part-ii-159fbe74c146">[Ballerina] Error Handling — Part II</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2019-12-24</td></tr>
 <tr><td>Blog</td><td><a href="https://medium.com/ballerina-techblog/ballerina-error-handling-part-i-d581f65c0f8d">[Ballerina] Error Handling — Part I</a></td><td><a href="https://medium.com/@maryamzi">Maryam Ziyad</a></td><td>2019-09-28</td></tr>
