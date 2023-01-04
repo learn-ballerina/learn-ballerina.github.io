@@ -2,6 +2,11 @@
 
 The Ballerina documentation framework allows developers to write the documentation in line with the Ballerina source code using the lightweight markdown markup language.
 
+- Always document all public constructs in your module.
+- As the best practice, document non-public constructs where necessary for better understandability.
+- Add meaningful and useful documentation without just repeating the construct name.
+- Add code snippets to make the usage clearer.
+
 ## Documenting functions
 
 Always add a period (.) at the end of a function description. However, for the parameter and return type descriptions, omit the period if you have only one sentence. If there are multiple sentences, add the period at the end of each sentence. For example,

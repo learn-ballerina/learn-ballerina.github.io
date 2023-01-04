@@ -12,3 +12,25 @@ Use one of the following ways to format the source files.
 
     - Right-click on the source file and use the `Format Document` option.
     - Use [format on save](https://code.visualstudio.com/updates/v1_6#_format-on-save) feature.
+
+
+## Order of the imports in a .bal file
+
+The sorting makes it simple to browse the list when there are many imports.
+
+- First import the modules from same package.
+- Second comes modules from the `ballerina/` and `ballerinax/` organizations.
+- Third import the modules from 3rd party organizations.
+- Seperate each group by an extra line. And each group has their imports in alphabetical order.
+
+```ballerina
+import bar;
+import foo;
+import ballerina/log;
+import ballerina/time;
+import ballerinax/jdbc;
+import ballerinax/oracledb;
+import abc/bar;
+import abc/baz;
+import cde/abz;
+```
