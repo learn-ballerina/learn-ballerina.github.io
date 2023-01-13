@@ -2,7 +2,7 @@
 
 ## Definitions
 
-### Open record
+### Open records
 
 The `record {}` is an inclusive record type-descriptor that allows any `anydata` field in addition to those explicitly specified in the record type-descriptor.That means it allows fields other than the explicitly specified fields.
 
@@ -53,13 +53,13 @@ To access these extra (rest) fields, you cannot use field access like `p.id`. In
 
 The `record {||}` is an exclusive record type-descriptor. It will allow only the specified fields, and an attempt to convert a JSON object that has extra fields to a value of this type will fail.
 
-
+```bal
 type Person record {|
     string name;
     string address;
     int age;
 |};
-
+```
 
 ## Usage 
 
@@ -69,7 +69,7 @@ One of the key best practices for creating robust services is embodied in the so
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
-```
+```bal
 import ballerina/http;
 
 //Represent the incoming payload, so using open record
