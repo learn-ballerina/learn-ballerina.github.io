@@ -23,7 +23,7 @@ The sorting makes it simple to browse the list when there are many imports.
 - Third import the modules from 3rd party organizations.
 - Seperate each group by an extra line. And each group has their imports in alphabetical order.
 
-```ballerina
+```bal
 import bar;
 import foo;
 import ballerina/log;
