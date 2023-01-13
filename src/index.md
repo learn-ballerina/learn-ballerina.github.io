@@ -1,23 +1,16 @@
-# Learn Ballerina
+# Ballerina best practices guide
+
+Welcome to the Ballerina best practices guide!
 
 [Ballerina](ballerina.io/) is an open-source programming language for the cloud that makes it easier to use, combine, and create network services. 
 
-This is a collection of code examples that illustrate various Ballerina concepts and functionalities.
+This is a collection of best practices on using various Ballerina concepts and functionalities. They are the social norms of the community. I is a list of most frequently used Ballerina project, language, code style and protocol specific best practices. 
 
-Let’s begin learning Ballerina.
+This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!
 
-## Introduction
+Let’s begin coding effectively in Ballerina.
 
-- [Introduction to Ballerina](introduction.md) - An introduction to the language
-- [Type system](type_system/type_system_fundamentals.md) - An introduction to Ballerina type system.
-    - [Values and Types](type_system/values_and_types.md) -  Details on Ballerina type system.
-    - [LangLib Modules](type_system/langlib.md) - Details on how lang lib support types.
-
-## Ballerina best practices guide
-
-A list of most frequently used Ballerina project, language, code style and protocol specific best practices are as follows. 
-
-### Project best practices
+## Project best practices
 
 How to use Ballerina's features to create clean, effective code organized properly in the file system.  
 
@@ -29,46 +22,46 @@ How to use Ballerina's features to create clean, effective code organized proper
 - [Configuration management](best_practices/configuration_management.md)
 - [Dependency management](best_practices/dependency_management.md)
 
-### Language best practices
+## Language best practices
 
 List of common Ballerina language best practices to follow.
 
-#### Optionality and nil values
+### Optionality and nil values
 
 - [Represent optionality](best_practices/represent_optionality.md)
 - [Handle nil values](best_practices/handle_nil_values.md)
 
-#### Values and types
+### Values and types
 
 - [Use precise types](best_practices/use_precise_types.md)
 - [Work with value ranges](best_practices/value_ranges.md)
 
-#### Functions and parameters
+### Functions and parameters
 
 - [Using included record parameters](best_practices/included_record_params.md)
 - [Use expression-bodied functions](best_practices/expression_bodied_func.md)
 
-#### Error handling
+### Error handling
 
 - [Error handling](best_practices/error_handling.md)
 
-#### Records
+### Records
 
 - [Use open vs closed records](best_practices/use_open_vs_closed_records.md)
 - [Simplify mapping constructor](best_practices/mapping_constructors.md)
 
-#### Working with constants and strings
+### Working with constants and strings
 
 - [Using constants](best_practices/constants.md)
 - [Handle unions of string constants](best_practices/string_unions.md)
 - [Handle unions of integer constants](best_practices/int_unions.md)
 - [Generate string by concatenating values](best_practices/string_concat.md)
 
-#### Conditionals
+### Conditionals
 
 - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
 
-### Common best practices guide
+## Common best practices guide
 
 These are common some best practices which are common for any language. 
 
