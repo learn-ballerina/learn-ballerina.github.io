@@ -129,8 +129,6 @@ Values are of four kinds, each corresponding to a kind of basic type:
 
 ## What is Langlib?
 
-# Langlib Functions
-
 This is a library which provides fundamentnal operations on built-in datatypes. There is a `ballerina/lang.T` module for each built-in type `T` and they are automatically imported using `T` prefix.
 
 We can call Langlib functions in two ways and both produce the same result. 

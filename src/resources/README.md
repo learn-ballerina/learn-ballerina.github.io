@@ -1,7 +1,9 @@
-# Awsome Ballerina
-A list of awesome Ballerina resources. Once you have an overview of the language, here are resources you can use to learn more.
+# Learning Resources
+An uncurated list of Ballerina resources. Once you have an overview of the language, here are resources you can use to learn more.
 
-- [Awsome Ballerina](#awsome-ballerina)
+This is grouped by different technical areas and ordered by the time.
+
+- [Learning Resources](#learning-resources)
   - [General](#general)
   - [Language Concepts](#language-concepts)
     - [General Language](#general-language)
