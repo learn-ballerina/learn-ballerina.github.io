@@ -1,4 +1,4 @@
-# Use open vs clode records
+# Use open vs closed records
 
 ## Definitions
 
