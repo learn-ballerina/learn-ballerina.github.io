@@ -54,6 +54,7 @@ List of common Ballerina language best practices to follow.
 
 #### Records
 
+- [Use open vs closed records](best_practices/use_open_vs_closed_records.md)
 - [Simplify mapping constructor](best_practices/mapping_constructors.md)
 
 #### Working with constants and strings

@@ -23,6 +23,7 @@
         - [Using included record parameters](best_practices/included_record_params.md)
         - [Use expression-bodied functions](best_practices/expression_bodied_func.md)
         - [Error handling](best_practices/error_handling.md)
+        - [Use open vs closed records](best_practices/use_open_vs_closed_records.md)
         - [Simplify mapping constructor](best_practices/mapping_constructors.md)
         - [Using constants](best_practices/constants.md)
         - [Handle unions of string constants](best_practices/string_unions.md)

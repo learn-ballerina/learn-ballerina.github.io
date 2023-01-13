@@ -40,6 +40,8 @@ List of common Ballerina language best practices to follow.
 - [Error handling](error_handling.md)
 
 ### Records
+
+- [Use open vs closed records](use_open_vs_closed_records.md)
 - [Simplify mapping constructor](mapping_constructors.md)
 
 ### Working with constants and strings

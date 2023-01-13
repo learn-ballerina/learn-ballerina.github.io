@@ -9,7 +9,7 @@ Following are the naming conventions used in various Ballerina constructs. Some 
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
 
-```
+```bal
 7eleven
 Google
 ballerinac
@@ -17,7 +17,7 @@ ballerinac
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
 
-```
+```bal
 wso2
 google
 ```
@@ -30,7 +30,7 @@ google
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
 
-```
+```bal
 Auth
 HTTP
 aws_s3
@@ -38,7 +38,7 @@ aws_s3
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
 
-```
+```bal
 auth
 http
 aws.s3
@@ -73,7 +73,7 @@ stock_quote_service.bal
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
 
-```
+```bal
 function TotalWidth()
 function AddStudent( int age, string FullName)
 function buildRSAPublicKey()
@@ -81,7 +81,7 @@ function buildRSAPublicKey()
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
 
-```
+```bal
 function computeTotalWidth()
 function addStudent( int age, string fullName)
 function buildRsaPublicKey()
@@ -93,7 +93,7 @@ function buildRsaPublicKey()
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
 
-```
+```bal
 int Count;
 string accountname;
 string account_name;
@@ -101,7 +101,7 @@ string account_name;
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
 
-```
+```bal
 int count;
 string accountName;
 ```
@@ -112,14 +112,14 @@ string accountName;
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
 
-```
+```bal
 const MAXSIZE = 1000;
 const maxSize = 1000;
 ```
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
 
-```
+```bal
 const MAX_SIZE = 1000;
 ```
 
@@ -130,7 +130,7 @@ const MAX_SIZE = 1000;
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
 
-```
+```bal
 public type Employee_Data record {|
     string first_Name;
     string LastName;
@@ -140,7 +140,7 @@ public type Employee_Data record {|
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
 
-```
+```bal
 public type Employee record {|
     string firstName;
     string lastName;
