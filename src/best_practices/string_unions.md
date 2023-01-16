@@ -74,3 +74,7 @@ Employee e = {name: "John Doe", department: HR};
 
 - In all three approaches, the User can't specify anything other than specified values which is good.
 - Option 1: Enums is a better choice if we consider the readability and simplicity of the code.
+
+## See Also
+
+[Enumerations](https://ballerina.io/learn/language-basics/#enumerations)

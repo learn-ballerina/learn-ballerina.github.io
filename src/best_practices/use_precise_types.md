@@ -47,3 +47,7 @@ http:Client httpClient = check new ("http://localhost:9090");
 Album[] albums = check httpClient->/albums;
 
 ```
+
+### See Also:
+
+[Type inference](https://ballerina.io/learn/language-basics/#type-inference)

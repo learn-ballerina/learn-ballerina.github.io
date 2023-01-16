@@ -58,3 +58,7 @@ function getUsers() returns string[]|error {
     return users ?: [];
 }
 ```
+
+### See Also:
+
+[nil](https://pre-prod.ballerina.io/learn/language-basics/#nil)

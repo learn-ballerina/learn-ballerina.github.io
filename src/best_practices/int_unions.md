@@ -56,3 +56,7 @@ Issue issue = {title: "Incorrect input parameters", priority: HIGH};
 - Both Options 1 and 2 restrict the users from having arbitrary integer values for priority.
 - But in option 1, by looking at the priority value, we can't understand whether `1` means high or low.
 - So Option 2: Unions of constants is the best option.
+
+## See Also:
+
+[Unions](https://pre-prod.ballerina.io/learn/language-basics/#unions)

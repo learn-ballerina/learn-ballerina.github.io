@@ -60,3 +60,7 @@ function getYear(string name) returns int|error {
 
 - `checkpanic` may be used if you want to terminate the program when a particular expression (or action) evaluates to an error.
 - It should be extremely rare to use `checkpanic`.
+
+### See Also:
+
+[Error handling](https://ballerina.io/learn/language-basics/#error-handling)

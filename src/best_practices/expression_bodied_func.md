@@ -16,3 +16,7 @@ function getUserAge(string username) returns int {
 function isValid(string username) returns boolean 
     => matchesCrieteria(username) && isAvailable(username);
 ```
+
+## See Also:
+
+[Expression-oriented style](https://pre-prod.ballerina.io/learn/by-example/expression-oriented-style/)

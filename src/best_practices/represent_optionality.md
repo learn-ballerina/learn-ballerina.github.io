@@ -48,3 +48,7 @@ function getMarks(string name) returns int? {
     return();
 }
 ```
+
+### See Also:
+
+[nil](https://pre-prod.ballerina.io/learn/language-basics/#nil)

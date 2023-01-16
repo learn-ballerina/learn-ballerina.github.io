@@ -41,3 +41,7 @@ The goal is to best leverage Ballerina features to create clean, effective code.
 **Documentation**
 - Properly [document](https://ballerina.io/learn/generate-code-documentation/) public APIs and functions exposed via the package.
 - Add up-to-date and meaningful overview of the package and modules in `Package.md` and `Module.md` files, as that will give a great overview for the users of your package. 
+
+## See Also:
+
+[Organize Ballerina code](https://ballerina.io/learn/organize-ballerina-code/)

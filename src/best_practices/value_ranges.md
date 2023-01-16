@@ -29,3 +29,7 @@ function processData(string[] data) {
     }
 }
 ```
+
+## See Also:
+
+[foreach statement](https://ballerina.io/learn/language-basics/#foreach-statement)

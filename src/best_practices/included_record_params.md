@@ -54,3 +54,7 @@ function register(int admissionYear, *Student student) {
 }
 
 ```
+
+## See Also:
+
+[Included record parameters](https://pre-prod.ballerina.io/learn/by-example/included-record-parameters/)

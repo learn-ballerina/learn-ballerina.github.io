@@ -15,3 +15,7 @@ const string FILE_NAME_PREFIX = "Summary";
 const MAX_SIZE = 1000;
 const FILE_NAME_PREFIX = "Summary";
 ```
+
+## See Also:
+
+[Const and final](https://ballerina.io/learn/language-basics/#const-and-final)

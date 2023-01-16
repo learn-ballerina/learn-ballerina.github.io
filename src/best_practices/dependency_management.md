@@ -44,3 +44,7 @@ Once the package is published to Central, it cannot be deleted.
     artifactId = "<artifact-id>"
     version = "<version>"
     ```
+
+## See Also:
+
+[Manage dependencies](https://ballerina.io/learn/manage-dependencies/)

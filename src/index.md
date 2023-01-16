@@ -4,9 +4,7 @@ Welcome to the Ballerina best practices guide!
 
 [Ballerina](ballerina.io/) is an open-source programming language for the cloud that makes it easier to use, combine, and create network services. 
 
-This is a collection of best practices on using various Ballerina concepts and functionalities. They are the social norms of the community. I is a list of most frequently used Ballerina project, language, code style and protocol specific best practices. 
-
-This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!
+This is a collection of best practices on using various Ballerina concepts and functionalities. This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!
 
 Let’s begin coding effectively in Ballerina.
 
