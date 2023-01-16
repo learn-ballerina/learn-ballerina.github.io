@@ -151,8 +151,7 @@
                         <h1 id="ballerina-best-practices-guide"><a class="header" href="#ballerina-best-practices-guide">Ballerina best practices guide</a></h1>
 <p>Welcome to the Ballerina best practices guide!</p>
 <p><a href="ballerina.io/">Ballerina</a> is an open-source programming language for the cloud that makes it easier to use, combine, and create network services. </p>
-<p>This is a collection of best practices on using various Ballerina concepts and functionalities. They are the social norms of the community. I is a list of most frequently used Ballerina project, language, code style and protocol specific best practices. </p>
-<p>This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!</p>
+<p>This is a collection of best practices on using various Ballerina concepts and functionalities. This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!</p>
 <p>Let’s begin coding effectively in Ballerina.</p>
 <h2 id="project-best-practices"><a class="header" href="#project-best-practices">Project best practices</a></h2>
 <p>How to use Ballerina's features to create clean, effective code organized properly in the file system.</p>
@@ -275,6 +274,8 @@
 <li>Properly <a href="https://ballerina.io/learn/generate-code-documentation/">document</a> public APIs and functions exposed via the package.</li>
 <li>Add up-to-date and meaningful overview of the package and modules in <code>Package.md</code> and <code>Module.md</code> files, as that will give a great overview for the users of your package. </li>
 </ul>
+<h2 id="see-also"><a class="header" href="#see-also">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/organize-ballerina-code/">Organize Ballerina code</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="naming-conventions"><a class="header" href="#naming-conventions">Naming conventions</a></h1>
 <p>Following are the naming conventions used in various Ballerina constructs. Some are opinionated rules but ensure consistency. </p>
 <h2 id="organizations"><a class="header" href="#organizations">Organizations</a></h2>
@@ -490,6 +491,8 @@ import abc/bar;
 import abc/baz;
 import cde/abz;
 </code></pre>
+<h2 id="see-also-1"><a class="header" href="#see-also-1">See Also:</a></h2>
+<p><a href="https://pre-prod.ballerina.io/learn/style-guide/coding-conventions/">Style guide</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="logging"><a class="header" href="#logging">Logging</a></h1>
 <p>The Ballerina log module has four log levels with their priority in descending order as follows.</p>
 <ol>
@@ -574,6 +577,9 @@ public function main() {
                        return random:createDecimal() * 100.0;});
 }
 </code></pre>
+<h2 id="see-also-2"><a class="header" href="#see-also-2">See Also:</a></h2>
+<p><a href="https://pre-prod.ballerina.io/learn/by-example/#log">Log BBEs</a>
+<a href="https://lib.ballerina.io/ballerina/log/latest">Log API docs</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="documenting-the-source-code"><a class="header" href="#documenting-the-source-code">Documenting the source code</a></h1>
 <p>The Ballerina documentation framework allows developers to write the documentation in line with the Ballerina source code using the lightweight markdown markup language.</p>
 <ul>
@@ -607,6 +613,8 @@ public function foo(int i, string s) returns boolean {
 <li>Displayed with the module API documentation</li>
 <li>Must explain the functionality of the module</li>
 </ul>
+<h2 id="see-also-3"><a class="header" href="#see-also-3">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/generate-code-documentation/">Generate code documentation</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="configuration-management"><a class="header" href="#configuration-management">Configuration management</a></h1>
 <h3 id="handle-sensitive-configurations"><a class="header" href="#handle-sensitive-configurations">Handle sensitive configurations</a></h3>
 <ul>
@@ -635,6 +643,8 @@ configurable int maxIdle = 100;
 <pre><code class="language-bal">configurable int maxActiveConnections = -1;
 configurable int maxIdleConnections = 100;
 </code></pre>
+<h3 id="see-also-4"><a class="header" href="#see-also-4">See Also:</a></h3>
+<p><a href="https://ballerina.io/learn/configure-ballerina-programs/configure-a-sample-ballerina-service/">Configure Ballerina programs</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dependency-management"><a class="header" href="#dependency-management">Dependency management</a></h1>
 <h2 id="test-with-local-repository"><a class="header" href="#test-with-local-repository">Test with local repository</a></h2>
 <ul>
@@ -686,6 +696,8 @@ version = &quot;&lt;version&gt;&quot;
 </code></pre>
 </li>
 </ul>
+<h2 id="see-also-5"><a class="header" href="#see-also-5">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/manage-dependencies/">Manage dependencies</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="language-best-practices-1"><a class="header" href="#language-best-practices-1">Language best practices</a></h1>
 <p>List of common Ballerina language best practices to follow.</p>
 <h4 id="optionality-and-nil-values-1"><a class="header" href="#optionality-and-nil-values-1">Optionality and nil values</a></h4>
@@ -755,6 +767,8 @@ version = &quot;&lt;version&gt;&quot;
     return();
 }
 </code></pre>
+<h3 id="see-also-6"><a class="header" href="#see-also-6">See Also:</a></h3>
+<p><a href="https://pre-prod.ballerina.io/learn/language-basics/#nil">nil</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="handle-nil-values"><a class="header" href="#handle-nil-values">Handle Nil values</a></h1>
 <p>Use the Elvis operator.</p>
 <p>Elvis operator is a conditional operator that can be used to handle nil values. It evaluates an expression and, if the value is nil, executes the second expression. The Elvis operator takes two operands and uses the <code>?:</code> symbol to form them.</p>
@@ -792,6 +806,8 @@ string validName = name ?: &quot;&quot;;
     return users ?: [];
 }
 </code></pre>
+<h3 id="see-also-7"><a class="header" href="#see-also-7">See Also:</a></h3>
+<p><a href="https://pre-prod.ballerina.io/learn/language-basics/#nil">nil</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="use-precise-types"><a class="header" href="#use-precise-types">Use precise types</a></h1>
 <h3 id="avoid-overuse-of-var"><a class="header" href="#avoid-overuse-of-var">Avoid overuse of var</a></h3>
 <p>Type inference allows the program to infer the actual data type of variables.</p>
@@ -823,6 +839,8 @@ http:Client httpClient = check new (&quot;http://localhost:9090&quot;);
 Album[] albums = check httpClient-&gt;/albums;
 
 </code></pre>
+<h3 id="see-also-8"><a class="header" href="#see-also-8">See Also:</a></h3>
+<p><a href="https://ballerina.io/learn/language-basics/#type-inference">Type inference</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="work-with-value-ranges"><a class="header" href="#work-with-value-ranges">Work with value ranges</a></h1>
 <p>Use range expressions.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-10"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-10"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
@@ -848,6 +866,8 @@ Album[] albums = check httpClient-&gt;/albums;
     }
 }
 </code></pre>
+<h2 id="see-also-9"><a class="header" href="#see-also-9">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/language-basics/#foreach-statement">foreach statement</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="using-included-record-parameters"><a class="header" href="#using-included-record-parameters">Using included record parameters</a></h1>
 <p>Including record fields as named arguments in a function provides a consistent experience to the caller.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgalertpng-without-included-record-parameters"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgalertpng-without-included-record-parameters"><img align="center" height="30" src="best_practices/../img/alert.png"> Without included record parameters</a></h4>
@@ -893,6 +913,8 @@ function register(int admissionYear, *Student student) {
 }
 
 </code></pre>
+<h2 id="see-also-10"><a class="header" href="#see-also-10">See Also:</a></h2>
+<p><a href="https://pre-prod.ballerina.io/learn/by-example/included-record-parameters/">Included record parameters</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="use-expression-bodied-functions"><a class="header" href="#use-expression-bodied-functions">Use expression-bodied functions</a></h1>
 <p>Expression-bodied functions can be used when the body is just a return statement.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-11"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-11"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
@@ -904,6 +926,8 @@ function register(int admissionYear, *Student student) {
 <pre><code class="language-bal">function isValid(string username) returns boolean 
     =&gt; matchesCrieteria(username) &amp;&amp; isAvailable(username);
 </code></pre>
+<h2 id="see-also-11"><a class="header" href="#see-also-11">See Also:</a></h2>
+<p><a href="https://pre-prod.ballerina.io/learn/by-example/expression-oriented-style/">Expression-oriented style</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="error-handling-2"><a class="header" href="#error-handling-2">Error handling</a></h1>
 <h3 id="return-errors-and-use-the-check"><a class="header" href="#return-errors-and-use-the-check">Return errors and use the check</a></h3>
 <p>Do not return invalid values when an error occurs; instead return the error.
@@ -958,6 +982,8 @@ function getYear(string name) returns int|error {
 <li><code>checkpanic</code> may be used if you want to terminate the program when a particular expression (or action) evaluates to an error.</li>
 <li>It should be extremely rare to use <code>checkpanic</code>.</li>
 </ul>
+<h3 id="see-also-12"><a class="header" href="#see-also-12">See Also:</a></h3>
+<p><a href="https://ballerina.io/learn/language-basics/#error-handling">Error handling</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="use-open-vs-closed-records"><a class="header" href="#use-open-vs-closed-records">Use open vs closed records</a></h1>
 <h2 id="definitions"><a class="header" href="#definitions">Definitions</a></h2>
 <h3 id="open-records"><a class="header" href="#open-records">Open records</a></h3>
@@ -1039,6 +1065,8 @@ service /store on new http:Listener(8080) {
     }
 }
 </code></pre>
+<h2 id="see-also-13"><a class="header" href="#see-also-13">See Also</a></h2>
+<p><a href="https://ballerina.io/learn/by-example/controlling-openness/">Controlling Openness</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="simplify-mapping-constructor"><a class="header" href="#simplify-mapping-constructor">Simplify mapping constructor</a></h1>
 <p>If the variable name is equal to the key of the mapping constructor, we can simplify code <code>{k: k}</code> to <code>{k}</code>.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-13"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-13"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
@@ -1075,6 +1103,8 @@ const string FILE_NAME_PREFIX = &quot;Summary&quot;;
 <pre><code class="language-bal">const MAX_SIZE = 1000;
 const FILE_NAME_PREFIX = &quot;Summary&quot;;
 </code></pre>
+<h2 id="see-also-14"><a class="header" href="#see-also-14">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/language-basics/#const-and-final">Const and final</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="handle-unions-of-string-constants"><a class="header" href="#handle-unions-of-string-constants">Handle unions of string constants</a></h1>
 <p>Use enums, unions of singletons, or unions of constants. Enum seems to be a better option out of those three.</p>
 <p>Let's say we have a string variable named <code>department</code>, which can only be  <code>Finance</code>, <code>Engineering</code>, or <code>HR</code>.</p>
@@ -1135,6 +1165,8 @@ Employee e = {name: &quot;John Doe&quot;, department: HR};
 <li>In all three approaches, the User can't specify anything other than specified values which is good.</li>
 <li>Option 1: Enums is a better choice if we consider the readability and simplicity of the code.</li>
 </ul>
+<h2 id="see-also-15"><a class="header" href="#see-also-15">See Also</a></h2>
+<p><a href="https://ballerina.io/learn/language-basics/#enumerations">Enumerations</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="handle-unions-of-integer-constants"><a class="header" href="#handle-unions-of-integer-constants">Handle unions of integer constants</a></h1>
 <p>Use unions of singletons or unions of constants. Unions of constants seem to be a better option out of those three.</p>
 <p>Let's say we have an int variable named <code>priority</code> which can only be  <code>1</code>, <code>2</code>, or <code>3</code> where <code>1</code> is the highest priority.</p>
@@ -1182,6 +1214,8 @@ Issue issue = {title: &quot;Incorrect input parameters&quot;, priority: HIGH};
 <li>But in option 1, by looking at the priority value, we can't understand whether <code>1</code> means high or low.</li>
 <li>So Option 2: Unions of constants is the best option.</li>
 </ul>
+<h2 id="see-also-16"><a class="header" href="#see-also-16">See Also:</a></h2>
+<p><a href="https://pre-prod.ballerina.io/learn/language-basics/#unions">Unions</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="generate--string-by-concatenating-values"><a class="header" href="#generate--string-by-concatenating-values">Generate  string by concatenating values</a></h1>
 <p>Use string backtick template.</p>
 <p>A backtick template is composed of a tag followed by a backtick string, enclosed within the backtick notation, where you can have expressions that are enclosed in <code>${...}</code>.</p>
@@ -1199,6 +1233,8 @@ log:printInfo(&quot;Child name is &quot; + name + &quot; and age is &quot; + age
 string name = &quot;Anne&quot;;
 log:printInfo(string `Child name is ${name} and age is ${age}`);
 </code></pre>
+<h2 id="see-also-17"><a class="header" href="#see-also-17">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/by-example/#backtick-templates">Backtick templates</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="avoid-parentheses-in-if-statement"><a class="header" href="#avoid-parentheses-in-if-statement">Avoid parentheses in if statement</a></h1>
 <p>Ballerina requires braces in if statements. But parentheses are not required around the condition.</p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-18"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-18"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
@@ -1211,6 +1247,9 @@ log:printInfo(string `Child name is ${name} and age is ${age}`);
     //
 }
 </code></pre>
+<h2 id="see-also-18"><a class="header" href="#see-also-18">See Also:</a></h2>
+<p><a href="https://ballerina.io/learn/language-basics/#booleans-and-conditionals">Booleans and conditionals</a>
+<a href="https://ballerina.io/learn/by-example/booleans/">BBE - Booleans</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="common-best-practices-guide-1"><a class="header" href="#common-best-practices-guide-1">Common best practices guide</a></h1>
 <p>These are common some best practices which are common for any language. </p>
 <ul>
@@ -1270,6 +1309,8 @@ log:printInfo(string `Child name is ${name} and age is ${age}`);
     return csvLines;
 }
 </code></pre>
+<h2 id="see-also-19"><a class="header" href="#see-also-19">See Also:</a></h2>
+<p><a href="https://www.martinfowler.com/ieeeSoftware/failFast.pdf">Fail fast</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="learning-resources"><a class="header" href="#learning-resources">Learning Resources</a></h1>
 <p>An uncurated list of Ballerina resources. Once you have an overview of the language, here are resources you can use to learn more.</p>
 <p>This is grouped by different technical areas and ordered by the time.</p>
