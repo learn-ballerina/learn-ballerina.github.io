@@ -18,4 +18,4 @@ const FILE_NAME_PREFIX = "Summary";
 
 ## See Also:
 
-[Const and final](https://ballerina.io/learn/language-basics/#const-and-final)
+- [Const and final](https://ballerina.io/learn/language-basics/#const-and-final)

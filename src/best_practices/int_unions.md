@@ -59,4 +59,4 @@ Issue issue = {title: "Incorrect input parameters", priority: HIGH};
 
 ## See Also:
 
-[Unions](https://pre-prod.ballerina.io/learn/language-basics/#unions)
+- [Unions](https://pre-prod.ballerina.io/learn/language-basics/#unions)

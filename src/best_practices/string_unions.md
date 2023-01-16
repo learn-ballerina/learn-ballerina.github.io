@@ -77,4 +77,4 @@ Employee e = {name: "John Doe", department: HR};
 
 ## See Also
 
-[Enumerations](https://ballerina.io/learn/language-basics/#enumerations)
+- [Enumerations](https://ballerina.io/learn/language-basics/#enumerations)

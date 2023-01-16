@@ -45,4 +45,4 @@ configurable int maxIdleConnections = 100;
 
 ### See Also:
 
-[Configure Ballerina programs](https://ballerina.io/learn/configure-ballerina-programs/configure-a-sample-ballerina-service/)
+- [Configure Ballerina programs](https://ballerina.io/learn/configure-ballerina-programs/configure-a-sample-ballerina-service/)

@@ -44,4 +44,4 @@ The goal is to best leverage Ballerina features to create clean, effective code.
 
 ## See Also:
 
-[Organize Ballerina code](https://ballerina.io/learn/organize-ballerina-code/)
+- [Organize Ballerina code](https://ballerina.io/learn/organize-ballerina-code/)

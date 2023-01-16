@@ -47,4 +47,4 @@ Once the package is published to Central, it cannot be deleted.
 
 ## See Also:
 
-[Manage dependencies](https://ballerina.io/learn/manage-dependencies/)
+- [Manage dependencies](https://ballerina.io/learn/manage-dependencies/)

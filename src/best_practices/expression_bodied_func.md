@@ -19,4 +19,4 @@ function isValid(string username) returns boolean
 
 ## See Also:
 
-[Expression-oriented style](https://pre-prod.ballerina.io/learn/by-example/expression-oriented-style/)
+- [Expression-oriented style](https://pre-prod.ballerina.io/learn/by-example/expression-oriented-style/)

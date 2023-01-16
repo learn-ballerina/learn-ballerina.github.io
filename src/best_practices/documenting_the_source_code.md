@@ -41,4 +41,4 @@ Use Package.md and Module.md files wisely to give the required information to th
 
 ## See Also:
 
-[Generate code documentation](https://ballerina.io/learn/generate-code-documentation/)
+- [Generate code documentation](https://ballerina.io/learn/generate-code-documentation/)

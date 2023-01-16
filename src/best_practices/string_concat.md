@@ -26,4 +26,4 @@ log:printInfo(string `Child name is ${name} and age is ${age}`);
 
 ## See Also:
 
-[Backtick templates](https://ballerina.io/learn/by-example/#backtick-templates)
+- [Backtick templates](https://ballerina.io/learn/by-example/#backtick-templates)

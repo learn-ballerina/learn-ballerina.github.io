@@ -22,5 +22,5 @@ if x == 0 {
 
 ## See Also:
 
-[Booleans and conditionals](https://ballerina.io/learn/language-basics/#booleans-and-conditionals)
-[BBE - Booleans](https://ballerina.io/learn/by-example/booleans/)
+- [Booleans and conditionals](https://ballerina.io/learn/language-basics/#booleans-and-conditionals)
+- [BBE - Booleans](https://ballerina.io/learn/by-example/booleans/)

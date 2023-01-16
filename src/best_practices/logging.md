@@ -110,5 +110,5 @@ public function main() {
 
 ## See Also:
 
-[Log BBEs](https://pre-prod.ballerina.io/learn/by-example/#log)
-[Log API docs](https://lib.ballerina.io/ballerina/log/latest)
+- [Log BBEs](https://pre-prod.ballerina.io/learn/by-example/#log)
+- [Log API docs](https://lib.ballerina.io/ballerina/log/latest)

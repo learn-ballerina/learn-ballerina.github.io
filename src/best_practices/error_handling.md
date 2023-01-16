@@ -63,4 +63,4 @@ function getYear(string name) returns int|error {
 
 ### See Also:
 
-[Error handling](https://ballerina.io/learn/language-basics/#error-handling)
+- [Error handling](https://ballerina.io/learn/language-basics/#error-handling)

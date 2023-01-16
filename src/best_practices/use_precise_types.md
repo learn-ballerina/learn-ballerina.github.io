@@ -50,4 +50,4 @@ Album[] albums = check httpClient->/albums;
 
 ### See Also:
 
-[Type inference](https://ballerina.io/learn/language-basics/#type-inference)
+- [Type inference](https://ballerina.io/learn/language-basics/#type-inference)

@@ -107,4 +107,4 @@ service /store on new http:Listener(8080) {
 
 ## See Also
 
-[Controlling Openness](https://ballerina.io/learn/by-example/controlling-openness/)
+- [Controlling Openness](https://ballerina.io/learn/by-example/controlling-openness/)
