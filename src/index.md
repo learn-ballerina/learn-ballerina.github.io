@@ -8,7 +8,7 @@ This is a collection of best practices on using various Ballerina concepts and f
 
 Let’s begin coding effectively in Ballerina.
 
-If you are interested in contributing to this book, check out the [contribution guidelines](https://github.com/learn-ballerina/learn-ballerina.github.io/blob/main/CONTRIBUTING.md.md).
+If you are interested in contributing to this book, check out the [contribution guidelines](https://github.com/learn-ballerina/learn-ballerina.github.io/blob/main/CONTRIBUTING.md).
 
 ## Project best practices
 
