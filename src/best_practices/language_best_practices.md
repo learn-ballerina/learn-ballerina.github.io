@@ -26,6 +26,10 @@ List of common Ballerina language best practices to follow.
 - [Use open vs closed records](use_open_vs_closed_records.md)
 - [Simplify mapping constructor](mapping_constructors.md)
 
+#### Objects
+
+- [Avoid unnecessary objects](best_practices/avoid_unnecessary_objects.md)
+
 #### Working with constants and strings
 
 - [Using constants](constants.md)
@@ -36,3 +40,4 @@ List of common Ballerina language best practices to follow.
 #### Conditionals
 
 - [Avoid parentheses in if statement](avoid_parentheses.md)
+- [Using match statement](best_practices/using_match_statement.md)
