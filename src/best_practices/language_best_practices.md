@@ -28,7 +28,7 @@ List of common Ballerina language best practices to follow.
 
 #### Objects
 
-- [Avoid unnecessary objects](best_practices/avoid_unnecessary_objects.md)
+- [Avoid unnecessary objects](avoid_unnecessary_objects.md)
 
 #### Working with constants and strings
 
@@ -40,4 +40,4 @@ List of common Ballerina language best practices to follow.
 #### Conditionals
 
 - [Avoid parentheses in if statement](avoid_parentheses.md)
-- [Using match statement](best_practices/using_match_statement.md)
+- [Using match statement](using_match_statement.md)
