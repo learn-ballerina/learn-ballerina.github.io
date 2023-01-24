@@ -45,7 +45,7 @@ function getMarks(string name) returns int? {
     if marks.hasKey(name) {
         return marks.get(name);
     }
-    return();
+    return ();
 }
 ```
 
