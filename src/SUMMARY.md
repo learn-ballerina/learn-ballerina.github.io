@@ -29,5 +29,6 @@
     - [Using match statement](best_practices/using_match_statement.md)
 - [Common best practices guide](best_practices/common_best_practices.md)
     - [Use early returns](best_practices/early_returns.md)
+    - [Avoid redundant variables](best_practices/avoid_redundant_variables.md)
 - [Learning Resources](resources/README.md)
 - [Ballerina FAQ](faq.md)

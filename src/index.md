@@ -72,6 +72,7 @@ These are common some best practices which are common for any language.
 
 - [Common best practices guide](best_practices/common_best_practices.md)
     - [Use early returns](best_practices/early_returns.md)
+    - [Avoid redundant variables](best_practices/avoid_redundant_variables.md)
 
 ## Resources
 
