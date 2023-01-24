@@ -26,10 +26,12 @@ The sorting makes it simple to browse the list when there are many imports.
 ```bal
 import bar;
 import foo;
+
 import ballerina/log;
 import ballerina/time;
 import ballerinax/jdbc;
 import ballerinax/oracledb;
+
 import abc/bar;
 import abc/baz;
 import cde/abz;
