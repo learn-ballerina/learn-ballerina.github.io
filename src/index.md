@@ -76,7 +76,7 @@ These are common some best practices which are common for any language.
 
 ## Resources
 
-- [Articles, Blogs and Videos on Ballerina](resources/README.md)
+- [Learning resources](https://learn-ballerina.github.io/resources/index.html)
 
 ## Ballerina FAQ 
 
