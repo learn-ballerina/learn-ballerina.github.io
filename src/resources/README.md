@@ -1,9 +1,11 @@
-# Learning Resources
+# Awsome Ballerina
 An uncurated list of Ballerina resources. Once you have an overview of the language, here are resources you can use to learn more.
 
-This is grouped by different technical areas and ordered by the time.
+This is grouped by different technical areas and ordered by the time. 
 
-- [Learning Resources](#learning-resources)
+> Note: Since the language syntax has changed over the time, some resources may contain invalid code/details. 
+
+- [Awsome Ballerina](#awsome-ballerina)
   - [General](#general)
   - [Language Concepts](#language-concepts)
     - [General Language](#general-language)
