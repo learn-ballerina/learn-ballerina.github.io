@@ -1,6 +1,4 @@
-# Error handling
-
-<h3>Return errors and use the check</h3>
+# Return errors and use the check
 
 Do not return invalid values when an error occurs; instead return the error.
 As much as possible, avoid the use of T|error in variable declarations. Instead, use `check` and add `error` to the return type
@@ -49,17 +47,6 @@ function getYear(string name) returns int|error {
     return error("Student year not found");
 }
 ```
-
-<h3>Usage of panic</h3>
-
-- An error value can also result in abrupt termination via panic if used in a panic statement.
-- It is OK for code to intentionally panic in a situation where a bug in the program's logic has been detected, which should be an extremely rare case.
-- Business logic-related errors would usually be returned.
-
-<h3>Usage of checkpanic</h3>
-
-- `checkpanic` may be used if you want to terminate the program when a particular expression (or action) evaluates to an error.
-- It should be extremely rare to use `checkpanic`.
 
 ### See Also:
 

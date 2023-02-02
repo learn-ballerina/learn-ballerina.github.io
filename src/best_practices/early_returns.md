@@ -2,7 +2,7 @@
 
 Use early returns to avoid nested if conditions. Then the code will become more readable and maintainable.
 
-Note: This is not a Ballerina language-specific thing, but it can simplify the code a lot.
+> Note: If both if and else contain similar kinds of logic, don’t return early.
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 

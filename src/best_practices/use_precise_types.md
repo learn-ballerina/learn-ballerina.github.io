@@ -1,5 +1,10 @@
 # Use precise types
 
+Using precise types will 
+- Improve type checking at compile-time
+- Reduces the need for is checks and casts
+- Improve tooling experience: e.g., completion
+
 <h3>Avoid overuse of var</h3>
 
 Type inference allows the program to infer the actual data type of variables.

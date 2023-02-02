@@ -1,6 +1,8 @@
 # Represent optionality 
 
-Use nil (i.e. `()`) to represent optional values.
+Use nil (i.e. `()`) to represent optional values. 
+
+> Note: Use `()` instead of `null` unless it’s in a json context.
 
 <h3>Example 1:</h3>
 

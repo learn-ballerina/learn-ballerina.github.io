@@ -35,6 +35,7 @@ List of common Ballerina language best practices to follow.
 
 - [Use precise types](best_practices/use_precise_types.md)
 - [Work with value ranges](best_practices/value_ranges.md)
+- [Avoid unnecessary type casts](best_practices/avoid_unnecessary_type_casts.md)
 
 ### Functions and parameters
 
@@ -43,7 +44,8 @@ List of common Ballerina language best practices to follow.
 
 ### Error handling
 
-- [Error handling](best_practices/error_handling.md)
+- [Return errors and use the check](best_practices/return_errors_and_use_check.md)
+- [Avoid unnecessary usage of panic](best_practices/avoid_unnecessary_panic.md)
 
 ### Records
 
