@@ -43,3 +43,7 @@ List of common Ballerina language best practices to follow.
 
 - [Avoid parentheses in if statement](avoid_parentheses.md)
 - [Using match statement](using_match_statement.md)
+
+#### Query expressions
+
+- [Using query expressions for iterations](using_query_expressions_for_iterations.md)

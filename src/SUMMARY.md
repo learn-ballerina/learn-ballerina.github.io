@@ -29,6 +29,7 @@
     - [Generate string by concatenating values](best_practices/string_concat.md)
     - [Avoid parentheses in if statement](best_practices/avoid_parentheses.md)
     - [Using match statement](best_practices/using_match_statement.md)
+    - [Using query expressions for iterations](best_practices/using_query_expressions_for_iterations.md)
 - [Common best practices guide](best_practices/common_best_practices.md)
     - [Use early returns](best_practices/early_returns.md)
     - [Avoid redundant variables](best_practices/avoid_redundant_variables.md)
