@@ -10,12 +10,6 @@
         {{#if base_url}}
         <base href="{{ base_url }}">
         {{/if}}
-        <div class="views">
-            <span class="views">
-                <img src="https://visitor-badge.glitch.me/badge?page_id=learn-ballerina.visitor-badge" alt="Views"/>
-            </span>
-        </div>
-
         <!-- Custom HTML head -->
         {{> head}}
 
@@ -60,6 +54,11 @@
         {{/if}}
     </head>
     <body>
+        <div class="views">
+            <span class="views">
+                <img src="https://visitor-badge.glitch.me/badge?page_id=learn-ballerina.visitor-badge" alt="Views"/>
+            </span>
+        </div>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "{{ path_to_root }}";
