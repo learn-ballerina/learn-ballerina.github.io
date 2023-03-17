@@ -17,6 +17,7 @@ List of common Ballerina language best practices to follow.
 
 - [Using included record parameters](included_record_params.md)
 - [Use expression-bodied functions](expression_bodied_func.md)
+- [Use tuples to return multiple values](use_tuple_to_return_multiple_values.md)
 
 #### Error handling
 

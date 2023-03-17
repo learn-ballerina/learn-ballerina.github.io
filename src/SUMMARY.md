@@ -18,6 +18,7 @@
     - [Avoid unnecessary type casts](best_practices/avoid_unnecessary_type_casts.md)
     - [Using included record parameters](best_practices/included_record_params.md)
     - [Use expression-bodied functions](best_practices/expression_bodied_func.md)
+    - - [Use tuples to return multiple values](best_practices/use_tuple_to_return_multiple_values.md)
     - [Return errors and use the check](best_practices/return_errors_and_use_check.md)
     - [Avoid unnecessary usage of panic](best_practices/avoid_unnecessary_panic.md)
     - [Use open vs closed records](best_practices/use_open_vs_closed_records.md)
