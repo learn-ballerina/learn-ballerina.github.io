@@ -15,7 +15,7 @@ int validAge = <int>age;
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
-```
+```bal
 int? age = ();
 int validAge = age ?: 0;
 ```
@@ -41,21 +41,41 @@ string validName = name ?: "";
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
 
 ```bal
-function getUsers() returns string[]|error {
-   string[]? users = check httpClient->/users;
-   if users is string[] {
-       return users;
-   }
-   return [];
+function getUsers() returns string[] {
+    string[]? users = loadUsers();
+    if users is string[] {
+        return users;
+    }
+    return [];
+}
+
+function loadUsers() returns string[]? {
+    //loading user code from DB or file etc
 }
 ```
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good Code</h4>
 
+Refer to the following options. We can use the elvis operator or can return error by explicitly checking for `nil`. Checking for nil is better than returning unrealistic default value in most cases.
+
+<h4>Option 1: </h4>
+
+```bal
+function getUsers() returns string[] {
+    string[]? users = loadUsers();
+    return users ?: [];
+}
+```
+
+<h4>Option 1: </h4>
+
 ```bal
 function getUsers() returns string[]|error {
-    string[]? users = check httpClient->/users;
-    return users ?: [];
+    string[]? users = loadUsers();
+    if users is () {
+        return error("Error in loading users");
+    }
+    return users;
 }
 ```
 
