@@ -821,7 +821,7 @@ version = &quot;&lt;version&gt;&quot;
 int validAge = &lt;int&gt;age;
 </code></pre>
 <h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-7"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-7"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
-<pre><code>int? age = ();
+<pre><code class="language-bal">int? age = ();
 int validAge = age ?: 0;
 </code></pre>
 <h3 id="example-2-1"><a class="header" href="#example-2-1">Example 2:</a></h3>
@@ -835,18 +835,33 @@ string validName = name ?: &quot;&quot;;
 </code></pre>
 <h3 id="example-3"><a class="header" href="#example-3">Example 3:</a></h3>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-8"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-code-8"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad Code</a></h4>
-<pre><code class="language-bal">function getUsers() returns string[]|error {
-   string[]? users = check httpClient-&gt;/users;
-   if users is string[] {
-       return users;
-   }
-   return [];
+<pre><code class="language-bal">function getUsers() returns string[] {
+    string[]? users = loadUsers();
+    if users is string[] {
+        return users;
+    }
+    return [];
+}
+
+function loadUsers() returns string[]? {
+    //loading user code from DB or file etc
 }
 </code></pre>
 <h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-9"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-code-9"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good Code</a></h4>
-<pre><code class="language-bal">function getUsers() returns string[]|error {
-    string[]? users = check httpClient-&gt;/users;
+<p>Refer to the following options. We can use the elvis operator or can return error by explicitly checking for <code>nil</code>. Checking for nil is better than returning unrealistic default value in most cases.</p>
+<h4 id="option-1"><a class="header" href="#option-1">Option 1: </a></h4>
+<pre><code class="language-bal">function getUsers() returns string[] {
+    string[]? users = loadUsers();
     return users ?: [];
+}
+</code></pre>
+<h4 id="option-1-1"><a class="header" href="#option-1-1">Option 1: </a></h4>
+<pre><code class="language-bal">function getUsers() returns string[]|error {
+    string[]? users = loadUsers();
+    if users is () {
+        return error(&quot;Error in loading users&quot;);
+    }
+    return users;
 }
 </code></pre>
 <h3 id="see-also-7"><a class="header" href="#see-also-7">See Also:</a></h3>
