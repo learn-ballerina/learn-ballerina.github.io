@@ -1,4 +1,4 @@
-# Generate  string by concatenating values
+# Concatenate string values
 
 Use string backtick template.
 

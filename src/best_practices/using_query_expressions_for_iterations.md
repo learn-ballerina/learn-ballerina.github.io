@@ -1,4 +1,4 @@
-# Using query expressions for iterations
+# Query expressions for iterations
 
 - A query expression is similar to the SQL query syntax where you can construct a list, a mapping, a table, a stream, or a sequence by iterating over an iterable value.
 - It provides a convenient way to iterate while doing filtering and sorting as well.

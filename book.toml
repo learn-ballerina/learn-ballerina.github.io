@@ -3,7 +3,7 @@ authors = ["anupama-pathirage"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Ballerina Best Practices Guide"
+title = "Ballerina Programming Language Best Practices Guide"
 
 
 [output.html]

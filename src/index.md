@@ -1,8 +1,8 @@
-# Ballerina best practices guide
+# Ballerina Programming Language - best practices guide
 
-Welcome to the Ballerina best practices guide!
+Welcome to the best practices guide of Ballerina programming language!
 
-[Ballerina](ballerina.io/) is an open-source programming language for the cloud that makes it easier to use, combine, and create network services. 
+[Ballerina](https://ballerina.io/) is an open-source programming language for the cloud that makes it easier to use, combine, and create network services. 
 
 This is a collection of best practices on using various Ballerina concepts and functionalities. This guide is opinionated and not Ballerina's official documentation. You won't find a list of every Ballerina syntax and standard library usage help here. Rather, you'll find a concise list of highly recommended options.  The list is growing!
 
@@ -62,7 +62,7 @@ List of common Ballerina language best practices to follow.
 - [Using constants](best_practices/constants.md)
 - [Handle unions of string constants](best_practices/string_unions.md)
 - [Handle unions of integer constants](best_practices/int_unions.md)
-- [Generate string by concatenating values](best_practices/string_concat.md)
+- [Concatenate string values](best_practices/string_concat.md)
 
 ### Conditionals
 
@@ -71,7 +71,7 @@ List of common Ballerina language best practices to follow.
 
 ### Query expressions
 
-- [Using query expressions for iterations](best_practices/using_query_expressions_for_iterations.md)
+- [Query expressions for iterations](best_practices/using_query_expressions_for_iterations.md)
 
 ## Common best practices guide
 
