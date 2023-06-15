@@ -22,6 +22,23 @@ public function foo(int i, string s) returns boolean {
 }
 ```
 
+## Documenting records
+
+Use the following approach to document the record and its fields.
+
+```bal
+# Fields of the Date record.
+type DateFields record {
+    # Year as an integer
+    int year;
+    # Month as an integer (1 <= month <= 12)
+    int month;
+    # Day as an integer (1 <= day <= 31)
+    int day;
+};
+```
+
+
 ## Documenting packages and modules
 
 Ballerina documentation design and usage is aligned with the package and module semantics of Ballerina.
