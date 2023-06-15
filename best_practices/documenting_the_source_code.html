@@ -174,6 +174,18 @@ public function foo(int i, string s) returns boolean {
     return true;
 }
 </code></pre>
+<h2 id="documenting-records"><a class="header" href="#documenting-records">Documenting records</a></h2>
+<p>Use the following approach to document the record and its fields.</p>
+<pre><code class="language-bal"># Fields of the Date record.
+type DateFields record {
+    # Year as an integer
+    int year;
+    # Month as an integer (1 &lt;= month &lt;= 12)
+    int month;
+    # Day as an integer (1 &lt;= day &lt;= 31)
+    int day;
+};
+</code></pre>
 <h2 id="documenting-packages-and-modules"><a class="header" href="#documenting-packages-and-modules">Documenting packages and modules</a></h2>
 <p>Ballerina documentation design and usage is aligned with the package and module semantics of Ballerina.</p>
 <p>Use Package.md and Module.md files wisely to give the required information to the users.</p>
