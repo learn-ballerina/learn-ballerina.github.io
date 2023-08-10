@@ -7,6 +7,7 @@ Excessively long lines are indicative of a code quality issue, suggesting that a
 - Alternatively, introduce line breaks strategically to aid readers in comprehending the code more effectively.
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad Code</h4>
+
 ```bal
 public function extractToolsFromOpenApiJsonSpec(map<json> openApiSpec, *AdditionInfoFlags additionInfoFlags) returns HttpApiSpecification & readonly|error {
     
