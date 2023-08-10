@@ -148,6 +148,48 @@ public type Employee record {|
 |};
 ``` 
 
+
+<h2>Names with Abbrevations</h2>
+
+- When using abbreviations in names, treat the abbreviation as another word.
+
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
+
+```bal
+public function hashMD5(byte[] input) {
+
+}
+```
+
+```bal
+type LLMModel record {|
+    
+|};
+```
+
+```bal
+string originalSHAValue;
+```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
+
+```bal
+public function hashMd5(byte[] input) {
+
+}
+```
+
+```bal
+type LlmModel record {|
+    
+|};
+```
+
+```bal
+string originalShaValue;
+```
+
+
 <h2>REST Service and resource paths</h2>
 
 - The `service path` represents the absolute path to the service. If the `service path` is omitted, then it defaults to `/`. Use meaningful grouping name if it is not omitting. 
