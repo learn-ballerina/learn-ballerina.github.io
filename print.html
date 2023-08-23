@@ -1814,11 +1814,8 @@ function validate(json input) returns boolean|error {
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="use-proper-commit-messages-and-pr-titles"><a class="header" href="#use-proper-commit-messages-and-pr-titles">Use proper commit messages and PR titles</a></h1>
 <p>Effective Git commit messages and subject lines hold immense significance in comprehending alterations and enhancing the code's maintainability.</p>
+<p>Always commit the changes to your fork and push them to the corresponding original repo by sending a Pull Request (PR). Follow the best practices for writing commit messages/PR titles. </p>
 <ol>
-<li>Always commit the changes to your fork and push them to the corresponding original repo by sending a Pull Request (PR).</li>
-<li>Follow the best practices for writing commit messages/PR titles. </li>
-</ol>
-<ul>
 <li>
 <p>Limit the subject line to 50 characters</p>
 </li>
@@ -1832,13 +1829,14 @@ function validate(json input) returns boolean|error {
 <p>Use the imperative mood in the subject line. A properly formed Git commit subject line should always be able to complete the following sentence:</p>
 <p>If applied, this commit will <code>&lt;your subject line here&gt;</code></p>
 </li>
-</ul>
+</ol>
 <h4 id="img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-commit-messagessubject-lines"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimgbadcodepng-bad-commit-messagessubject-lines"><img align="center" height="30" src="best_practices/../img/BadCode.png"> Bad commit messages/subject lines</a></h4>
-<p><code>Feature request for banking app</code> - Not follwoing the semantics of If applied, this commit will <code>&lt;your subject line here&gt;</code> and not informative enough</p>
+<p><code>Feature request for banking app</code> - Violting 4th point above and not informative enough</p>
 <p><code>Add minor changes</code> - Not informative enough</p>
-<p><code>Implementing XML to record converter</code> - Not follwoing the semantics of If applied, this commit will <code>&lt;your subject line here&gt;</code> </p>
+<p><code>Implementing XML to record converter</code> - Violting 4th point above </p>
+<p><code>fix GraalVM compatibility warnings after Java17 migration.</code> - Violting 2nd and 3rd points above </p>
 <h4 id="img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-commit-messagessubject-lines"><a class="header" href="#img-aligncenter-height30-srcbest_practicesimggoodcodepng-good-commit-messagessubject-lines"><img align="center" height="30" src="best_practices/../img/GoodCode.png"> Good commit messages/subject lines</a></h4>
-<p><code>Fix the failure to generate records from xml when multiple namespaces exist</code> - Follows the semantics and informative enough</p>
+<p><code>Fix the failure to generate records from xml when multiple namespaces exist</code></p>
 <p><code>Fix GraalVM compatibility warnings after Java17 migration</code></p>
 <h2 id="see-also-26"><a class="header" href="#see-also-26">See Also</a></h2>
 <ul>
