@@ -36,5 +36,6 @@
     - [Avoid redundant variables](best_practices/avoid_redundant_variables.md)
     - [Avoid unnecessary comments](best_practices/avoid_unnecessary_comments.md)
     - [Wrap code at 120 characters](best_practices/wrap_code.md)
+    - [Use proper commit messages and PR titles](best_practices/use_proper_titles.md)
 - [Learning Resources](resources/README.md)
 - [Ballerina FAQ](faq.md)
