@@ -2,28 +2,29 @@
 
 Effective Git commit messages and subject lines hold immense significance in comprehending alterations and enhancing the code's maintainability.
 
-1. Always commit the changes to your fork and push them to the corresponding original repo by sending a Pull Request (PR).
-2. Follow the best practices for writing commit messages/PR titles. 
+Always commit the changes to your fork and push them to the corresponding original repo by sending a Pull Request (PR). Follow the best practices for writing commit messages/PR titles. 
 
-- Limit the subject line to 50 characters
-- Capitalize the subject line
-- Do not end the subject line with a period
-- Use the imperative mood in the subject line. A properly formed Git commit subject line should always be able to complete the following sentence:
+1) Limit the subject line to 50 characters
+2) Capitalize the subject line
+3) Do not end the subject line with a period
+4) Use the imperative mood in the subject line. A properly formed Git commit subject line should always be able to complete the following sentence:
 
     If applied, this commit will `<your subject line here>`
 
 
 <h4><img align="center" height="30" src="../img/BadCode.png"> Bad commit messages/subject lines</h4>
 
-`Feature request for banking app` - Not follwoing the semantics of If applied, this commit will `<your subject line here>` and not informative enough
+`Feature request for banking app` - Violting 4th point above and not informative enough
 
 `Add minor changes` - Not informative enough
 
-`Implementing XML to record converter` - Not follwoing the semantics of If applied, this commit will `<your subject line here>` 
+`Implementing XML to record converter` - Violting 4th point above 
+
+`fix GraalVM compatibility warnings after Java17 migration.` - Violting 2nd and 3rd points above 
 
 <h4><img align="center" height="30" src="../img/GoodCode.png"> Good commit messages/subject lines</h4>
 
-`Fix the failure to generate records from xml when multiple namespaces exist` - Follows the semantics and informative enough
+`Fix the failure to generate records from xml when multiple namespaces exist`
 
 `Fix GraalVM compatibility warnings after Java17 migration`
 
