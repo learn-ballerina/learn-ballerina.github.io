@@ -260,11 +260,25 @@ const maxSize = 1000;
     int age;
 |};
 </code></pre>
+<h2 id="clients"><a class="header" href="#clients">Clients</a></h2>
+<ul>
+<li>Name it to reflect the type of the client.</li>
+<li>Avoid unnecesary repetitive words such as <code>Client</code>.</li>
+</ul>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-7"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-7"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<pre><code class="language-bal">twilio:Client myClient = check new ({twilioAuth: {accountSId, authToken}});
+twilio:Client c = check new ({twilioAuth: {accountSId, authToken}});
+twilio:Client twilioClient = check new ({twilioAuth: {accountSId, authToken}});
+
+</code></pre>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-7"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-7"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<pre><code class="language-bal">twilio:Client twilio = check new ({twilioAuth: {accountSId, authToken}});
+</code></pre>
 <h2 id="names-with-abbrevations"><a class="header" href="#names-with-abbrevations">Names with Abbrevations</a></h2>
 <ul>
 <li>When using abbreviations in names, treat the abbreviation as another word.</li>
 </ul>
-<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-7"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-7"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-8"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-8"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
 <pre><code class="language-bal">public function hashMD5(byte[] input) {
 
 }
@@ -275,7 +289,7 @@ const maxSize = 1000;
 </code></pre>
 <pre><code class="language-bal">string originalSHAValue;
 </code></pre>
-<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-7"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-7"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-8"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-8"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
 <pre><code class="language-bal">public function hashMd5(byte[] input) {
 
 }
@@ -292,7 +306,7 @@ const maxSize = 1000;
 <li>Use lowercase letters.</li>
 <li>Try to use simple single words, but when it is needed to have multiple words use dashes instead of underscore. </li>
 </ul>
-<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-8"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-8"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-9"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-9"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
 <pre><code class="language-bal">service /MusicStore on new http:Listener(9090) {
 
 }
@@ -301,7 +315,7 @@ const maxSize = 1000;
 
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-8"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-8"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-9"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-9"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
 <pre><code class="language-bal">service &quot;/store&quot; on new http:Listener(9090) {
 
 }
@@ -318,7 +332,7 @@ const maxSize = 1000;
 <ul>
 <li>Use nouns instead of verbs for resource function names. Verbs should not be used in endpoint paths. </li>
 </ul>
-<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-9"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-9"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-10"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-10"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
 <pre><code class="language-bal">service / on new http:Listener(9090) {
 
     resource function get getAlbums() returns Album[] {
@@ -326,7 +340,7 @@ const maxSize = 1000;
     }
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-9"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-9"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-10"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-10"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
 <pre><code class="language-bal">service / on new http:Listener(9090) {
 
     resource function get albums() returns Album[] {
@@ -338,7 +352,7 @@ const maxSize = 1000;
 <li>Use plural resource nouns.</li>
 </ul>
 <p>Use the plural form for resource nouns, because this fits all types of endpoints.</p>
-<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-10"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-10"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimgbadcodepng-bad-names-11"><a class="header" href="#img-aligncenter-height30-srcimgbadcodepng-bad-names-11"><img align="center" height="30" src="../img/BadCode.png"> Bad Names</a></h4>
 <pre><code class="language-bal">service / on new http:Listener(9090) {
 
     resource function get albums() returns Album[] {
@@ -350,7 +364,7 @@ const maxSize = 1000;
     }
 }
 </code></pre>
-<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-10"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-10"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
+<h4 id="img-aligncenter-height30-srcimggoodcodepng-good-names-11"><a class="header" href="#img-aligncenter-height30-srcimggoodcodepng-good-names-11"><img align="center" height="30" src="../img/GoodCode.png"> Good Names</a></h4>
 <pre><code class="language-bal">service / on new http:Listener(9090) {
 
     resource function get albums() returns Album[] {
