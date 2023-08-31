@@ -148,6 +148,26 @@ public type Employee record {|
 |};
 ``` 
 
+<h2>Clients</h2>
+
+- Name it to reflect the type of the client.
+- Avoid unnecesary repetitive words such as `Client`.
+
+<h4><img align="center" height="30" src="../img/BadCode.png"> Bad Names</h4>
+
+```bal
+twilio:Client myClient = check new ({twilioAuth: {accountSId, authToken}});
+twilio:Client c = check new ({twilioAuth: {accountSId, authToken}});
+twilio:Client twilioClient = check new ({twilioAuth: {accountSId, authToken}});
+
+```
+
+<h4><img align="center" height="30" src="../img/GoodCode.png"> Good Names</h4>
+
+```bal
+twilio:Client twilio = check new ({twilioAuth: {accountSId, authToken}});
+``` 
+
 
 <h2>Names with Abbrevations</h2>
 
