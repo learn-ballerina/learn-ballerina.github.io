@@ -2858,7 +2858,7 @@ service /twilio on new http:Listener(9090) {
 <pre><code>https://a624-2600-1700-1bd0-1390-9587-3a61-a470-879b.ngrok.io/twilio/voice
 </code></pre>
 <p>Next, write your Ballerina code as follows. Use the above complete ngrok URL as the <code>voiceTwimUrl</code> configurable. </p>
-<pre><code class="language-ballerina">import ballerina/log;
+<pre><code class="language-bal">import ballerina/log;
 import ballerinax/twilio;
 
 configurable string accountSId = ?;
