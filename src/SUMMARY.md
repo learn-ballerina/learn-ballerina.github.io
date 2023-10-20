@@ -39,5 +39,5 @@
     - [Use proper commit messages and PR titles](best_practices/use_proper_titles.md)
 - [Learning resources](resources/README.md)
 - [Ballerina FAQ](faq.md)
-- [Ballerina library samples]()
+- [Ballerina library samples](ballerina-library-samples/ballerina-library-samples.md)
     - [Twilio](ballerina-library-samples/twilio.md)

@@ -28,7 +28,7 @@ To provide the configurations required, create a new file named `Config.toml`` a
 
 Add the following code to `main.bal` file.
 
-```ballerina
+```bal
 import ballerina/log;
 import ballerinax/twilio;
 
@@ -108,7 +108,7 @@ Let’s see how to write a Ballerina program that makes a voice call with the in
 
 If you don’t have such a URL that returns TwiML, you can write a simple Ballerina HTTP service to return it as follows and run it. The instruction returned by this service will contain a bell sound, which is looped ten times. 
 
-```ballerina
+```bal
 import ballerina/http;
 
 service /twilio on new http:Listener(9090) {
