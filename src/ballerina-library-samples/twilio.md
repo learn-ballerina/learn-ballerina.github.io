@@ -145,7 +145,7 @@ https://a624-2600-1700-1bd0-1390-9587-3a61-a470-879b.ngrok.io/twilio/voice
 
 Next, write your Ballerina code as follows. Use the above complete ngrok URL as the `voiceTwimUrl` configurable. 
 
-```ballerina
+```bal
 import ballerina/log;
 import ballerinax/twilio;
 
